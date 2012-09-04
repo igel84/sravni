@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InitialRelease</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container">
+<div class="row">
+   <div class="span12">
+  <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+
+  <a class="brand" href="#">название или логотип</a>
+<ul class="nav">
+  <li class="active">
+    <a href="#">главная</a>
+  </li>
+  <li><a href="#">какая-нибудь</a></li>
+  <li><a href="#">другая</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      с выпадающим списком
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href='#'>пункт</a></li>
+      <li><a href='#'>пункт</a></li>
+      <li><a href='#'>пункт</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+</div>
+</div>
+<%= yield %>
+
+</div>
+</div>
+</div>
+</body>
+</html>
