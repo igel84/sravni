@@ -9,9 +9,13 @@
     .container
       .row
         .span12
-          .navbar.navbar-fixed-top
+          .navbar.navbar-static-top
             .navbar-inner
               .container
+                %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+                  %span.icon-bar
+                  %span.icon-bar
+                  %span.icon-bar
                 %a.brand{:href => "#"} название или логотип
                 %ul.nav
                   %li.active
@@ -27,5 +31,33 @@
                     %ul.dropdown-menu
                       - City.all.each do |city|
                         %li
-                          %a{:href => "#"}= city.name
+                          %a{:href => "#"}= city.name                  
+                %ul.nav.pull-right
+                  %li.divider-vertical
+                  %li.dropdown
+                    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                      Личный кабинет
+                      %b.caret
+                    %ul.dropdown-menu
+                      - if current_user
+                        %li= link_to "выход", logout_path
+                      - else
+                        %li= link_to "вход", login_path                      
+                        %li= link_to "регистрация", signup_path  
+      .row
+        .span12= image_tag 'top.jpg', width:940, hight:80
+      .row-fluid   
+        .span10
+          %br/
+          - flash.each do |name, msg|
+            = content_tag :div, msg, class:"alert alert-info"
           = yield
+        .span2
+          %br/
+          = image_tag "banner.jpg", class:"img-rounded"
+          %br/
+          %br/
+          = image_tag "banner.jpg", class:"img-rounded"
+          %br/
+          %br/
+          = image_tag "banner.jpg", class:"img-rounded"
