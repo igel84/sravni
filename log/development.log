@@ -1483,3 +1483,252 @@ Served asset /home.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-04 23:17:57 +0400
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 23:30:47 +0400
+  Processing by HomeController#wellcom as HTML
+Rendered home/wellcom.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 59ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 23:30:48 +0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-09-07 23:30:48 +0400
+Served asset /bootstrap-responsive.css - 200 OK (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-07 23:30:48 +0400
+Served asset /home.css - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-09-07 23:30:48 +0400
+Served asset /bootstrap.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 23:30:48 +0400
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-07 23:30:48 +0400
+Served asset /bootstrap.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 23:30:48 +0400
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 23:30:48 +0400
+Served asset /home.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 23:30:48 +0400
+Served asset /application.js - 200 OK (2ms)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (3.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (3.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCities (20120907193834)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120907193834')[0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("cities")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mSQL (24.3ms)[0m  INSERT INTO "cities" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 07 Sep 2012 19:42:00 UTC +00:00], ["name", "Воронеж"], ["updated_at", Fri, 07 Sep 2012 19:42:00 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "cities" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 07 Sep 2012 19:42:00 UTC +00:00], ["name", "Москва"], ["updated_at", Fri, 07 Sep 2012 19:42:00 UTC +00:00]]
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 23:52:44 +0400
+  Processing by HomeController#wellcom as HTML
+Rendered home/wellcom.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 23:53:00 +0400
+  Processing by HomeController#wellcom as HTML
+Rendered home/wellcom.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 23:54:23 +0400
+  Processing by HomeController#wellcom as HTML
+Completed 500 Internal Server Error in 13ms
+
+ActionView::MissingTemplate (Missing template home/wellcom, application/wellcom with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/igel/proj/sravni/app/views"
+):
+  
+
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 23:54:26 +0400
+  Processing by HomeController#wellcom as HTML
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template home/wellcom, application/wellcom with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/igel/proj/sravni/app/views"
+):
+  
+
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 23:54:26 +0400
+  Processing by HomeController#wellcom as HTML
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template home/wellcom, application/wellcom with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/igel/proj/sravni/app/views"
+):
+  
+
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 23:54:27 +0400
+  Processing by HomeController#wellcom as HTML
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template home/wellcom, application/wellcom with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/igel/proj/sravni/app/views"
+):
+  
+
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 23:54:27 +0400
+  Processing by HomeController#wellcom as HTML
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template home/wellcom, application/wellcom with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/igel/proj/sravni/app/views"
+):
+  
+
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 23:54:27 +0400
+  Processing by HomeController#wellcom as HTML
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template home/wellcom, application/wellcom with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/igel/proj/sravni/app/views"
+):
+  
+
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 23:54:27 +0400
+  Processing by HomeController#wellcom as HTML
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template home/wellcom, application/wellcom with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/igel/proj/sravni/app/views"
+):
+  
+
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 23:54:28 +0400
+  Processing by HomeController#wellcom as HTML
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template home/wellcom, application/wellcom with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/igel/proj/sravni/app/views"
+):
+  
+
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 23:58:04 +0400
+  Processing by HomeController#wellcom as HTML
+Rendered home/wellcom.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 74ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 23:58:05 +0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-09-07 23:58:05 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-09-07 23:58:05 +0400
+Served asset /bootstrap.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 23:58:05 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 23:58:05 +0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-07 23:58:05 +0400
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-07 23:58:05 +0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 23:58:05 +0400
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 23:58:05 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-07 23:59:30 +0400
+  Processing by HomeController#wellcom as HTML
+Rendered home/wellcom.html.haml within layouts/application (0.1ms)
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities" [0m
+Completed 200 OK in 114ms (Views: 112.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-07 23:59:30 +0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-09-07 23:59:30 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-09-07 23:59:30 +0400
+Served asset /bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-07 23:59:30 +0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-07 23:59:30 +0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-07 23:59:30 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-07 23:59:30 +0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-07 23:59:30 +0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-07 23:59:30 +0400
+Served asset /application.js - 304 Not Modified (2ms)
