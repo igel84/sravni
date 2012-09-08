@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1346785356.9790094:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347141469.3773255:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%8bd22da4fc3067e24ab3748fdee9e14fI"logical_path;
+F"%b73346fb9b45c25108e43c95e21d2c56I"logical_path;
 FI"bootstrap.js;
 FI"pathname;
 FI".$root/app/assets/javascripts/bootstrap.js;
@@ -2049,5 +2049,5 @@ FI"
 mtime;
 FIu:	Time¦€   <:@_zoneI"MSK;
 T:offseti@8I"hexdigest;
-F"%94ff0a7c9b0b4864b62be61c6a0059bfI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+F"%ac0a3abfa1ab63efc1b247212ae2a0efI"_version;
+F"%1c9609bc58b1e77c196de29021583379

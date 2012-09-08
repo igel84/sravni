@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1346801888.1885707:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347141469.4317708:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%1cabdddff0db1e1e6b6071c38752de78I"logical_path;
+F"%a7f8442571db6caadc0866e90776d719I"logical_path;
 FI"password_resets.js;
 FI"pathname;
 FI";$root/app/assets/javascripts/password_resets.js.coffee;
@@ -24,5 +24,5 @@ mtime;
 FIu:	Time— €À$c‡
 :@_zoneI"MSK;
 T:nano_numi:nano_deni:submicro"R:offseti@8I"hexdigest;
-F"%c12f0621e8cbf15a5c4dfa732f9f322aI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+F"%4785117870f420bbb297280d7c44bd89I"_version;
+F"%1c9609bc58b1e77c196de29021583379

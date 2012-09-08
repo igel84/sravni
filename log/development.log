@@ -13763,3 +13763,16 @@ Served asset /top.jpg - 304 Not Modified (0ms)
 
 Started GET "/assets/banner.jpg" for 127.0.0.1 at 2012-09-09 01:42:52 +0400
 Served asset /banner.jpg - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20120904231302)
+Migrating to SorceryRememberMe (20120904231303)
+Migrating to SorceryResetPassword (20120904231304)
+Migrating to SorceryUserActivation (20120904234937)
+Migrating to CreateCities (20120907193834)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("cities")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_activation_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_remember_me_token')
