@@ -11,9 +11,34 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120910192041) do
+ActiveRecord::Schema.define(:version => 20120910225217) do
+
+  create_table "areas", :force => true do |t|
+    t.string   "name"
+    t.string   "city_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "chains", :force => true do |t|
+    t.string   "name"
+    t.string   "logo_content_type"
+    t.integer  "logo_file_size"
+    t.string   "logo_file_name"
+    t.datetime "logo_updated_at"
+    t.text     "info"
+    t.string   "site"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "cities", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "products", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -31,6 +56,31 @@ ActiveRecord::Schema.define(:version => 20120910192041) do
   end
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
+
+  create_table "shop_products", :force => true do |t|
+    t.integer  "shop_id"
+    t.integer  "product_id"
+    t.decimal  "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "shops", :force => true do |t|
+    t.integer  "chain_id"
+    t.integer  "area_id"
+    t.string   "adds"
+    t.string   "phone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_shops", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "shop_id"
+    t.string   "post"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "username"
