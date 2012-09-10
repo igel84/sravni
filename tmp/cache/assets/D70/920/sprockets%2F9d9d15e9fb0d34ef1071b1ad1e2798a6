@@ -1,0 +1,74 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347305548.8051589:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%f173c40d32e0c06a1313a918d74e74b8I"logical_path;
+FI"(rails_admin/ra.nested-form-hooks.js;
+FI"pathname;
+FI"Å/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/ra.nested-form-hooks.coffee;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-09-10T23:20:06+04:00;
+FI"	body;
+FI"'(function() {
+  var $;
+
+  $ = jQuery;
+
+  $(document).ready(function() {
+    return window.nestedFormEvents.insertFields = function(content, assoc, link) {
+      var tab_content;
+      tab_content = $(link).closest(".controls").siblings(".tab-content");
+      tab_content.append(content);
+      return tab_content.children().last();
+    };
+  });
+
+  $('form').live('nested:fieldAdded', function(content) {
+    var controls, field, nav, new_tab, parent_group, toggler;
+    field = content.field.addClass('tab-pane');
+    new_tab = $('<li><a data-toggle="tab" href="#' + field.attr('id') + '">' + field.children('.object-infos').data('object-label') + '</a></li>');
+    parent_group = field.closest('.control-group');
+    controls = parent_group.children('.controls');
+    nav = controls.children('.nav');
+    content = parent_group.children('.tab-content');
+    toggler = controls.find('.toggler');
+    nav.append(new_tab);
+    $(window.document).trigger('rails_admin.dom_ready');
+    new_tab.children('a').tab('show');
+    nav.select(':hidden').show('slow');
+    content.select(':hidden').show('slow');
+    return toggler.addClass('active').removeClass('disabled').children('i').addClass('icon-chevron-down').removeClass('icon-chevron-right');
+  });
+
+  $('form').live('nested:fieldRemoved', function(content) {
+    var controls, current_li, field, nav, parent_group, toggler;
+    field = content.field;
+    nav = field.closest(".control-group").children('.controls').children('.nav');
+    current_li = nav.children('li').has('a[href=#' + field.attr('id') + ']');
+    parent_group = field.closest(".control-group");
+    controls = parent_group.children('.controls');
+    toggler = controls.find('.toggler');
+    (current_li.next().length ? current_li.next() : current_li.prev()).children('a:first').tab('show');
+    current_li.remove();
+    if (nav.children().length === 0) {
+      nav.select(':visible').hide('slow');
+      return toggler.removeClass('active').addClass('disabled').children('i').removeClass('icon-chevron-down').addClass('icon-chevron-right');
+    }
+  });
+
+}).call(this);
+;
+TI"asset_paths;
+F[I"Å/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/ra.nested-form-hooks.coffee;
+FI"dependency_paths;
+F[{I"	path;
+FI"Å/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/ra.nested-form-hooks.coffee;
+FI"
+mtime;
+FIu:	TimeS!Ä~kP
+:@_zoneI"MSK;
+T:nano_numi≥:nano_deni:submicro"ê:offseti@8I"hexdigest;
+F"%18cbf57ad75fb1fb4783e7ee7b3503e5I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

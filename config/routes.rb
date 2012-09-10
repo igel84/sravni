@@ -1,7 +1,10 @@
 InitialRelease::Application.routes.draw do
   
-  resources :password_resets
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
+  resources :password_resets
+  resources :sessions
+  
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
@@ -12,7 +15,6 @@ InitialRelease::Application.routes.draw do
     end
   end
 
-  resources :sessions
   
   root to: "home#wellcom"
 

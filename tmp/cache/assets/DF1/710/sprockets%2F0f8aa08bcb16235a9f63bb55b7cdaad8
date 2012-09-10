@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347263126.9478908:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347303783.1657324:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%a815683bcd9529821820fe864b4681b2I"logical_path;
+F"%5fa1757eb2753eaf9dc5af16bb6ad0bfI"logical_path;
 FI"sessions.js;
 FI"pathname;
 FI"4$root/app/assets/javascripts/sessions.js.coffee;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-10T11:25:30+04:00;
+FI"2012-09-10T22:50:35+04:00;
 FI"	body;
 FI"
 
@@ -21,8 +21,8 @@ F[{I"	path;
 FI"4$root/app/assets/javascripts/sessions.js.coffee;
 FI"
 mtime;
-FIu:	TimeG!Äq„Ïe
+FIu:	TimeR!ÄBŒ1 
 :@_zoneI"MSK;
-T:nano_numiñ:nano_deni:submicro":offseti@8I"hexdigest;
-F"%4785117870f420bbb297280d7c44bd89I"_version;
-F"%1c9609bc58b1e77c196de29021583379
+T:nano_numim:nano_deni:submicro"@:offseti@8I"hexdigest;
+F"%c12f0621e8cbf15a5c4dfa732f9f322aI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

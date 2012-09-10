@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347263126.955523:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347303783.1707346:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%9011c6240a0d30365d462d2a5e55dac2I"logical_path;
+F"%85b8ba31b23987c084c618101e4ea86dI"logical_path;
 FI"application.js;
 TI"pathname;
 FI"0$root/app/assets/javascripts/application.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-10T11:25:30+04:00;
+FI"2012-09-10T23:00:29+04:00;
 FI"	body;
 FI"î// This is a manifest file that'll be compiled into including all the files listed below.
 // Add new JavaScript/Coffee code in separate files in this directory and they'll automatically
@@ -33,65 +33,64 @@ F[{I"	path;
 FI"0$root/app/assets/javascripts/application.js;
 FI"
 mtime;
-FIu:	TimeG!Äq„Ïe
+FIu:	TimeR!ÄBŒ1 
 :@_zoneI"MSK;
-T:nano_numiñ:nano_deni:submicro":offseti@8I"hexdigest;
-F"%96050a843252264ace1d55ab3d4aff44{I"	path;
+T:nano_numim:nano_deni:submicro"@:offseti@8I"hexdigest;
+F"%549ddbd6cc7eb5cac3ef01164f35f695{I"	path;
 FI"!$root/app/assets/javascripts;
 FI"
 mtime;
-FIu;G!Äq„Ïe
+FIu;R!ÄBŒ1 
 ;I"MSK;
-T;iñ;i;";i@8I"hexdigest;
-F"%4d1fb8f68c6b3cd15ec5eabe6c3dfba0{I"	path;
+T;im;i;"@;i@8I"hexdigest;
+F"%3f295028919f517651a8a450ec9f39ef{I"	path;
 FI"m/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery.js;
 FI"
 mtime;
-FIu;(Äjàh:
+FIu;S!ÄØ—
 ;I"MSK;
-T;i*;i;"U@;i@8I"hexdigest;
-F"%6e41a2d7a949f29bada29472c804727c{I"	path;
+T;iÎ;i;"#P;i@8I"hexdigest;
+F"%f2a91ff6a83f03a4db8c8ea8d7ddd472{I"	path;
 FI"q/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery_ujs.js;
 FI"
 mtime;
-FIu;(Ä
-òh:
+FIu;S!ÄØ—
 ;I"MSK;
-T;i*;i;"U@;i@8I"hexdigest;
-F"%2688c1ae47a71e8175851b3412626a0e{I"	path;
+T;iÎ;i;"#P;i@8I"hexdigest;
+F"%2cda53cd72f5fa4dc3aaf1133f2f8d18{I"	path;
 FI".$root/app/assets/javascripts/bootstrap.js;
 FI"
 mtime;
-FIu;G!Äq„Ïe
+FIu;R!ÄBŒ1 
 ;I"MSK;
-T;iñ;i;";i@8I"hexdigest;
-F"%ac0a3abfa1ab63efc1b247212ae2a0ef{I"	path;
+T;im;i;"@;i@8I"hexdigest;
+F"%94ff0a7c9b0b4864b62be61c6a0059bf{I"	path;
 FI"0$root/app/assets/javascripts/home.js.coffee;
 FI"
 mtime;
-FIu;G!Äq„Ïe
+FIu;R!ÄBŒ1 
 ;I"MSK;
-T;iñ;i;";i@8I"hexdigest;
-F"%4785117870f420bbb297280d7c44bd89{I"	path;
+T;im;i;"@;i@8I"hexdigest;
+F"%c12f0621e8cbf15a5c4dfa732f9f322a{I"	path;
 FI";$root/app/assets/javascripts/password_resets.js.coffee;
 FI"
 mtime;
-FIu;G!Äq„Ïe
+FIu;R!ÄBŒ1 
 ;I"MSK;
-T;iñ;i;";i@8I"hexdigest;
-F"%4785117870f420bbb297280d7c44bd89{I"	path;
+T;im;i;"@;i@8I"hexdigest;
+F"%c12f0621e8cbf15a5c4dfa732f9f322a{I"	path;
 FI"4$root/app/assets/javascripts/sessions.js.coffee;
 FI"
 mtime;
-FIu;G!Äq„Ïe
+FIu;R!ÄBŒ1 
 ;I"MSK;
-T;iñ;i;";i@8I"hexdigest;
-F"%4785117870f420bbb297280d7c44bd89{I"	path;
+T;im;i;"@;i@8I"hexdigest;
+F"%c12f0621e8cbf15a5c4dfa732f9f322a{I"	path;
 FI"1$root/app/assets/javascripts/users.js.coffee;
 FI"
 mtime;
-FIu;G!Äq„Ïe
+FIu;R!ÄBŒ1 
 ;I"MSK;
-T;iñ;i;";i@8I"hexdigest;
-F"%4785117870f420bbb297280d7c44bd89I"_version;
-F"%1c9609bc58b1e77c196de29021583379
+T;im;i;"@;i@8I"hexdigest;
+F"%c12f0621e8cbf15a5c4dfa732f9f322aI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

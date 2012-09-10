@@ -1,0 +1,40 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347305548.8536832:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%3fb3184d410c4ec073919c7fc111ba15I"logical_path;
+FI"%rails_admin/themes/default/ui.js;
+FI"pathname;
+FI"/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/themes/default/ui.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-09-10T23:20:06+04:00;
+FI"	body;
+FI"/*
+  Theme's JS behaviour
+
+  Available resources:
+
+  http://twitter.github.com/bootstrap/javascript.html
+  https://github.com/twitter/bootstrap/tree/master/js
+  http://jquery.com/
+  http://jqueryui.com/ (parts of it)
+
+  rename to ui.js.coffee if needed.
+*/
+
+;
+;
+FI"asset_paths;
+F[I"/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/themes/default/ui.js;
+FI"dependency_paths;
+F[{I"	path;
+FI"/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/themes/default/ui.js;
+FI"
+mtime;
+FIu:	TimeS!€¾4kP
+:@_zoneI"MSK;
+T:nano_numi±:nano_deni:submicro"p:offseti@8I"hexdigest;
+F"%faf111de0216961a220db6dcfe77249dI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5
