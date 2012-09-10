@@ -102,3 +102,78 @@ Started GET "/" for 127.0.0.1 at 2012-09-09 01:58:44 +0400
   Processing by HomeController#wellcom as HTML
 Rendered home/wellcom.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 60ms (Views: 49.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-10 11:45:26 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cYWf7+sy6VEP+QwPntc3r6S8YrsyhAFIkjovBdo+0UI=", "email"=>"Тырнов Юлиан", "password"=>"[FILTERED]"}
+Rendered sessions/new.html.haml within layouts/application (5.9ms)
+Compiled application.css  (2ms)  (pid 4550)
+Compiled bootstrap-responsive.css  (0ms)  (pid 4550)
+Compiled bootstrap.css  (0ms)  (pid 4550)
+Compiled home.css  (558ms)  (pid 4550)
+Compiled password_resets.css  (1ms)  (pid 4550)
+Compiled sessions.css  (1ms)  (pid 4550)
+Compiled users.css  (1ms)  (pid 4550)
+Compiled application.js  (4ms)  (pid 4550)
+Compiled jquery.js  (55ms)  (pid 4550)
+Compiled jquery_ujs.js  (0ms)  (pid 4550)
+Compiled bootstrap.js  (0ms)  (pid 4550)
+Compiled home.js  (97ms)  (pid 4550)
+Compiled password_resets.js  (1ms)  (pid 4550)
+Compiled sessions.js  (1ms)  (pid 4550)
+Compiled users.js  (1ms)  (pid 4550)
+Completed 200 OK in 5357ms (Views: 5351.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application-693385fa883fb5719b5ed5e9c5e261bf.css" for 127.0.0.1 at 2012-09-10 11:45:31 +0400
+Served asset /application-693385fa883fb5719b5ed5e9c5e261bf.css - 200 OK (1ms)
+
+
+Started GET "/assets/application-02bdbea4ba51d993d23840227970d9b6.js" for 127.0.0.1 at 2012-09-10 11:45:31 +0400
+Served asset /application-02bdbea4ba51d993d23840227970d9b6.js - 200 OK (0ms)
+
+
+Started GET "/assets/top-0cb5e81f14d3dcf517069a084574dafb.jpg" for 127.0.0.1 at 2012-09-10 11:45:31 +0400
+Served asset /top-0cb5e81f14d3dcf517069a084574dafb.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/banner-ac76ebec76e44b8dab549b30916d60a7.jpg" for 127.0.0.1 at 2012-09-10 11:45:31 +0400
+Served asset /banner-ac76ebec76e44b8dab549b30916d60a7.jpg - 200 OK (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-10 11:45:42 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cYWf7+sy6VEP+QwPntc3r6S8YrsyhAFIkjovBdo+0UI=", "email"=>"admin@mlip.ru", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 266ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-10 11:45:42 +0400
+  Processing by HomeController#wellcom as HTML
+Rendered home/wellcom.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 365ms (Views: 87.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2012-09-10 11:45:50 +0400
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-10 11:45:50 +0400
+  Processing by HomeController#wellcom as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-09-10 11:45:50 +0400
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-09-10 11:45:58 +0400
+  Processing by UsersController#new as HTML
+Rendered users/new.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.3ms)

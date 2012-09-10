@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347141469.3773255:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347263126.8389308:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%b73346fb9b45c25108e43c95e21d2c56I"logical_path;
+F"%7332db1bbccb0c46facf432cf20299c4I"logical_path;
 FI"bootstrap.js;
 FI"pathname;
 FI".$root/app/assets/javascripts/bootstrap.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-08-21T10:15:10+04:00;
+FI"2012-09-10T11:25:30+04:00;
 FI"	body;
 FI"ö€/* ===================================================
  * bootstrap-transition.js v2.1.0
@@ -2047,7 +2047,8 @@ F[{I"	path;
 FI".$root/app/assets/javascripts/bootstrap.js;
 FI"
 mtime;
-FIu:	Time¶Ä  †<:@_zoneI"MSK;
-T:offseti@8I"hexdigest;
+FIu:	TimeG!Äq„Ïe
+:@_zoneI"MSK;
+T:nano_numiñ:nano_deni:submicro":offseti@8I"hexdigest;
 F"%ac0a3abfa1ab63efc1b247212ae2a0efI"_version;
 F"%1c9609bc58b1e77c196de29021583379

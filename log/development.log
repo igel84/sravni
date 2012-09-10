@@ -13776,3 +13776,486 @@ Migrating to CreateCities (20120907193834)
   [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_activation_token')
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
   [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_remember_me_token')
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-10 11:28:26 +0400
+  Processing by HomeController#wellcom as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-09-10 11:28:26 +0400
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (49.6ms)
+Compiled application.css  (3ms)  (pid 4280)
+Compiled bootstrap-responsive.css  (0ms)  (pid 4280)
+Compiled bootstrap.css  (0ms)  (pid 4280)
+Compiled home.css  (28ms)  (pid 4280)
+Compiled password_resets.css  (0ms)  (pid 4280)
+Compiled sessions.css  (0ms)  (pid 4280)
+Compiled users.css  (0ms)  (pid 4280)
+Compiled application.js  (30ms)  (pid 4280)
+Compiled jquery.js  (68ms)  (pid 4280)
+Compiled jquery_ujs.js  (7ms)  (pid 4280)
+Compiled bootstrap.js  (1ms)  (pid 4280)
+Compiled home.js  (137ms)  (pid 4280)
+Compiled password_resets.js  (1ms)  (pid 4280)
+Compiled sessions.js  (0ms)  (pid 4280)
+Compiled users.js  (0ms)  (pid 4280)
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities" [0m
+Completed 200 OK in 758ms (Views: 755.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-09-10 11:28:27 +0400
+Served asset /bootstrap-responsive.css - 200 OK (8ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-10 11:28:27 +0400
+Served asset /home.css - 200 OK (8ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-09-10 11:28:27 +0400
+Served asset /bootstrap.css - 200 OK (3ms)
+
+
+Started GET "/assets/password_resets.css?body=1" for 127.0.0.1 at 2012-09-10 11:28:28 +0400
+Served asset /password_resets.css - 200 OK (19ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-10 11:28:28 +0400
+Served asset /users.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:28 +0400
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-10 11:28:28 +0400
+Served asset /sessions.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:28 +0400
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:28 +0400
+Served asset /bootstrap.js - 200 OK (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:28 +0400
+Served asset /home.js - 200 OK (8ms)
+
+
+Started GET "/assets/password_resets.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:28 +0400
+Served asset /password_resets.js - 200 OK (8ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:28 +0400
+Served asset /sessions.js - 200 OK (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:28 +0400
+Served asset /users.js - 200 OK (4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-09-10 11:28:48 +0400
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (3.4ms)
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities" 
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-09-10 11:28:49 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-09-10 11:28:49 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/password_resets.css?body=1" for 127.0.0.1 at 2012-09-10 11:28:49 +0400
+Served asset /password_resets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-10 11:28:49 +0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-10 11:28:49 +0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-10 11:28:49 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:49 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:49 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:49 +0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/password_resets.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:49 +0400
+Served asset /password_resets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:49 +0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:49 +0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-10 11:28:49 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (4.5ms)
+  [1m[36mCity Load (0.1ms)[0m  [1mSELECT "cities".* FROM "cities" [0m
+Completed 200 OK in 100ms (Views: 98.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/password_resets.css?body=1" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+Served asset /password_resets.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/password_resets.js?body=1" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+Served asset /password_resets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-10 11:29:07 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (4.9ms)
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities" 
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/password_resets.css?body=1" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+Served asset /password_resets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/password_resets.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+Served asset /password_resets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:07 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-10 11:30:14 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cYWf7+sy6VEP+QwPntc3r6S8YrsyhAFIkjovBdo+0UI=", "email"=>"Тырнов Юлиан", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (email = 'Тырнов Юлиан') LIMIT 1[0m
+Rendered sessions/new.html.haml within layouts/application (4.1ms)
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities" 
+Completed 200 OK in 2756ms (Views: 38.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-09-10 11:30:16 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-09-10 11:30:16 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-10 11:30:16 +0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/password_resets.css?body=1" for 127.0.0.1 at 2012-09-10 11:30:16 +0400
+Served asset /password_resets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-10 11:30:17 +0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:17 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-10 11:30:17 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:17 +0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:17 +0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:17 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/password_resets.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:17 +0400
+Served asset /password_resets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:17 +0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-10 11:30:17 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2012-09-10 11:31:04 +0400
+
+AbstractController::ActionNotFound (The action 'index' could not be found for SessionsController):
+  
+
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-10 11:31:07 +0400
+  Processing by HomeController#wellcom as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-09-10 11:31:07 +0400
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (3.3ms)
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities" [0m
+Completed 200 OK in 74ms (Views: 72.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-09-10 11:31:08 +0400
+Served asset /bootstrap-responsive.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-10 11:31:08 +0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-09-10 11:31:08 +0400
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/password_resets.css?body=1" for 127.0.0.1 at 2012-09-10 11:31:08 +0400
+Served asset /password_resets.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-10 11:31:08 +0400
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-10 11:31:08 +0400
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-10 11:31:08 +0400
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-10 11:31:08 +0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-10 11:31:08 +0400
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-10 11:31:08 +0400
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-10 11:31:08 +0400
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/password_resets.js?body=1" for 127.0.0.1 at 2012-09-10 11:31:08 +0400
+Served asset /password_resets.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-10 11:31:08 +0400
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-10 11:38:15 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cYWf7+sy6VEP+QwPntc3r6S8YrsyhAFIkjovBdo+0UI=", "email"=>"Тырнов Юлиан", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (email = 'Тырнов Юлиан') LIMIT 1[0m
+Rendered sessions/new.html.haml within layouts/application (11.9ms)
+Compiled application.css  (3ms)  (pid 4509)
+Compiled bootstrap-responsive.css  (0ms)  (pid 4509)
+Compiled bootstrap.css  (48ms)  (pid 4509)
+Compiled home.css  (8ms)  (pid 4509)
+Compiled password_resets.css  (1ms)  (pid 4509)
+Compiled sessions.css  (1ms)  (pid 4509)
+Compiled users.css  (2ms)  (pid 4509)
+Compiled application.js  (4ms)  (pid 4509)
+Compiled jquery.js  (3ms)  (pid 4509)
+Compiled jquery_ujs.js  (0ms)  (pid 4509)
+Compiled bootstrap.js  (0ms)  (pid 4509)
+Compiled home.js  (73ms)  (pid 4509)
+Compiled password_resets.js  (1ms)  (pid 4509)
+Compiled sessions.js  (0ms)  (pid 4509)
+Compiled users.js  (0ms)  (pid 4509)
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities" 
+Completed 200 OK in 3076ms (Views: 688.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/password_resets.css?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /password_resets.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /sessions.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /users.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /bootstrap.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/password_resets.js?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /password_resets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-10 11:38:18 +0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/top.jpg" for 127.0.0.1 at 2012-09-10 11:38:19 +0400
+Served asset /top.jpg - 304 Not Modified (7ms)
+
+
+Started GET "/assets/banner.jpg" for 127.0.0.1 at 2012-09-10 11:38:19 +0400
+Served asset /banner.jpg - 304 Not Modified (21ms)

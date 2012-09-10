@@ -1,15 +1,15 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347141469.3361337:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347263131.439154:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%4230277c729e6f9b586805ff8af47bb4I"logical_path;
+F"%959dea9f92420cf84f9c9d184038f06eI"logical_path;
 FI"banner.jpg;
-FI"pathname;
+TI"pathname;
 FI"'$root/app/assets/images/banner.jpg;
 FI"content_type;
 FI"image/jpeg;
 FI"
 mtime;
-FI"2012-09-09T01:40:35+04:00;
+FI"2012-09-10T11:25:30+04:00;
 FI"length;
 FI"427;
 FI"digest;
