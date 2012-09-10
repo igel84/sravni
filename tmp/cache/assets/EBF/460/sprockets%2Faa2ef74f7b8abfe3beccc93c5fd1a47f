@@ -1,219 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347389717.5604367:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%d77c7dbfb453882f473fe9f3e7c0eba9I"logical_path;
-FI"jquery.ui.mouse.js;
-FI"pathname;
-FI"x/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-ui-rails-1.1.1/vendor/assets/javascripts/jquery.ui.mouse.js;
-FI"content_type;
-FI"application/javascript;
-FI"
-mtime;
-FI"2012-09-11T22:08:48+04:00;
-FI"	body;
-FI"Å
-/*!
- * jQuery UI Mouse 1.8.23
- *
- * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
- *
- * http://docs.jquery.com/UI/Mouse
- *
- * Depends:
- *	jquery.ui.widget.js
- */
-
-(function( $, undefined ) {
-
-var mouseHandled = false;
-$( document ).mouseup( function( e ) {
-	mouseHandled = false;
-});
-
-$.widget("ui.mouse", {
-	options: {
-		cancel: ':input,option',
-		distance: 1,
-		delay: 0
-	},
-	_mouseInit: function() {
-		var self = this;
-
-		this.element
-			.bind('mousedown.'+this.widgetName, function(event) {
-				return self._mouseDown(event);
-			})
-			.bind('click.'+this.widgetName, function(event) {
-				if (true === $.data(event.target, self.widgetName + '.preventClickEvent')) {
-				    $.removeData(event.target, self.widgetName + '.preventClickEvent');
-					event.stopImmediatePropagation();
-					return false;
-				}
-			});
-
-		this.started = false;
-	},
-
-	// TODO: make sure destroying one instance of mouse doesn't mess with
-	// other instances of mouse
-	_mouseDestroy: function() {
-		this.element.unbind('.'+this.widgetName);
-		if ( this._mouseMoveDelegate ) {
-			$(document)
-				.unbind('mousemove.'+this.widgetName, this._mouseMoveDelegate)
-				.unbind('mouseup.'+this.widgetName, this._mouseUpDelegate);
-		}
-	},
-
-	_mouseDown: function(event) {
-		// don't let more than one widget handle mouseStart
-		if( mouseHandled ) { return };
-
-		// we may have missed mouseup (out of window)
-		(this._mouseStarted && this._mouseUp(event));
-
-		this._mouseDownEvent = event;
-
-		var self = this,
-			btnIsLeft = (event.which == 1),
-			// event.target.nodeName works around a bug in IE 8 with
-			// disabled inputs (#7620)
-			elIsCancel = (typeof this.options.cancel == "string" && event.target.nodeName ? $(event.target).closest(this.options.cancel).length : false);
-		if (!btnIsLeft || elIsCancel || !this._mouseCapture(event)) {
-			return true;
-		}
-
-		this.mouseDelayMet = !this.options.delay;
-		if (!this.mouseDelayMet) {
-			this._mouseDelayTimer = setTimeout(function() {
-				self.mouseDelayMet = true;
-			}, this.options.delay);
-		}
-
-		if (this._mouseDistanceMet(event) && this._mouseDelayMet(event)) {
-			this._mouseStarted = (this._mouseStart(event) !== false);
-			if (!this._mouseStarted) {
-				event.preventDefault();
-				return true;
-			}
-		}
-
-		// Click event may never have fired (Gecko & Opera)
-		if (true === $.data(event.target, this.widgetName + '.preventClickEvent')) {
-			$.removeData(event.target, this.widgetName + '.preventClickEvent');
-		}
-
-		// these delegates are required to keep context
-		this._mouseMoveDelegate = function(event) {
-			return self._mouseMove(event);
-		};
-		this._mouseUpDelegate = function(event) {
-			return self._mouseUp(event);
-		};
-		$(document)
-			.bind('mousemove.'+this.widgetName, this._mouseMoveDelegate)
-			.bind('mouseup.'+this.widgetName, this._mouseUpDelegate);
-
-		event.preventDefault();
-		
-		mouseHandled = true;
-		return true;
-	},
-
-	_mouseMove: function(event) {
-		// IE mouseup check - mouseup happened when mouse was out of window
-		if ($.browser.msie && !(document.documentMode >= 9) && !event.button) {
-			return this._mouseUp(event);
-		}
-
-		if (this._mouseStarted) {
-			this._mouseDrag(event);
-			return event.preventDefault();
-		}
-
-		if (this._mouseDistanceMet(event) && this._mouseDelayMet(event)) {
-			this._mouseStarted =
-				(this._mouseStart(this._mouseDownEvent, event) !== false);
-			(this._mouseStarted ? this._mouseDrag(event) : this._mouseUp(event));
-		}
-
-		return !this._mouseStarted;
-	},
-
-	_mouseUp: function(event) {
-		$(document)
-			.unbind('mousemove.'+this.widgetName, this._mouseMoveDelegate)
-			.unbind('mouseup.'+this.widgetName, this._mouseUpDelegate);
-
-		if (this._mouseStarted) {
-			this._mouseStarted = false;
-
-			if (event.target == this._mouseDownEvent.target) {
-			    $.data(event.target, this.widgetName + '.preventClickEvent', true);
-			}
-
-			this._mouseStop(event);
-		}
-
-		return false;
-	},
-
-	_mouseDistanceMet: function(event) {
-		return (Math.max(
-				Math.abs(this._mouseDownEvent.pageX - event.pageX),
-				Math.abs(this._mouseDownEvent.pageY - event.pageY)
-			) >= this.options.distance
-		);
-	},
-
-	_mouseDelayMet: function(event) {
-		return this.mouseDelayMet;
-	},
-
-	// These are placeholder methods, to be overriden by extending plugin
-	_mouseStart: function(event) {},
-	_mouseDrag: function(event) {},
-	_mouseStop: function(event) {},
-	_mouseCapture: function(event) { return true; }
-});
-
-})(jQuery);
-;
-FI"asset_paths;
-F[	I"m/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery.js;
-FI"w/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-ui-rails-1.1.1/vendor/assets/javascripts/jquery.ui.core.js;
-FI"y/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-ui-rails-1.1.1/vendor/assets/javascripts/jquery.ui.widget.js;
-FI"x/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-ui-rails-1.1.1/vendor/assets/javascripts/jquery.ui.mouse.js;
-FI"dependency_paths;
-F[	{I"	path;
-FI"x/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-ui-rails-1.1.1/vendor/assets/javascripts/jquery.ui.mouse.js;
-FI"
-mtime;
-FIu:	Timer!Ä˛«	#
-:@_zoneI"MSK;
-T:nano_numiÊ:nano_deni:submicro"t :offseti@8I"hexdigest;
-F"%fc4871a45aced0a5395d57f928b54131{I"	path;
-FI"m/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery.js;
-FI"
-mtime;
-FIu;Û ÄL\}q
-;I"MSK;
-T;i;i;"'ê;i@8I"hexdigest;
-F"%6e41a2d7a949f29bada29472c804727c{I"	path;
-FI"w/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-ui-rails-1.1.1/vendor/assets/javascripts/jquery.ui.core.js;
-FI"
-mtime;
-FIu;r!Ä^∏	#
-;I"MSK;
-T;iÊ;i;"t ;i@8I"hexdigest;
-F"%b6f5b195964c822a2dfa0f56b9f2214d{I"	path;
-FI"y/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-ui-rails-1.1.1/vendor/assets/javascripts/jquery.ui.widget.js;
-FI"
-mtime;
-FIu;r!Ä˛«	#
-;I"MSK;
-T;iÊ;i;"t ;i@8I"hexdigest;
-F"%9a9c9a489bbfc7bbe42ecb367a308aaaI"_version;
-F"%1c9609bc58b1e77c196de29021583379

@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347389717.2069228:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%bcfc747875898f956cb002a9ba5311c8I"logical_path;
-FI"rails_admin/clock.png;
-FI"pathname;
-FI"o/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/images/rails_admin/clock.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2012-09-11T22:09:07+04:00;
-FI"length;
-FI"	3637;
-FI"digest;
-F"%268bd67862cc21f5010e6b9d47ad442dI"_version;
-F"%1c9609bc58b1e77c196de29021583379

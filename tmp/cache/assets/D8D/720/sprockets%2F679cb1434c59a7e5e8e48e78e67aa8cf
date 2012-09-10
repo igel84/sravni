@@ -1,18 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347389731.6516316:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%1679c196dc73974f627a35c899913fceI"logical_path;
-FI"fontawesome-webfont.eot;
-FI"pathname;
-FI"/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/fonts/fontawesome-webfont.eot;
-FI"content_type;
-FI"application/octet-stream;
-FI"
-mtime;
-FI"2012-09-11T22:26:59+04:00;
-FI"length;
-FI"
-38708;
-FI"digest;
-F"%f1a2d82ad03042c1b004b53b1b687c46I"_version;
-F"%1c9609bc58b1e77c196de29021583379

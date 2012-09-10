@@ -1,16 +1,5 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347311154.610264:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%a51ab9c1520459ba4eefa667c20d6243I"logical_path;
-FI" bootstrap_and_overrides.css;
-FI"pathname;
-FI"B$root/app/assets/stylesheets/bootstrap_and_overrides.css.less;
-FI"content_type;
-FI"text/css;
-FI"
-mtime;
-FI"2012-09-11T01:05:52+04:00;
-FI"	body;
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347311154.6264265:@value{	I"length:EFiÀ–I"digest;
+F"%091304a0d08a85f2876233f1eab38d8eI"source;
 FI"À–/*!
  * Bootstrap v2.1.0
  *
@@ -9337,15 +9326,5 @@ ul.icons li .icon-large:before {
   content: "\f200";
 }
 ;
-TI"asset_paths;
-F[I"B$root/app/assets/stylesheets/bootstrap_and_overrides.css.less;
-FI"dependency_paths;
-F[{I"	path;
-FI"B$root/app/assets/stylesheets/bootstrap_and_overrides.css.less;
-FI"
-mtime;
-FIu:	TimeU!Ä˜CF
-:@_zoneI"MSK;
-T:nano_numi@:nano_deni:submicro"ê:offseti@8I"hexdigest;
-F"%2bda0ee4d11331d9c9b291dd855837fdI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+FI"_version;
+F"%a51ab9c1520459ba4eefa667c20d6243

@@ -1,40 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347389717.7040174:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%93c865e36ba764027fcfe4e1629399bbI"logical_path;
-FI"rails_admin/custom/ui.js;
-FI"pathname;
-FI"w/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/custom/ui.js;
-FI"content_type;
-FI"application/javascript;
-FI"
-mtime;
-FI"2012-09-11T22:09:07+04:00;
-FI"	body;
-FI"T/*
-  Meant to be overriden in user's app/assets/javascripts/rails_admin/custom directory. no content here
-
-  Available resources:
-
-  http://twitter.github.com/bootstrap/javascript.html
-  https://github.com/twitter/bootstrap/tree/master/js
-  http://jquery.com/
-  http://jqueryui.com/ (parts of it)
-
-  rename to ui.js.coffee if needed.
-*/
-
-;
-;
-FI"asset_paths;
-F[I"w/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/custom/ui.js;
-FI"dependency_paths;
-F[{I"	path;
-FI"w/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/custom/ui.js;
-FI"
-mtime;
-FIu:	Timer!Äù`x$
-:@_zoneI"MSK;
-T:nano_numiÉ:nano_deni:submicro"âê:offseti@8I"hexdigest;
-F"%81608a05576a162e6d833a2aed5be085I"_version;
-F"%1c9609bc58b1e77c196de29021583379
