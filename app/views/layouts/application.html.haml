@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title InitialRelease
+    %title Сравни-ка
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -53,8 +53,11 @@
             = content_tag :div, msg, class:"alert alert-info"
           = yield
         .span2
+          -#%br/
+          -#%button.btn.btn-info{style:'width:140px'} дать рекламу
+          -#%br/
           %br/
-          = image_tag "banner.jpg", class:"img-rounded"
+          = link_to(image_tag("banner-mlip.png", class:"img-rounded"), 'http://mlip.ru', target:'_blank')
           %br/
           %br/
           = image_tag "banner.jpg", class:"img-rounded"
