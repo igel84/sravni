@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347389717.1919253:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%2c2a77993f434f5dbebe91488040f163I"logical_path;
+FI"1rails_admin/aristo/images/slider_handles.png;
+FI"pathname;
+FI"Å/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/images/rails_admin/aristo/images/slider_handles.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-09-11T22:09:07+04:00;
+FI"length;
+FI"	4453;
+FI"digest;
+F"%310e966fcf097f1420e555ce2be44d98I"_version;
+F"%1c9609bc58b1e77c196de29021583379

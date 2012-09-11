@@ -1,17 +1,17 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347358709.4611316:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347389709.764133:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%858eb7f814da88435f7e169bb95127deI"logical_path;
+F"%5cb48ff28910fb532dcdec05fcb1a660I"logical_path;
 FI"top.jpg;
-TI"pathname;
+FI"pathname;
 FI"$$root/app/assets/images/top.jpg;
 FI"content_type;
 FI"image/jpeg;
 FI"
 mtime;
-FI"2012-09-11T14:18:25+04:00;
+FI"2012-09-11T21:59:27+04:00;
 FI"length;
 FI"	5462;
 FI"digest;
-F"%c923e996f9e54afaa92d0385c6b88ed1I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+F"%d0fe437cf957bcd864f4a6565077d34bI"_version;
+F"%1c9609bc58b1e77c196de29021583379

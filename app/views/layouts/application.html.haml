@@ -17,7 +17,7 @@
                   %span.icon-bar
                   %span.icon-bar
                   %span.icon-bar
-                %a.brand{:href => "#"} СРАВНИМ-КА                
+                %a.brand{:href => "#"} Сравним-ка
                 %ul.nav
                   %li.divider-vertical
                   %li.dropdown
@@ -27,7 +27,7 @@
                     %ul.dropdown-menu
                       - City.all.each do |city|
                         %li
-                          %a{:href => "#"}= city.name 
+                          = link_to city.name, '#'
                   %li.active
                     %a{:href => "#"} главная
                   %li
@@ -42,7 +42,26 @@
                       %b.caret
                     %ul.dropdown-menu
                       - if current_user
-                        %li= link_to "выход", logout_path
+                        %li
+                          = link_to '#' do
+                            %i.icon-user
+                            профиль
+                        %li
+                          = link_to '' do
+                            %i.icon-envelope
+                            рассылка
+                        %li
+                          = link_to '' do
+                            %i.icon-eye-open
+                            реклама
+                        %li
+                          = link_to '' do
+                            %i.icon-globe
+                            друзья
+                        %li
+                          = link_to logout_path do
+                            %i.icon-remove-circle
+                            выход                         
                       - else
                         %li= link_to "вход", login_path                      
                         %li= link_to "регистрация", signup_path  

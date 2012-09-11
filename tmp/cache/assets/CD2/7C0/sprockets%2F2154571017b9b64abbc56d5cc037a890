@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347303783.0911956:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347389709.8088138:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%5c79d71f9ac4fffa16fd8b772eedae42I"logical_path;
+F"%e405e6649fbec427a448aa1a4cc41ee0I"logical_path;
 FI"jquery_ujs.js;
 FI"pathname;
 FI"q/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery_ujs.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-10T23:00:29+04:00;
+FI"2012-09-07T23:28:23+04:00;
 FI"	body;
 FI";(function($, undefined) {
 
@@ -387,8 +387,8 @@ F[{I"	path;
 FI"q/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery_ujs.js;
 FI"
 mtime;
-FIu:	TimeS!ÄØ—
+FIu:	TimeÛ ÄL\}q
 :@_zoneI"MSK;
-T:nano_numiÎ:nano_deni:submicro"#P:offseti@8I"hexdigest;
-F"%2cda53cd72f5fa4dc3aaf1133f2f8d18I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+T:nano_numi:nano_deni:submicro"'ê:offseti@8I"hexdigest;
+F"%2688c1ae47a71e8175851b3412626a0eI"_version;
+F"%1c9609bc58b1e77c196de29021583379

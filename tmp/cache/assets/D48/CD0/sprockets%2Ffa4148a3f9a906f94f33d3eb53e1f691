@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347389717.327568:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%47064f1bb5f9ce476cd9558c8ab163e8I"logical_path;
+FI"?rails_admin/multiselect/ui-icon-circle-triangle-n-dark.png;
+FI"pathname;
+FI"è/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/images/rails_admin/multiselect/ui-icon-circle-triangle-n-dark.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-09-11T22:09:07+04:00;
+FI"length;
+FI"	1402;
+FI"digest;
+F"%c3a1be57e36dd4ed6919260c7dd82457I"_version;
+F"%1c9609bc58b1e77c196de29021583379
