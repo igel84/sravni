@@ -4,6 +4,7 @@
     %title Сравни-ка
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
+    %link{:rel=>"shortcut icon", :href=>'/assets/favicon.ico'}
     = csrf_meta_tags
   %body
     .container
@@ -16,14 +17,9 @@
                   %span.icon-bar
                   %span.icon-bar
                   %span.icon-bar
-                %a.brand{:href => "#"} название или логотип
+                %a.brand{:href => "#"} СРАВНИМ-КА                
                 %ul.nav
-                  %li.active
-                    %a{:href => "#"} главная
-                  %li
-                    %a{:href => "#"} какая-нибудь
-                  %li
-                    %a{:href => "#"} другая
+                  %li.divider-vertical
                   %li.dropdown
                     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
                       Воронеж
@@ -31,7 +27,13 @@
                     %ul.dropdown-menu
                       - City.all.each do |city|
                         %li
-                          %a{:href => "#"}= city.name                  
+                          %a{:href => "#"}= city.name 
+                  %li.active
+                    %a{:href => "#"} главная
+                  %li
+                    %a{:href => "#"} какая-нибудь
+                  %li
+                    %a{:href => "#"} другая                                   
                 %ul.nav.pull-right
                   %li.divider-vertical
                   %li.dropdown
