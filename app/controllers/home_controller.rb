@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  before_filter :require_login#, :only => :wellcom
+  skip_before_filter :require_login, :only => :wellcom
 
   def wellcom
   end

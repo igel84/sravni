@@ -1,4 +1,5 @@
 = form_for @user, html: {class:'form-horizontal'} do |f|
+  %legend Регистрация
   - if @user.errors.any?  
     .error_messages
       %h3 Ошибка регистрации
