@@ -7,9 +7,9 @@
       - 1.upto(7) do |n|
         %th= "магазин " + n.to_s
   %tbody
-    - 1.upto(10) do |i|
+    - Product.all.each do |product|
       %tr
-        %td= "наименование " + i.to_s
+        %td= product.name
         - 1.upto(7) do |n|
           %td цена
 %br/

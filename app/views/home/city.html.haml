@@ -1,0 +1,3 @@
+%legend Выберите город
+- City.all.each do |city|
+  =  link_to city.name, {controller: 'home', action: 'wellcom', city: city}, class: 'btn btn-primary', style: 'width:150px;margin:10px auto;display:block'
