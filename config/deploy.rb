@@ -98,7 +98,7 @@ set :unicorn_start_cmd, "(cd #{deploy_to}/current; rvm use #{rvm_ruby_string};bu
 #stop
 #[ -f "/var/run/unicorn/sravni.igel84.pid" ] && kill -QUIT `cat "/var/run/unicorn/sravni.igel84.pid"`
 #start
-#ln -s /home/hosting_igel84/projects/sravni/releases/initial_release /home/hosting_igel84/projects/sravni/current;cd /home/hosting_igel84/projects/sravni/current
+#ln -s /. /home/hosting_igel84/projects/sravni/current;cd /home/hosting_igel84/projects/sravni/current
 #bundle exec unicorn_rails -Dc "/etc/unicorn/sravni.igel84.rb"
 
 # - for unicorn - #
