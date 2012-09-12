@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347312526.042242:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347429043.3815014:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%2951ff5ae1607fa9969277089ae46868I"logical_path;
+F"%8f34cb34132681cea54517b221be0106I"logical_path;
 FI"application.js;
 TI"pathname;
 FI"0$root/app/assets/javascripts/application.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-11T00:55:58+04:00;
+FI"2012-09-12T09:46:14+04:00;
 FI"	body;
 FI"î// This is a manifest file that'll be compiled into including all the files listed below.
 // Add new JavaScript/Coffee code in separate files in this directory and they'll automatically
@@ -20,7 +20,7 @@ FI"î// This is a manifest file that'll be compiled into including all the file
 ;
 ;
 FI"asset_paths;
-F[I"m/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery.js;
+F[I"m/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery.js;
 FI"q/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery_ujs.js;
 FI"í/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-transition.js;
 FI"ç/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-alert.js;
@@ -36,28 +36,27 @@ FI"ê/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.
 FI"ë/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-typeahead.js;
 FI"ç/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-affix.js;
 FI"}/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap.js;
-FI"5$root/app/assets/javascripts/bootstrap.js.coffee;
 FI"0$root/app/assets/javascripts/home.js.coffee;
 FI";$root/app/assets/javascripts/password_resets.js.coffee;
 FI"4$root/app/assets/javascripts/sessions.js.coffee;
 FI"1$root/app/assets/javascripts/users.js.coffee;
 FI"0$root/app/assets/javascripts/application.js;
 FI"dependency_paths;
-F[{I"	path;
+F[{I"	path;
 FI"0$root/app/assets/javascripts/application.js;
 FI"
 mtime;
-FIu:	TimeT!Ä`)0ﬁ
+FIu:	TimeÖ!Ä÷BË∏
 :@_zoneI"MSK;
-T:nano_numi¶:nano_deni:submicro"B :offseti@8I"hexdigest;
+T:nano_numi¯:nano_deni:submicro"P@:offseti@8I"hexdigest;
 F"%b0ff4ab6007016af149bc32344243366{I"	path;
 FI"!$root/app/assets/javascripts;
 FI"
 mtime;
-FIu;T!Ä`)0ﬁ
+FIu;Ö!Ä÷BË∏
 ;I"MSK;
-T;i¶;i;"B ;i@8I"hexdigest;
-F"%24dade8466f6ae505c6db78ae87b6cba{I"	path;
+T;i¯;i;"P@;i@8I"hexdigest;
+F"%eb4ac03c9ee1a10fb37060e69026a116{I"	path;
 FI"m/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery.js;
 FI"
 mtime;
@@ -170,13 +169,6 @@ FIu;T!Ä!c¶ﬂ
 ;I"MSK;
 T;i€;i;"!ê;i@8I"hexdigest;
 F"%b2c167608739bf3d4a392dab24f24ce2{I"	path;
-FI"5$root/app/assets/javascripts/bootstrap.js.coffee;
-FI"
-mtime;
-FIu;T!Ä`)0ﬁ
-;I"MSK;
-T;i¶;i;"B ;i@8I"hexdigest;
-F"%de3289fb6cc9d49b6e3dadb10080f1e6{I"	path;
 FI"0$root/app/assets/javascripts/home.js.coffee;
 FI"
 mtime;

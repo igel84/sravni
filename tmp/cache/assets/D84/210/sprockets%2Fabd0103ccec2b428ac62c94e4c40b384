@@ -1,6 +1,6 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347312526.1126006:@value{	I"length:EFi"æI"digest;
-F"%0ced33eafb1b13588f59c3538cf0baf4I"source;
-FI""æ/*!
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347429043.4170613:@value{	I"length:EFi›åI"digest;
+F"%b654f989b81a7fa355157d767bf465fdI"source;
+FI"›å/*!
  * jQuery JavaScript Library v1.7
  * http://jquery.com/
  *
@@ -11720,12 +11720,6 @@ window.jQuery = window.$ = jQuery;
 
 }(window.jQuery);
 
-  jQuery(function() {
-    $("a[rel=popover]").popover();
-    $(".tooltip").tooltip();
-    return $("a[rel=tooltip]").tooltip();
-  });
-
 
 
 
@@ -11742,4 +11736,4 @@ window.jQuery = window.$ = jQuery;
 ;
 ;
 TI"_version;
-F"%2951ff5ae1607fa9969277089ae46868
+F"%8f34cb34132681cea54517b221be0106
