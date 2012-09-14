@@ -46744,3 +46744,2507 @@ Served asset /banner.jpg - 304 Not Modified (1ms)
 
 Started GET "/assets/favicon.ico" for 127.0.0.1 at 2012-09-12 23:41:13 +0400
 Served asset /favicon.ico - 304 Not Modified (0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20120904231302)
+Migrating to SorceryRememberMe (20120904231303)
+Migrating to SorceryResetPassword (20120904231304)
+Migrating to SorceryUserActivation (20120904234937)
+Migrating to CreateCities (20120907193834)
+Migrating to CreateRailsAdminHistoriesTable (20120910192041)
+Migrating to CreateChains (20120910213804)
+Migrating to CreateShops (20120910215754)
+Migrating to CreateAreas (20120910215902)
+Migrating to CreateProducts (20120910222445)
+Migrating to CreateShopProducts (20120910222849)
+Migrating to CreateUserShops (20120910225217)
+Migrating to CreateCkeditorAssets (20120910225299)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (21.6ms)[0m  [1mCREATE TABLE "ckeditor_assets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_file_name" varchar(255) NOT NULL, "data_content_type" varchar(255), "data_file_size" integer, "assetable_id" integer, "assetable_type" varchar(30), "type" varchar(30), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  PRAGMA index_list("ckeditor_assets")
+  [1m[36m (0.5ms)[0m  [1mCREATE INDEX "idx_ckeditor_assetable_type" ON "ckeditor_assets" ("assetable_type", "type", "assetable_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("ckeditor_assets")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('idx_ckeditor_assetable_type')[0m
+  [1m[35m (0.3ms)[0m  CREATE INDEX "idx_ckeditor_assetable" ON "ckeditor_assets" ("assetable_type", "assetable_id")
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910225299')[0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("areas")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("chains")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("cities")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("ckeditor_assets")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('idx_ckeditor_assetable')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('idx_ckeditor_assetable_type')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("products")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_rails_admin_histories')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("shop_products")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("shops")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("user_shops")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_activation_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20120904231302)
+Migrating to SorceryRememberMe (20120904231303)
+Migrating to SorceryResetPassword (20120904231304)
+Migrating to SorceryUserActivation (20120904234937)
+Migrating to CreateCities (20120907193834)
+Migrating to CreateRailsAdminHistoriesTable (20120910192041)
+Migrating to CreateChains (20120910213804)
+Migrating to CreateShops (20120910215754)
+Migrating to CreateAreas (20120910215902)
+Migrating to CreateProducts (20120910222445)
+Migrating to CreateShopProducts (20120910222849)
+Migrating to CreateUserShops (20120910225217)
+Migrating to CreateCkeditorAssets (20120910225299)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "ckeditor_assets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_file_name" varchar(255) NOT NULL, "data_content_type" varchar(255), "data_file_size" integer, "assetable_id" integer, "assetable_type" varchar(30), "type" varchar(30), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("ckeditor_assets")
+  [1m[36m (0.4ms)[0m  [1mCREATE INDEX "idx_ckeditor_assetable_type" ON "ckeditor_assets" ("assetable_type", "type", "assetable_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("ckeditor_assets")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('idx_ckeditor_assetable_type')[0m
+  [1m[35m (0.3ms)[0m  CREATE INDEX "idx_ckeditor_assetable" ON "ckeditor_assets" ("assetable_type", "assetable_id")
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910225299')[0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("areas")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("chains")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("cities")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("ckeditor_assets")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('idx_ckeditor_assetable')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('idx_ckeditor_assetable_type')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("products")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_rails_admin_histories')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("shop_products")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("shops")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("user_shops")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_activation_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateCkeditorAssets (20120910225299)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  DROP TABLE "ckeditor_assets"
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20120910225299'[0m
+  [1m[35m (0.7ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("areas")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("chains")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("cities")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("products")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("rails_admin_histories")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_rails_admin_histories')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("shop_products")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("shops")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("user_shops")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_activation_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_remember_me_token')
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20120904231302)
+Migrating to SorceryRememberMe (20120904231303)
+Migrating to SorceryResetPassword (20120904231304)
+Migrating to SorceryUserActivation (20120904234937)
+Migrating to CreateCities (20120907193834)
+Migrating to CreateRailsAdminHistoriesTable (20120910192041)
+Migrating to CreateChains (20120910213804)
+Migrating to CreateShops (20120910215754)
+Migrating to CreateAreas (20120910215902)
+Migrating to CreateProducts (20120910222445)
+Migrating to CreateShopProducts (20120910222849)
+Migrating to CreateUserShops (20120910225217)
+Migrating to CreateCkeditorAssets (20120914105854)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "ckeditor_assets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_file_name" varchar(255) NOT NULL, "data_content_type" varchar(255), "data_file_size" integer, "assetable_id" integer, "assetable_type" varchar(30), "type" varchar(30), "width" integer, "height" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("ckeditor_assets")
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "idx_ckeditor_assetable_type" ON "ckeditor_assets" ("assetable_type", "type", "assetable_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("ckeditor_assets")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('idx_ckeditor_assetable_type')[0m
+  [1m[35m (0.3ms)[0m  CREATE INDEX "idx_ckeditor_assetable" ON "ckeditor_assets" ("assetable_type", "assetable_id")
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120914105854')[0m
+  [1m[35m (0.8ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("areas")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("chains")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("cities")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("ckeditor_assets")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('idx_ckeditor_assetable')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('idx_ckeditor_assetable_type')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("products")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_rails_admin_histories')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("shop_products")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("shops")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("user_shops")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_activation_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-14 10:59:40 +0400
+  Processing by HomeController#wellcom as HTML
+  [1m[36mCity Load (94.3ms)[0m  [1mSELECT "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" [0m
+Rendered home/wellcom.html.haml within layouts/application (38.7ms)
+  [1m[35mCity Load (0.4ms)[0m  SELECT "cities".* FROM "cities" 
+Completed 200 OK in 1640ms (Views: 1337.3ms | ActiveRecord: 97.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:42 +0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:42 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:42 +0400
+Served asset /sessions.css - 304 Not Modified (47ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:42 +0400
+Served asset /jquery.js - 304 Not Modified (90ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:42 +0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:42 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:42 +0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (163ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:42 +0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:42 +0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:42 +0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:42 +0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:42 +0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /twitter/bootstrap.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /sessions.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/password_resets.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /password_resets.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/password_resets.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /password_resets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/top.jpg" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /top.jpg - 304 Not Modified (67ms)
+
+
+Started GET "/assets/banner-mlip.png" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /banner-mlip.png - 304 Not Modified (48ms)
+
+
+Started GET "/assets/banner.jpg" for 127.0.0.1 at 2012-09-14 10:59:43 +0400
+Served asset /banner.jpg - 304 Not Modified (21ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-09-14 10:59:45 +0400
+  Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 36ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-09-14 10:59:45 +0400
+  Processing by SessionsController#new as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1  [["id", 2]]
+Rendered sessions/new.html.haml within layouts/application (7.4ms)
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT "cities".* FROM "cities" [0m
+Completed 200 OK in 116ms (Views: 47.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/password_resets.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /password_resets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /twitter/bootstrap.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/password_resets.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /password_resets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.jpg" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /top.jpg - 304 Not Modified (5ms)
+
+
+Started GET "/assets/banner-mlip.png" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /banner-mlip.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/banner.jpg" for 127.0.0.1 at 2012-09-14 10:59:46 +0400
+Served asset /banner.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-09-14 10:59:57 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MvZjnOwqJ7X7ePLmIdusRuWGVx1jhtNP1tTcD2qymHo=", "email"=>"admin@mlip.ru", "password"=>"[FILTERED]"}
+  [1m[35mCity Load (0.4ms)[0m  SELECT "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (email = 'admin@mlip.ru') LIMIT 1[0m
+Redirected to http://localhost:3000/admin/
+Completed 302 Found in 1963ms
+
+
+Started GET "/admin/" for 127.0.0.1 at 2012-09-14 10:59:59 +0400
+  Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (36.9ms)[0m  [1mSELECT COUNT(*) FROM "areas" [0m
+  [1m[35mArea Load (0.5ms)[0m  SELECT "areas".* FROM "areas" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ckeditor_assets" [0m
+  [1m[35mCkeditor::Asset Load (0.3ms)[0m  SELECT "ckeditor_assets".* FROM "ckeditor_assets" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "ckeditor_assets" WHERE "ckeditor_assets"."type" IN ('Ckeditor::AttachmentFile')[0m
+  [1m[35mCkeditor::AttachmentFile Load (0.3ms)[0m  SELECT "ckeditor_assets".* FROM "ckeditor_assets" WHERE "ckeditor_assets"."type" IN ('Ckeditor::AttachmentFile') ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "chains" [0m
+  [1m[35mChain Load (0.3ms)[0m  SELECT "chains".* FROM "chains" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "cities" [0m
+  [1m[35mCity Load (0.3ms)[0m  SELECT "cities".* FROM "cities" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "ckeditor_assets" WHERE "ckeditor_assets"."type" IN ('Ckeditor::Picture')[0m
+  [1m[35mCkeditor::Picture Load (0.3ms)[0m  SELECT "ckeditor_assets".* FROM "ckeditor_assets" WHERE "ckeditor_assets"."type" IN ('Ckeditor::Picture') ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "products" [0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "shops" [0m
+  [1m[35mShop Load (0.3ms)[0m  SELECT "shops".* FROM "shops" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "shop_products" [0m
+  [1m[35mShopProduct Load (0.2ms)[0m  SELECT "shop_products".* FROM "shop_products" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_shops" [0m
+  [1m[35mUserShop Load (0.3ms)[0m  SELECT "user_shops".* FROM "user_shops" ORDER BY updated_at desc LIMIT 1
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (77.9ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (8.5ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/pjax.html.haml (11.0ms)
+Completed 200 OK in 3129ms (Views: 2289.2ms | ActiveRecord: 50.3ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at 2012-09-14 11:00:02 +0400
+Served asset /rails_admin/imports.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:02 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:02 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.effects.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:02 +0400
+Served asset /jquery.effects.core.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:02 +0400
+Served asset /jquery.remotipart.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:02 +0400
+Served asset /jquery.ui.core.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /jquery.ui.mouse.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /jquery.ui.sortable.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /jquery.ui.position.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /jquery_nested_form.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap-transition.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap-button.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap-alert.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap-affix.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (90ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap-modal.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap-tab.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap-popover.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /bootstrap.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /rails_admin/ui.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2012-09-14 11:00:03 +0400
+Served asset /jquery.iframe-transport.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2012-09-14 11:00:04 +0400
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (37ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2012-09-14 11:00:04 +0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (27ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20120904231302)
+Migrating to SorceryRememberMe (20120904231303)
+Migrating to SorceryResetPassword (20120904231304)
+Migrating to SorceryUserActivation (20120904234937)
+Migrating to CreateCities (20120907193834)
+Migrating to CreateRailsAdminHistoriesTable (20120910192041)
+Migrating to CreateChains (20120910213804)
+Migrating to CreateShops (20120910215754)
+Migrating to CreateAreas (20120910215902)
+Migrating to CreateProducts (20120910222445)
+Migrating to CreateShopProducts (20120910222849)
+Migrating to CreateUserShops (20120910225217)
+Migrating to CreateCkeditorAssets (20120914105854)
+Migrating to CreateArticles (20120914105899)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "permalink" varchar(255), "body" text, "parent_id" integer, "lft" integer, "rgt" integer, "depth" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120914105899')
+Migrating to AddSlugToArticles (20120914105999)
+  [1m[36m (1.1ms)[0m  [1mALTER TABLE "articles" ADD "slug" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("articles")
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_articles_on_slug" ON "articles" ("slug")[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120914105999')
+Migrating to CreateFriendlyIdSlugs (20120914109999)
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "friendly_id_slugs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "slug" varchar(255) NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" varchar(40), "created_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("friendly_id_slugs")
+  [1m[36m (0.5ms)[0m  [1mCREATE INDEX "index_friendly_id_slugs_on_sluggable_id" ON "friendly_id_slugs" ("sluggable_id")[0m
+  [1m[35m (0.2ms)[0m  PRAGMA index_list("friendly_id_slugs")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_sluggable_id')[0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs" ("slug", "sluggable_type")
+  [1m[36m (0.2ms)[0m  [1mPRAGMA index_list("friendly_id_slugs")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_friendly_id_slugs_on_slug_and_sluggable_type')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_sluggable_id')[0m
+  [1m[35m (0.5ms)[0m  CREATE INDEX "index_friendly_id_slugs_on_sluggable_type" ON "friendly_id_slugs" ("sluggable_type")
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120914109999')[0m
+  [1m[35m (1.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("areas")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("articles")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_articles_on_slug')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("chains")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("cities")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("ckeditor_assets")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('idx_ckeditor_assetable')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('idx_ckeditor_assetable_type')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("friendly_id_slugs")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_sluggable_type')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_friendly_id_slugs_on_slug_and_sluggable_type')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_sluggable_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("products")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_rails_admin_histories')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("shop_products")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("shops")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("user_shops")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_activation_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateFriendlyIdSlugs (20120914109999)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  DROP TABLE "friendly_id_slugs"
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20120914109999'[0m
+  [1m[35m (0.7ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("areas")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("articles")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_articles_on_slug')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("chains")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("cities")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("ckeditor_assets")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('idx_ckeditor_assetable')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('idx_ckeditor_assetable_type')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("products")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_rails_admin_histories')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("shop_products")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("shops")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("user_shops")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_activation_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to AddSlugToArticles (20120914105999)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  PRAGMA index_list("articles")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_articles_on_slug')[0m
+  [1m[35m (0.5ms)[0m  DROP INDEX "index_articles_on_slug"
+  [1m[36m (0.7ms)[0m  [1mCREATE TEMPORARY TABLE "altered_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "permalink" varchar(255), "body" text, "parent_id" integer, "lft" integer, "rgt" integer, "depth" integer, "created_at" datetime, "updated_at" datetime, "slug" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("articles")
+  [1m[36m (0.3ms)[0m  [1mSELECT * FROM "articles"[0m
+  [1m[35m (0.8ms)[0m  DROP TABLE "articles"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "permalink" varchar(255), "body" text, "parent_id" integer, "lft" integer, "rgt" integer, "depth" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("altered_articles")
+  [1m[36m (0.6ms)[0m  [1mSELECT * FROM "altered_articles"[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "altered_articles"
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20120914105999'[0m
+  [1m[35m (0.8ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("areas")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("articles")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("chains")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("cities")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("ckeditor_assets")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('idx_ckeditor_assetable')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('idx_ckeditor_assetable_type')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("products")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("rails_admin_histories")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_rails_admin_histories')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("shop_products")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("shops")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("user_shops")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_activation_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_remember_me_token')
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateArticles (20120914105899)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  DROP TABLE "articles"
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20120914105899'[0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("areas")
+  [1m[36m (0.2ms)[0m  [1mPRAGMA index_list("chains")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("cities")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("ckeditor_assets")[0m
+  [1m[35m (0.2ms)[0m  PRAGMA index_info('idx_ckeditor_assetable')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('idx_ckeditor_assetable_type')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("products")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_rails_admin_histories')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("shop_products")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("shops")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("user_shops")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_activation_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20120904231302)
+Migrating to SorceryRememberMe (20120904231303)
+Migrating to SorceryResetPassword (20120904231304)
+Migrating to SorceryUserActivation (20120904234937)
+Migrating to CreateCities (20120907193834)
+Migrating to CreateRailsAdminHistoriesTable (20120910192041)
+Migrating to CreateChains (20120910213804)
+Migrating to CreateShops (20120910215754)
+Migrating to CreateAreas (20120910215902)
+Migrating to CreateProducts (20120910222445)
+Migrating to CreateShopProducts (20120910222849)
+Migrating to CreateUserShops (20120910225217)
+Migrating to CreateCkeditorAssets (20120914105854)
+Migrating to CreateArticles (20120914105899)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "slug" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("articles")
+  [1m[36m (0.5ms)[0m  [1mCREATE UNIQUE INDEX "index_articles_on_slug" ON "articles" ("slug")[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120914105899')
+Migrating to CreateFriendlyIdSlugs (20120914109999)
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "friendly_id_slugs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "slug" varchar(255) NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" varchar(40), "created_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("friendly_id_slugs")
+  [1m[36m (0.6ms)[0m  [1mCREATE INDEX "index_friendly_id_slugs_on_sluggable_id" ON "friendly_id_slugs" ("sluggable_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("friendly_id_slugs")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_sluggable_id')[0m
+  [1m[35m (0.5ms)[0m  CREATE UNIQUE INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs" ("slug", "sluggable_type")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("friendly_id_slugs")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_friendly_id_slugs_on_slug_and_sluggable_type')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_sluggable_id')[0m
+  [1m[35m (0.3ms)[0m  CREATE INDEX "index_friendly_id_slugs_on_sluggable_type" ON "friendly_id_slugs" ("sluggable_type")
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120914109999')[0m
+  [1m[35m (0.7ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  PRAGMA index_list("areas")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("articles")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_articles_on_slug')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("chains")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("cities")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("ckeditor_assets")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('idx_ckeditor_assetable')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('idx_ckeditor_assetable_type')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("friendly_id_slugs")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_sluggable_type')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_friendly_id_slugs_on_slug_and_sluggable_type')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_sluggable_id')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("products")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_rails_admin_histories')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("shop_products")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("shops")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("user_shops")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_activation_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+
+
+Started GET "/admin/" for 127.0.0.1 at 2012-09-14 11:11:48 +0400
+  Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "areas" 
+  [1m[36mArea Load (0.5ms)[0m  [1mSELECT "areas".* FROM "areas" ORDER BY updated_at desc LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "articles" 
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles" ORDER BY updated_at desc LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ckeditor_assets" 
+  [1m[36mCkeditor::Asset Load (0.3ms)[0m  [1mSELECT "ckeditor_assets".* FROM "ckeditor_assets" ORDER BY updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "ckeditor_assets" WHERE "ckeditor_assets"."type" IN ('Ckeditor::AttachmentFile')
+  [1m[36mCkeditor::AttachmentFile Load (0.2ms)[0m  [1mSELECT "ckeditor_assets".* FROM "ckeditor_assets" WHERE "ckeditor_assets"."type" IN ('Ckeditor::AttachmentFile') ORDER BY updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "chains" 
+  [1m[36mChain Load (0.3ms)[0m  [1mSELECT "chains".* FROM "chains" ORDER BY updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cities" 
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT "cities".* FROM "cities" ORDER BY updated_at desc LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ckeditor_assets" WHERE "ckeditor_assets"."type" IN ('Ckeditor::Picture')
+  [1m[36mCkeditor::Picture Load (0.2ms)[0m  [1mSELECT "ckeditor_assets".* FROM "ckeditor_assets" WHERE "ckeditor_assets"."type" IN ('Ckeditor::Picture') ORDER BY updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "products" 
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "shops" 
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT "shops".* FROM "shops" ORDER BY updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "shop_products" 
+  [1m[36mShopProduct Load (0.3ms)[0m  [1mSELECT "shop_products".* FROM "shop_products" ORDER BY updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_shops" 
+  [1m[36mUserShop Load (0.3ms)[0m  [1mSELECT "user_shops".* FROM "user_shops" ORDER BY updated_at desc LIMIT 1[0m
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (170.9ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (15.7ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/pjax.html.haml (10.7ms)
+Completed 200 OK in 2509ms (Views: 719.7ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /rails_admin/imports.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /jquery.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /jquery.iframe-transport.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /jquery.remotipart.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /jquery.ui.core.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.effects.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /jquery.effects.core.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /jquery.ui.sortable.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /jquery.ui.mouse.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /jquery.ui.position.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (139ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:51 +0400
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /jquery_nested_form.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap-transition.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap-affix.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap-alert.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap-button.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap-modal.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap-tab.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap-popover.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /bootstrap.js - 304 Not Modified (133ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /rails_admin/ui.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2012-09-14 11:11:52 +0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (7ms)
+
+
+Started GET "/admin/article?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2012-09-14 11:11:55 +0400
+  Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"article"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles" ORDER BY articles.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "articles" 
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (135.1ms)
+Completed 200 OK in 237ms (Views: 163.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/admin/article/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2012-09-14 11:11:57 +0400
+  Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"article"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_form_field.html.haml (2.5ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_form_text.html.haml (6.3ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_submit_buttons.html.haml (5.8ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (81.0ms)
+Completed 200 OK in 214ms (Views: 98.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?_=1347606718356" for 127.0.0.1 at 2012-09-14 11:11:58 +0400
+Compiled ckeditor/ckeditor.js  (7ms)  (pid 26406)
+Served asset /ckeditor/ckeditor.js - 200 OK (258ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?_=1347606718438" for 127.0.0.1 at 2012-09-14 11:11:58 +0400
+Served asset /ckeditor/ckeditor.js - 200 OK (0ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:11:58 +0400
+Compiled ckeditor/config.js  (0ms)  (pid 26406)
+Served asset /ckeditor/config.js - 200 OK (159ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/editor.css?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:11:59 +0400
+Compiled ckeditor/skins/kama/editor.css  (0ms)  (pid 26406)
+Served asset /ckeditor/skins/kama/editor.css - 200 OK (58ms)
+
+
+Started GET "/assets/ckeditor/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:11:59 +0400
+Compiled ckeditor/lang/ru.js  (1ms)  (pid 26406)
+Served asset /ckeditor/lang/ru.js - 200 OK (36ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/plugin.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:11:59 +0400
+Compiled ckeditor/plugins/embed/plugin.js  (3ms)  (pid 26406)
+Served asset /ckeditor/plugins/embed/plugin.js - 200 OK (35ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/plugin.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:11:59 +0400
+Compiled ckeditor/plugins/attachment/plugin.js  (1ms)  (pid 26406)
+Served asset /ckeditor/plugins/attachment/plugin.js - 200 OK (57ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:11:59 +0400
+Compiled ckeditor/plugins/embed/lang/ru.js  (2ms)  (pid 26406)
+Served asset /ckeditor/plugins/embed/lang/ru.js - 200 OK (36ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:11:59 +0400
+Compiled ckeditor/plugins/attachment/lang/ru.js  (1ms)  (pid 26406)
+Served asset /ckeditor/plugins/attachment/lang/ru.js - 200 OK (9ms)
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2012-09-14 11:11:59 +0400
+Compiled ckeditor/contents.css  (0ms)  (pid 26406)
+Served asset /ckeditor/contents.css - 200 OK (14ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/images/sprites.png" for 127.0.0.1 at 2012-09-14 11:11:59 +0400
+Served asset /ckeditor/skins/kama/images/sprites.png - 200 OK (107ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/icons.png" for 127.0.0.1 at 2012-09-14 11:11:59 +0400
+Served asset /ckeditor/skins/kama/icons.png - 200 OK (10ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/images/embed.png?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:11:59 +0400
+Served asset /ckeditor/plugins/embed/images/embed.png - 200 OK (8ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/images/attachment.png?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:11:59 +0400
+Served asset /ckeditor/plugins/attachment/images/attachment.png - 200 OK (10ms)
+
+
+Started GET "/assets/ckeditor/plugins/styles/styles/default.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:11:59 +0400
+Compiled ckeditor/plugins/styles/styles/default.js  (0ms)  (pid 26406)
+Served asset /ckeditor/plugins/styles/styles/default.js - 200 OK (33ms)
+
+
+Started GET "/admin/article/new" for 127.0.0.1 at 2012-09-14 11:12:28 +0400
+  Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"article"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_form_text.html.haml (0.9ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_submit_buttons.html.haml (1.7ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (24.8ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (32.9ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/pjax.html.haml (14.3ms)
+Completed 200 OK in 544ms (Views: 484.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at 2012-09-14 11:12:28 +0400
+Served asset /rails_admin/imports.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:28 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:28 +0400
+Served asset /jquery.iframe-transport.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:28 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:28 +0400
+Served asset /jquery.remotipart.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.effects.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:28 +0400
+Served asset /jquery.effects.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:28 +0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:28 +0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:28 +0400
+Served asset /jquery.ui.position.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:28 +0400
+Served asset /jquery.ui.mouse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /jquery.ui.sortable.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap-alert.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap-tab.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap-popover.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /bootstrap.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /rails_admin/ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?_=1347606749730" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /ckeditor/ckeditor.js - 200 OK (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:29 +0400
+Served asset /ckeditor/config.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/editor.css?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:30 +0400
+Served asset /ckeditor/skins/kama/editor.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:30 +0400
+Served asset /ckeditor/lang/ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/plugin.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:30 +0400
+Served asset /ckeditor/plugins/embed/plugin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/plugin.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:30 +0400
+Served asset /ckeditor/plugins/attachment/plugin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:30 +0400
+Served asset /ckeditor/plugins/embed/lang/ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:30 +0400
+Served asset /ckeditor/plugins/attachment/lang/ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2012-09-14 11:12:30 +0400
+Served asset /ckeditor/contents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/images/sprites.png" for 127.0.0.1 at 2012-09-14 11:12:30 +0400
+Served asset /ckeditor/skins/kama/images/sprites.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/icons.png" for 127.0.0.1 at 2012-09-14 11:12:30 +0400
+Served asset /ckeditor/skins/kama/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/images/embed.png?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:30 +0400
+Served asset /ckeditor/plugins/embed/images/embed.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/images/attachment.png?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:30 +0400
+Served asset /ckeditor/plugins/attachment/images/attachment.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/styles/styles/default.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:30 +0400
+Served asset /ckeditor/plugins/styles/styles/default.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/article/new" for 127.0.0.1 at 2012-09-14 11:12:37 +0400
+  Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"article"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_form_text.html.haml (1.1ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_submit_buttons.html.haml (2.1ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (30.9ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (52.0ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/pjax.html.haml (14.1ms)
+Completed 200 OK in 654ms (Views: 502.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /rails_admin/imports.css - 304 Not Modified (119ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /jquery.iframe-transport.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /jquery.remotipart.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.effects.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /jquery.effects.core.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /jquery.ui.core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /jquery.ui.mouse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /jquery.ui.position.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /jquery.ui.sortable.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap-affix.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap-tab.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:38 +0400
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /rails_admin/ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?_=1347606759131" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/ckeditor.js - 200 OK (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (9ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/config.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/editor.css?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/skins/kama/editor.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/lang/ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/plugin.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/plugins/embed/plugin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/plugin.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/plugins/attachment/plugin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/plugins/embed/lang/ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/plugins/attachment/lang/ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/contents.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/images/sprites.png" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/skins/kama/images/sprites.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/images/embed.png?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/plugins/embed/images/embed.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/images/attachment.png?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/plugins/attachment/images/attachment.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/icons.png" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/skins/kama/icons.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/plugins/styles/styles/default.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:12:39 +0400
+Served asset /ckeditor/plugins/styles/styles/default.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/article/new" for 127.0.0.1 at 2012-09-14 11:14:03 +0400
+  Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"article"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_form_field.html.haml (4.5ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_form_text.html.haml (6.2ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_submit_buttons.html.haml (8.4ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (55.2ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (56.4ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/pjax.html.haml (88.7ms)
+Completed 200 OK in 2221ms (Views: 744.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at 2012-09-14 11:14:05 +0400
+Served asset /rails_admin/imports.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:05 +0400
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:05 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:05 +0400
+Served asset /jquery.remotipart.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:05 +0400
+Served asset /jquery.ui.core.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.effects.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /jquery.effects.core.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /jquery.iframe-transport.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /jquery.ui.mouse.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /jquery.ui.sortable.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /jquery.ui.position.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (151ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /jquery_nested_form.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap-transition.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap-affix.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap-alert.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap-button.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap-modal.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap-popover.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap-tab.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /bootstrap.js - 304 Not Modified (157ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /rails_admin/ui.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:06 +0400
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?_=1347606847254" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /ckeditor/ckeditor.js - 200 OK (10ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /ckeditor/config.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/editor.css?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /ckeditor/skins/kama/editor.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ckeditor/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /ckeditor/lang/ru.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/plugin.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /ckeditor/plugins/embed/plugin.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/plugin.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /ckeditor/plugins/attachment/plugin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /ckeditor/plugins/embed/lang/ru.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /ckeditor/plugins/attachment/lang/ru.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /ckeditor/contents.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/images/sprites.png" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /ckeditor/skins/kama/images/sprites.png - 304 Not Modified (20ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/icons.png" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /ckeditor/skins/kama/icons.png - 304 Not Modified (9ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/images/attachment.png?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /ckeditor/plugins/attachment/images/attachment.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/images/embed.png?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:14:07 +0400
+Served asset /ckeditor/plugins/embed/images/embed.png - 304 Not Modified (92ms)
+
+
+Started GET "/assets/ckeditor/plugins/styles/styles/default.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:14:08 +0400
+Served asset /ckeditor/plugins/styles/styles/default.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ckeditor/plugins/image/dialogs/image.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:14:15 +0400
+Compiled ckeditor/plugins/image/dialogs/image.js  (4ms)  (pid 26647)
+Served asset /ckeditor/plugins/image/dialogs/image.js - 200 OK (16ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/dialog.css?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:14:15 +0400
+Compiled ckeditor/skins/kama/dialog.css  (0ms)  (pid 26647)
+Served asset /ckeditor/skins/kama/dialog.css - 200 OK (96ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/images/sprites.png" for 127.0.0.1 at 2012-09-14 11:14:15 +0400
+Served asset /ckeditor/skins/kama/images/sprites.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/images/mini.gif" for 127.0.0.1 at 2012-09-14 11:14:15 +0400
+Served asset /ckeditor/skins/kama/images/mini.gif - 200 OK (11ms)
+
+
+Started GET "/ckeditor/pictures?CKEditor=article_body&CKEditorFuncNum=2&langCode=ru" for 127.0.0.1 at 2012-09-14 11:14:17 +0400
+  Processing by Ckeditor::PicturesController#index as HTML
+  Parameters: {"CKEditor"=>"article_body", "CKEditorFuncNum"=>"2", "langCode"=>"ru"}
+  [1m[35mCkeditor::Picture Load (0.3ms)[0m  SELECT "ckeditor_assets".* FROM "ckeditor_assets" WHERE "ckeditor_assets"."type" IN ('Ckeditor::Picture') ORDER BY id desc
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/app/views/ckeditor/shared/_asset.html.erb (0.0ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/app/views/ckeditor/pictures/index.html.erb within layouts/ckeditor/application (7.7ms)
+Compiled ckeditor/application.css  (3ms)  (pid 26647)
+Compiled ckeditor/filebrowser/stylesheets/uploader.css  (0ms)  (pid 26647)
+Compiled ckeditor/application.js  (125ms)  (pid 26647)
+Compiled ckeditor/filebrowser/javascripts/jquery.min.js  (2ms)  (pid 26647)
+Compiled ckeditor/filebrowser/javascripts/jquery.tmpl.min.js  (0ms)  (pid 26647)
+Compiled ckeditor/filebrowser/javascripts/fileuploader.js  (1ms)  (pid 26647)
+Compiled ckeditor/filebrowser/javascripts/rails.js  (0ms)  (pid 26647)
+Compiled ckeditor/filebrowser/javascripts/application.js  (5ms)  (pid 26647)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/app/views/ckeditor/shared/_asset_tmpl.html.erb (4.9ms)
+Completed 200 OK in 472ms (Views: 469.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ckeditor/filebrowser/stylesheets/uploader.css?body=1" for 127.0.0.1 at 2012-09-14 11:14:18 +0400
+Served asset /ckeditor/filebrowser/stylesheets/uploader.css - 200 OK (18ms)
+
+
+Started GET "/assets/ckeditor/filebrowser/javascripts/fileuploader.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:18 +0400
+Served asset /ckeditor/filebrowser/javascripts/fileuploader.js - 200 OK (6ms)
+
+
+Started GET "/assets/ckeditor/filebrowser/javascripts/jquery.tmpl.min.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:18 +0400
+Served asset /ckeditor/filebrowser/javascripts/jquery.tmpl.min.js - 200 OK (10ms)
+
+
+Started GET "/assets/ckeditor/filebrowser/javascripts/rails.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:18 +0400
+Served asset /ckeditor/filebrowser/javascripts/rails.js - 200 OK (4ms)
+
+
+Started GET "/assets/ckeditor/application.css?body=1" for 127.0.0.1 at 2012-09-14 11:14:18 +0400
+Served asset /ckeditor/application.css - 200 OK (0ms)
+
+
+Started GET "/assets/ckeditor/filebrowser/javascripts/jquery.min.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:18 +0400
+Served asset /ckeditor/filebrowser/javascripts/jquery.min.js - 200 OK (5ms)
+
+
+Started GET "/assets/ckeditor/filebrowser/javascripts/application.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:18 +0400
+Served asset /ckeditor/filebrowser/javascripts/application.js - 200 OK (5ms)
+
+
+Started GET "/assets/ckeditor/application.js?body=1" for 127.0.0.1 at 2012-09-14 11:14:18 +0400
+Served asset /ckeditor/application.js - 200 OK (0ms)
+
+
+Started GET "/assets/ckeditor/filebrowser/images/gal_add.png" for 127.0.0.1 at 2012-09-14 11:14:18 +0400
+Served asset /ckeditor/filebrowser/images/gal_add.png - 200 OK (10ms)
+
+
+Started GET "/admin/article/new" for 127.0.0.1 at 2012-09-14 11:15:00 +0400
+  Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"article"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_form_field.html.haml (2.5ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_form_text.html.haml (7.2ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_submit_buttons.html.haml (6.5ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (53.3ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (50.1ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/pjax.html.haml (83.2ms)
+Completed 200 OK in 2316ms (Views: 771.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at 2012-09-14 11:15:02 +0400
+Served asset /rails_admin/imports.css - 304 Not Modified (53ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /jquery.iframe-transport.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /jquery.remotipart.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.effects.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /jquery.effects.core.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /jquery.ui.core.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /jquery.ui.mouse.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /jquery.ui.sortable.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /jquery.ui.position.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (129ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /jquery_nested_form.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap-transition.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap-affix.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap-alert.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap-button.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap-modal.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap-tab.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap-popover.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:03 +0400
+Served asset /bootstrap.js - 304 Not Modified (137ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /rails_admin/ui.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?_=1347606904312" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/ckeditor.js - 200 OK (9ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/config.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/editor.css?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/skins/kama/editor.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ckeditor/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/lang/ru.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/plugin.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/plugins/embed/plugin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/plugin.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/plugins/attachment/plugin.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/plugins/embed/lang/ru.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/plugins/attachment/lang/ru.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/contents.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/images/attachment.png?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/plugins/attachment/images/attachment.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/icons.png" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/skins/kama/icons.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/images/embed.png?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/plugins/embed/images/embed.png - 304 Not Modified (11ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/images/sprites.png" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/skins/kama/images/sprites.png - 304 Not Modified (10ms)
+
+
+Started GET "/assets/ckeditor/plugins/styles/styles/default.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:15:04 +0400
+Served asset /ckeditor/plugins/styles/styles/default.js - 304 Not Modified (5ms)
+
+
+Started GET "/admin/article/new" for 127.0.0.1 at 2012-09-14 11:24:03 +0400
+  Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"article"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_form_field.html.haml (2.6ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_form_text.html.haml (7.3ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/_submit_buttons.html.haml (6.2ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (57.5ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (52.4ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/views/layouts/rails_admin/pjax.html.haml (109.8ms)
+Completed 200 OK in 2254ms (Views: 767.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /rails_admin/imports.css - 304 Not Modified (47ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /jquery.iframe-transport.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /jquery.ui.mouse.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /jquery.remotipart.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /jquery.ui.widget.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /jquery.ui.core.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.effects.core.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /jquery.effects.core.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /jquery.ui.sortable.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /jquery.ui.position.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (106ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:06 +0400
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /jquery_nested_form.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap-transition.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap-affix.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap-button.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap-alert.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap-modal.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap-tab.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap-popover.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /bootstrap.js - 304 Not Modified (121ms)
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /rails_admin/ra.widgets.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /rails_admin/ui.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?_=1347607447862" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /ckeditor/ckeditor.js - 200 OK (18ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2012-09-14 11:24:07 +0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:24:08 +0400
+Served asset /ckeditor/config.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/editor.css?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:24:08 +0400
+Served asset /ckeditor/skins/kama/editor.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ckeditor/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:24:08 +0400
+Served asset /ckeditor/lang/ru.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/plugin.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:24:08 +0400
+Served asset /ckeditor/plugins/embed/plugin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/plugin.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:24:08 +0400
+Served asset /ckeditor/plugins/attachment/plugin.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:24:08 +0400
+Served asset /ckeditor/plugins/embed/lang/ru.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/lang/ru.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:24:08 +0400
+Served asset /ckeditor/plugins/attachment/lang/ru.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ckeditor/contents.css" for 127.0.0.1 at 2012-09-14 11:24:08 +0400
+Served asset /ckeditor/contents.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/images/sprites.png" for 127.0.0.1 at 2012-09-14 11:24:08 +0400
+Served asset /ckeditor/skins/kama/images/sprites.png - 304 Not Modified (12ms)
+
+
+Started GET "/assets/ckeditor/skins/kama/icons.png" for 127.0.0.1 at 2012-09-14 11:24:08 +0400
+Served asset /ckeditor/skins/kama/icons.png - 304 Not Modified (9ms)
+
+
+Started GET "/assets/ckeditor/plugins/attachment/images/attachment.png?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:24:08 +0400
+Served asset /ckeditor/plugins/attachment/images/attachment.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/ckeditor/plugins/embed/images/embed.png?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:24:08 +0400
+Served asset /ckeditor/plugins/embed/images/embed.png - 304 Not Modified (105ms)
+
+
+Started GET "/assets/ckeditor/plugins/styles/styles/default.js?t=C3HA5RM" for 127.0.0.1 at 2012-09-14 11:24:08 +0400
+Served asset /ckeditor/plugins/styles/styles/default.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-14 11:24:10 +0400
+  Processing by HomeController#wellcom as HTML
+  [1m[35mCity Load (0.3ms)[0m  SELECT "cities".* FROM "cities" 
+Rendered home/city.html.haml within layouts/application (41.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cities".* FROM "cities" [0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 373ms (Views: 368.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-14 11:24:10 +0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-09-14 11:24:10 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-09-14 11:24:10 +0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-14 11:24:10 +0400
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/password_resets.css?body=1" for 127.0.0.1 at 2012-09-14 11:24:10 +0400
+Served asset /password_resets.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:10 +0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-09-14 11:24:10 +0400
+Served asset /sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-14 11:24:10 +0400
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:10 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:10 +0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:10 +0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (112ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /twitter/bootstrap.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/password_resets.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /password_resets.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /sessions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /users.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/top.jpg" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /top.jpg - 304 Not Modified (15ms)
+
+
+Started GET "/assets/banner-mlip.png" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /banner-mlip.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/banner.jpg" for 127.0.0.1 at 2012-09-14 11:24:11 +0400
+Served asset /banner.jpg - 304 Not Modified (2ms)
