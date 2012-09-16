@@ -11,6 +11,13 @@ InitialRelease::Application.routes.draw do
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
   
+
+  resources :cities do
+    resources :areas do
+      resources :shops
+    end
+  end
+
   resources :users do
     member do
       get :activate
