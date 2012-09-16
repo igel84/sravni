@@ -96,6 +96,7 @@ end
 set :unicorn_start_cmd, "(cd #{deploy_to}/current; rvm use #{rvm_ruby_string};bundle install --path ../../shared/gems;bundle exec rake db:migrate RAILS_ENV=production;bundle exec unicorn_rails -Dc #{unicorn_conf})"
 
 #stop
+#bundle install --path ../../shared/gems
 #[ -f "/var/run/unicorn/sravni.igel84.pid" ] && kill -QUIT `cat "/var/run/unicorn/sravni.igel84.pid"`
 #start
 #ln -s /. /home/hosting_igel84/projects/sravni/current;cd /home/hosting_igel84/projects/sravni/current

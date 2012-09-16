@@ -1,0 +1,15 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347606719.3835547:@value{	I"length:EFi�I"digest;
+F"%8805c834faac93d0c0d3ca5ff66f4f34I"source;
+FI"�CKEDITOR.plugins.setLang('attachment', 'ru',
+{
+  attachment : 
+  {
+    title : "Включить вложения",
+    url: "URL",
+    name: "Название",
+    button : "Вставить"
+  }
+});
+;
+TI"_version;
+F"%4778c7f32c7ba9cdd2c2471fc1763739

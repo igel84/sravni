@@ -5,4 +5,11 @@ class Area < ActiveRecord::Base
   def to_s
     name
   end
+  def to_label
+    name + ' ' + self.city.name
+  end
+
+  #def name
+  #  return name # + ' - ' + self.city.name
+  #end
 end

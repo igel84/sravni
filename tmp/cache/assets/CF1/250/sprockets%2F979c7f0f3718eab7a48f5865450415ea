@@ -1,0 +1,33 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347606719.8910856:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%308a36a30fc190375bf968d5cb7da75bI"logical_path;
+FI".ckeditor/plugins/styles/styles/default.js;
+TI"pathname;
+FI"Г/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/plugins/styles/styles/default.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-09-14T10:58:10+04:00;
+FI"	body;
+FI"S/*
+Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+*/
+
+
+CKEDITOR.stylesSet.add('default',[{name:'Blue Title',element:'h3',styles:{color:'Blue'}},{name:'Red Title',element:'h3',styles:{color:'Red'}},{name:'Marker: Yellow',element:'span',styles:{'background-color':'Yellow'}},{name:'Marker: Green',element:'span',styles:{'background-color':'Lime'}},{name:'Big',element:'big'},{name:'Small',element:'small'},{name:'Typewriter',element:'tt'},{name:'Computer Code',element:'code'},{name:'Keyboard Phrase',element:'kbd'},{name:'Sample Text',element:'samp'},{name:'Variable',element:'var'},{name:'Deleted Text',element:'del'},{name:'Inserted Text',element:'ins'},{name:'Cited Work',element:'cite'},{name:'Inline Quotation',element:'q'},{name:'Language: RTL',element:'span',attributes:{dir:'rtl'}},{name:'Language: LTR',element:'span',attributes:{dir:'ltr'}},{name:'Image on Left',element:'img',attributes:{style:'padding: 5px; margin-right: 5px',border:'2',align:'left'}},{name:'Image on Right',element:'img',attributes:{style:'padding: 5px; margin-left: 5px',border:'2',align:'right'}},{name:'Borderless Table',element:'table',styles:{'border-style':'hidden','background-color':'#E6E6FA'}},{name:'Square Bulleted List',element:'ul',styles:{'list-style-type':'square'}}]);
+;
+FI"asset_paths;
+F[I"Г/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/plugins/styles/styles/default.js;
+FI"dependency_paths;
+F[{I"	path;
+FI"Г/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/plugins/styles/styles/default.js;
+FI"
+mtime;
+FIu:	Time╞!А@1иш
+:@_zoneI"MSK;
+T:nano_numi#:nano_deni:submicro":offseti@8I"hexdigest;
+F"%a9abcb2f45756924eb0292c81af1b111I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5
