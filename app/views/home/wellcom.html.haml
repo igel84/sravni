@@ -1,16 +1,18 @@
 :javascript
   $(document).ready(function() { 
     $('.chzn-select').chosen().change(function() {
-      alert('sdf')
+      var id = $(this).val();
+      document.location.href="/cities/"+id; //http://sravnim-ka.ru
+      //alert('sdf')
     });
     $(".chzn-select-deselect").chosen({allow_single_deselect:true});
 
   });
 %legend Таблица сравнения товаров по магазинам города
 %br/
-= select("city", "name", City.all, {:include_blank => true}, html_options = {class: 'chzn-select', :'data-placeholder' => "#{@city == nil ? 'Выберите город' : @city.name}"})
+= select("city", "id", City.all.collect {|p| [ p.name, p.id ] }, {:include_blank => true}, html_options = {class: 'chzn-select', :'data-placeholder' => "#{@city == nil ? 'Выберите город' : @city.name}"})
 - if @city
-  = select("area", "name", @city.areas, {:include_blank => true}, html_options = {class: 'chzn-select-deselect', :'data-placeholder' => "#{@city == nil ? 'Выберите район' : @city.name}"})
+  = select("area", "name", @city.areas.collect {|p| [ p.name, p.id ] }, {:include_blank => true}, html_options = {class: 'chzn-select-deselect', :'data-placeholder' => "#{@area == nil ? 'Выберите район' : @city.name}"})
 %table.table.table-hover.table-striped
   %thead
     %tr

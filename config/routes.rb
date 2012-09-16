@@ -16,7 +16,9 @@ InitialRelease::Application.routes.draw do
 
   resources :cities do
     resources :areas do
-      resources :shops
+      resources :chains do 
+        resources :shops
+      end
     end
   end
 
