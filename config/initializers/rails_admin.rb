@@ -4,10 +4,15 @@
 
 RailsAdmin.config do |config|
 
-  config.authenticate_with do
-    # Use sorcery's before filter to auth users
-    require_login
-  end
+  #config.authenticate_with do
+  #  # Use sorcery's before filter to auth users
+  #  require_login
+  #end
+
+  config.authorize_with{
+    redirect_to main_app.root_path, :alert => "Вы не обладаете достаточными правами для доступа к данной странице" unless current_user.admin == true
+  }
+
   # If your default_local is different from :en, uncomment the following 2 lines and set your default locale here:
   # require 'i18n'
   # I18n.default_locale = :de
@@ -27,6 +32,28 @@ RailsAdmin.config do |config|
 
   config.excluded_models = [ShopProduct, UserShop] #, Ckeditor::AttachmentFile, Ckeditor::Picture, Ckeditor::Asset]
   
+  config.model Area do
+    object_label_method do
+      "#{bindings[:view].city.name if bindings[:view].city != nil}"
+    end
+  #   # Cross-section field configuration
+  #   object_label_method :name     # Name of the method called for pretty printing an *instance* of ModelName
+  #   label 'My model'              # Name of ModelName (smartly defaults to ActiveRecord's I18n API)
+  #   label_plural 'My models'      # Same, plural
+  #   weight -1                     # Navigation priority. Bigger is higher.
+  #   parent OtherModel             # Set parent model for navigation. MyModel will be nested below. OtherModel will be on first position of the dropdown
+  #   navigation_label              # Sets dropdown entry's name in navigation. Only for parents!
+  #   # Section specific configuration:
+    #list do
+    #  configure :id, :integer
+  #     filters [:id, :name]  # Array of field names which filters should be shown by default in the table header
+  #     items_per_page 100    # Override default_items_per_page
+  #     sort_by :id           # Sort column (default is primary key)
+  #     sort_reverse true     # Sort direction (default is true for primary key, last created first)
+  #     # Here goes the fields configuration for the list view
+    #end
+  end
+
   config.model Article do
     # Found associations:
       #configure :parent, :belongs_to_association 
@@ -81,7 +108,7 @@ RailsAdmin.config do |config|
   # config.included_models = [City, User]
 
   # Application wide tried label methods for models' instances
-  # config.label_methods << :description # Default is [:name, :title]
+  #config.label_methods << :to_label # Default is [:name, :title]
 
   #  ==> Global models configuration
   # config.models do
