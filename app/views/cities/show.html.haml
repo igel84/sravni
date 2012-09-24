@@ -25,7 +25,7 @@
   %br/
   %br/
   .well{style: "padding:8px;height:30px;margin:0;background:#f9f9f9"}  
-    = form_for([@city, @area, @chain, Shop.new(area_id: @area.id, chain_id: @chain.id)], html: {class:"form-inline"}) do |f|
+    = form_for([@city, @area, @chain, Shop.new(area_id: @area.id, chain_id: @chain.id)], html: {class:"form-inline"}, remote: true) do |f|
       = f.hidden_field :area_id
       = f.hidden_field :chain_id
       %label.control-label{:for => "shop_adds"} Данные о магазине: 
@@ -33,18 +33,9 @@
       = f.text_field :phone, id:'shop_phone', placeholder:"телефон"
       %button.btn{:type => "submit"} добавить
   %br/
-  .well
+  .well#shop_list
     %legend список магазинов:
-    - Shop.where(area_id: @area.id).where(chain_id: @chain.id).each do |shop|
-      = form_for([@city, @area, @chain, shop], html: {class:"form-inline", style:"margin:0;"}) do |f|        
-        .controlls          
-          = f.text_field :adds, id:'shop_adds', placeholder:"адрес", class:'span5 offset1', style:"margin-top:8px;"
-          = f.text_field :phone, id:'shop_phone', placeholder:"телефон", class:'span3', style:"margin-top:8px;"
-          .btn-group
-            %button.btn.btn-success{:type => "submit", style: 'width:60px;', title: 'сохранить изменения'}
-              %i.icon-ok.icon-white
-            = link_to [@city, @area, @chain, shop], method: 'delete', confirm: 'вы уверены?', class: 'btn btn-danger btn-pop', style: 'width:30px;', title: 'удалить магазин' do
-              %i.icon-trash.icon-white  
+    = render partial: 'cities/shop', collection: Shop.where(area_id: @area.id).where(chain_id: @chain.id).order('created_at DESC')
 %table.table.table-hover.table-striped
   %thead
     %tr
