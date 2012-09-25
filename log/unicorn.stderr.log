@@ -1,4 +1,0 @@
-I, [2012-09-04T22:20:32.744650 #28029]  INFO -- : listening on addr=/var/sockets/sravni.igel84.sock fd=7
-I, [2012-09-04T22:20:32.745057 #28029]  INFO -- : Refreshing Gem list
-I, [2012-09-04T22:20:33.967696 #28029]  INFO -- : master process ready
-I, [2012-09-04T22:20:34.295714 #28060]  INFO -- : worker=0 ready
