@@ -2,11 +2,11 @@ class ShopsController < ApplicationController
   skip_before_filter :require_login, :only => :wellcom
 
   def create
-    if params[:city_id] && params[:area_id] && params[:chain_id]
+    if params[:city_id] && params[:area_id] && params[:chain_id] && params[:shop][:adds] != ''
       @area = Area.find(params[:area_id]) if params[:area_id]
       @chain = Chain.find(params[:chain_id]) if params[:chain_id]
-      Shop.create(params[:shop])
-      render 'cities/show'
+      @shop = Shop.create(params[:shop])
+      #render 'cities/show'
     else
       redirect_to cities_path(@city.id)
     end
@@ -30,7 +30,7 @@ class ShopsController < ApplicationController
       @chain = Chain.find(params[:chain_id]) if params[:chain_id]
       @shop = Shop.find(params[:id])
       @shop.destroy
-      render 'cities/show'
+      #render 'cities/show'
     else
       redirect_to cities_path(@city.id)
     end
