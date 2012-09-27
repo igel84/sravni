@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
 
   has_many :shops, through: :user_shops
   has_many :user_shops
+  belongs_to :city
   
   attr_accessible :email, :password, :password_confirmation
 
@@ -13,6 +14,14 @@ class User < ActiveRecord::Base
 
   def to_s
   	self.email	
+  end
+
+  def admin?
+    self.admin == true
+  end
+
+  def seller?
+    self.user_shops != []
   end
 
 end

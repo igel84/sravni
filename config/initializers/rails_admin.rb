@@ -9,16 +9,16 @@ RailsAdmin.config do |config|
   #  require_login
   #end
 
+  config.current_user_method { current_user } # auto-generated
+
   config.authorize_with{
-    redirect_to main_app.root_path, :alert => "Вы не обладаете достаточными правами для доступа к данной странице" unless current_user.admin == true
+    redirect_to main_app.root_path, :alert => "Вы не обладаете достаточными правами для доступа к данной странице" unless current_user && current_user.admin?
   }
 
   # If your default_local is different from :en, uncomment the following 2 lines and set your default locale here:
   # require 'i18n'
-  # I18n.default_locale = :de
+  # I18n.default_locale = :de  
   
-  config.current_user_method { current_user } # auto-generated
-
   # If you want to track changes on your models:
   # config.audit_with :history, User
 

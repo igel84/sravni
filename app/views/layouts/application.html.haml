@@ -43,7 +43,7 @@
                     %ul.dropdown-menu
                       - if current_user
                         %li
-                          = link_to '#' do
+                          = link_to edit_user_path(current_user) do
                             %i.icon-user
                             профиль
                         %li
