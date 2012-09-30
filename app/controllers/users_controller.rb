@@ -19,6 +19,27 @@ class UsersController < ApplicationController
     @user = current_user
   end
 
+  def update
+    @user = User.find(params[:id])
+    if params[:user] && (@user == current_user || current_user.admin?) 
+      @user.email = params[:user][:email]
+      @user.city_id = params[:user][:city_id]
+      flash[:info] = "Данные обновлены"
+      @user.save
+
+      if params[:old_password] && !params[:old_password].blank? 
+        if @user.update_password(params[:old_password], params[:user][:password], params[:user][:password_confirmation])
+          flash.now.alert = "Пароль успешно изменен"
+        else
+          flash.now.alert = "Неверный пароль"
+        end
+      end
+    end
+    render 'edit'
+    #@user.update_attributes(params[:user]) #if @user == current_user || current_user.admin?
+    #redirect_to edit_user_path(@user)
+  end
+
   def activate
     if (@user = User.load_from_activation_token(params[:id]))
       @user.activate!
