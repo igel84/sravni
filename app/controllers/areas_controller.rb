@@ -2,8 +2,8 @@ class AreasController < ApplicationController
   skip_before_filter :require_login, :only => :wellcom
 
   def index
-    if params[:id]
-      @areas = City.find(params[:id]).areas
+    if params[:city_id]
+      @areas = City.find(params[:city_id]).areas
     else
       @areas = Area.all
     end

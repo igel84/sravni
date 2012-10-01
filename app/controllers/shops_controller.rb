@@ -1,6 +1,14 @@
 class ShopsController < ApplicationController
   skip_before_filter :require_login, :only => :wellcom
 
+  def index
+    if params[:area_id]
+      @area = Area.find(params[:area_id])
+    else
+      @area = Area.first
+    end
+  end
+
   def create
     if params[:city_id] && params[:area_id] && params[:chain_id] && params[:shop][:adds] != ''
       @area = Area.find(params[:area_id]) if params[:area_id]

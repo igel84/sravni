@@ -22,6 +22,10 @@ InitialRelease::Application.routes.draw do
     end
   end
 
+  resources :areas do
+    resources :shops
+  end
+
   resources :users do
     member do
       get :activate
