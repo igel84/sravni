@@ -1,5 +1,7 @@
 class City < ActiveRecord::Base
-	has_many :areas
+	default_scope order('name')
+
+  has_many :areas
 	has_many :users
 
   def to_s

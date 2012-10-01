@@ -12,18 +12,18 @@
     $(".chzn-select-chain").chosen({allow_single_deselect:true}).change(function() {
       var id = $(this).val();
       document.location.href="/cities/#{@city.id}/areas/#{@area == nil ? 1.to_s : @area.id}/chains/"+id; //http://sravnim-ka.ru      
-    });   
+    });  
+    $('a').tooltip(); 
   });
-%legend Таблица сравнения товаров по магазинам города
-%br/
-= select("city", "id", City.all.collect {|p| [ p.name, p.id ] }, {:include_blank => true}, html_options = {class: 'chzn-select', :'data-placeholder' => "#{@city == nil ? 'Выберите город' : @city.name}"})
-- if @city
-  = select("area", "name", @city.areas.collect {|p| [ p.name, p.id ] }, {:include_blank => true}, html_options = {class: 'chzn-select-deselect', :'data-placeholder' => "#{@area == nil ? 'Выберите район' : @area.name}"})
-- if @area
-  = select("chain", "name", Chain.all.collect {|p| [ p.name, p.id ] }, {:include_blank => true}, html_options = {class: 'chzn-select-chain', :'data-placeholder' => "#{@chain == nil ? 'Выберите сеть' : @chain.name}"})
+%legend{style: 'margin-bottom:5px'}
+  Таблица сравнения товаров по магазинам города
+  %br/
+  = select("city", "id", City.all.collect {|p| [ p.name, p.id ] }, {:include_blank => true}, html_options = {class: 'chzn-select', :'data-placeholder' => "#{@city == nil ? 'Выберите город' : @city.name}"})
+  - if @city
+    = select("area", "name", @city.areas.collect {|p| [ p.name, p.id ] }, {:include_blank => true}, html_options = {class: 'chzn-select-deselect', :'data-placeholder' => "#{@area == nil ? 'Выберите район' : @area.name}"})
+  - if @area
+    = select("chain", "name", Chain.all.collect {|p| [ p.name, p.id ] }, {:include_blank => true}, html_options = {class: 'chzn-select-chain', :'data-placeholder' => "#{@chain == nil ? 'Выберите сеть' : @chain.name}"})
 - if current_user && current_user.admin == true && @city != nil && @area != nil && @chain != nil
-  %br/
-  %br/
   .well{style: "padding:8px;height:30px;margin:0;background:#f9f9f9"}  
     = form_for([@city, @area, @chain, Shop.new(area_id: @area.id, chain_id: @chain.id)], html: {class:"form-inline"}, remote: true) do |f|
       = f.hidden_field :area_id
@@ -40,13 +40,18 @@
   %thead
     %tr
       %th товар
-      - 1.upto(7) do |n|
-        %th= "магазин " + n.to_s
+      - if @temp_shops
+        - @temp_shops.each do |shop|
+          %td{style: 'width:100px'}
+            .well{style: 'padding: 8px;text-align:center'}            
+              = link_to shop.chain.name, root_path if shop.chain
+              %br/
+              .muted{style: 'font-size:9px'}= link_to truncate(shop.adds, length: 15, ommission: '...'), root_path, title: shop.adds, rel: "tooltip"
   %tbody
     - Product.all.each do |product|
       %tr
         %td= product.name
-        - 1.upto(7) do |n|
+        - 1.upto(5) do |n|
           %td цена
 %br/
 %blockquote.pull-right

@@ -27,7 +27,7 @@
                     %ul.dropdown-menu
                       - City.all.each do |city|
                         %li
-                          = link_to city.name, {controller: 'home', action: 'wellcom', city: city}
+                          = link_to city.name, city
                   %li.active
                     %a{:href => "#"} главная
                   %li
