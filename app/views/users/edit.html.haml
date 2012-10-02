@@ -34,12 +34,25 @@
       .controls
         = f.password_field :password_confirmation, id:'inputPasswordConfirm', placeholder:"Повторите пароль", class: 'span8'
         = f.submit 'сохранить', class:'btn pull-right'
-  - if current_user && (current_user.admin? || current_user.saller?)
-    .well#shops
-      %legend Магазины и прайсы
-      .row
-        .offset1.span4= select_tag("city[id]", options_from_collection_for_select(City.all, 'id', 'name'), prompt: 'выберите город', class: 'chzn-select-deselect')
-        .span4.area  
-      %br/
-      .row
-        .offset1.new_form
+- if current_user && (current_user.admin? || current_user.seller?)
+  .well#shops
+    %legend Магазины и прайсы
+    - if current_user.seller?
+      %label
+        Сеть магазинов: 
+        = current_user.chain
+    .row
+      .offset1.span4= select_tag("city[id]", options_from_collection_for_select(City.all, 'id', 'name'), prompt: 'выберите город', class: 'chzn-select-deselect')
+      .span4.area  
+    %br/
+    .row
+      .offset1.new_form
+    .shops
+= form_for XmlFile.new do |f|
+  = f.label :attach, "Upload paintings:"
+  = f.file_field :attach, multiple: true, name: "xml_file[attach]"
+%script{id:"template-upload", type:"text/x-tmpl"}
+  %div.upload
+    {%=o.name%}
+    %div.progress
+      %div.bar{style:"width: 0%"}

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120914109999) do
+ActiveRecord::Schema.define(:version => 20121002083818) do
 
   create_table "areas", :force => true do |t|
     t.string   "name"
@@ -142,5 +142,15 @@ ActiveRecord::Schema.define(:version => 20120914109999) do
   add_index "users", ["activation_token"], :name => "index_users_on_activation_token"
   add_index "users", ["remember_me_token"], :name => "index_users_on_remember_me_token"
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token"
+
+  create_table "xml_files", :force => true do |t|
+    t.integer  "shop_id"
+    t.string   "attach_content_type"
+    t.integer  "attach_file_size"
+    t.string   "attach_file_name"
+    t.datetime "attach_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

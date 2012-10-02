@@ -4,6 +4,8 @@ class ShopsController < ApplicationController
   def index
     if params[:area_id]
       @area = Area.find(params[:area_id])
+      #@shops = Shop.where(area_id: @area.id).order('created_at DESC')
+      current_user.admin == true ? @shops = Shop.where(area_id: @area.id).order('created_at DESC') :  @shops = Shop.where(area_id: @area.id).where(chain_id: current_user.chain.id).order('created_at DESC')
     else
       @area = Area.first
     end
@@ -15,6 +17,13 @@ class ShopsController < ApplicationController
       @chain = Chain.find(params[:chain_id]) if params[:chain_id]
       @shop = Shop.create(params[:shop])
       #render 'cities/show'
+    elsif params[:shop][:area_id] != '' && params[:shop][:adds] != ''
+      @area = Area.find(params[:shop][:area_id])
+      @chain = current_user.chain if current_user.seller?
+      params[:shop][:chain_id] = @chain.id.to_s
+      @shop = Shop.create(params[:shop])
+      current_user.admin == true ? @shops = Shop.where(area_id: @area.id).order('created_at DESC') :  @shops = Shop.where(area_id: @area.id).where(chain_id: current_user.chain.id).order('created_at DESC')      
+      render 'index'      
     else
       redirect_to cities_path(@city.id)
     end
@@ -39,6 +48,12 @@ class ShopsController < ApplicationController
       @shop = Shop.find(params[:id])
       @shop.destroy
       #render 'cities/show'
+    elsif params[:city_id] == nil && params[:area_id] && params[:chain_id] == nil && params[:id]
+      @shop = Shop.find(params[:id])
+      @shop.destroy
+      @area = Area.find(params[:area_id])
+      current_user.admin == true ? @shops = Shop.where(area_id: @area.id).order('created_at DESC') :  @shops = Shop.where(area_id: @area.id).where(chain_id: current_user.chain.id).order('created_at DESC')
+      render 'index'  
     else
       redirect_to cities_path(@city.id)
     end

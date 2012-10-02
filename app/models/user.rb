@@ -24,6 +24,10 @@ class User < ActiveRecord::Base
     self.user_shops != []
   end
 
+  def chain
+    self.user_shops.first.shop.chain if self.seller?
+  end
+
   def update_password(current_password, new_password, new_password_confirmation)
     if new_password == new_password_confirmation
       if !User.authenticate(self.email, current_password).nil?

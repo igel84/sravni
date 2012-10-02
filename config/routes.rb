@@ -26,6 +26,8 @@ InitialRelease::Application.routes.draw do
     resources :shops
   end
 
+  resources :xml_files
+
   resources :users do
     member do
       get :activate

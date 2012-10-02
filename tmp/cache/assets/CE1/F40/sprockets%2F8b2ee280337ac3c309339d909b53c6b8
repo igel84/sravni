@@ -1,0 +1,43 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349168502.9883447:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%a955ee10967c122140ffd355cef034c2I"logical_path;
+FI"xml_files.js.cofee;
+FI"pathname;
+FI"4$root/app/assets/javascripts/xml_files.js.cofee;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-10-02T13:01:35+04:00;
+FI"	body;
+FI"HjQuery ->
+  $('#new_xml_file').fileupload
+    dataType: "script"
+    add: (e, data) ->
+      types = /(\.|\/)(xml)$/i
+      file = data.files[0]
+      if types.test(file.type) || types.test(file.name)
+        data.context = $(tmpl("template-upload", file))
+        $('#new_xml_file').append(data.context)
+        data.submit()
+      else
+        alert("#{file.name} is not a gif, jpeg, or png image file")
+    progress: (e, data) ->
+      if data.context
+        progress = parseInt(data.loaded / data.total * 100, 10)
+        data.context.find('.bar').css('width', progress + '%')
+;
+;
+FI"asset_paths;
+F[I"4$root/app/assets/javascripts/xml_files.js.cofee;
+FI"dependency_paths;
+F[{I"	path;
+FI"4$root/app/assets/javascripts/xml_files.js.cofee;
+FI"
+mtime;
+FIu:	TimeI$€wç9
+:@_zoneI"MSK;
+T:nano_numiÎ:nano_deni:submicro"q€:offseti@8I"hexdigest;
+F"%116aa296fdc17882fef71f12b7c9856cI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

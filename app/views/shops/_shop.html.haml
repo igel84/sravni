@@ -1,0 +1,17 @@
+= form_for([@area, shop], html: {class:"form-inline", style:"margin:0;"}, remote: true) do |f|        
+  .controlls          
+    = f.text_field :adds, id:'shop_adds', placeholder:"адрес", class:'span5 offset1', style:"margin-top:8px;"
+    = f.text_field :phone, id:'shop_phone', placeholder:"телефон", class:'span3', style:"margin-top:8px;"
+    .btn-group
+      %button.btn.btn-success{:type => "submit", style: 'width:60px;', title: 'сохранить изменения'}
+        %i.icon-ok.icon-white
+      = link_to [@area, shop], method: 'delete', remote: true, confirm: 'вы уверены?', class: 'btn btn-danger btn-pop', style: 'width:30px;', title: 'удалить магазин' do
+        %i.icon-trash.icon-white
+= form_for XmlFile.new do |f|
+  = f.label :attach, "Upload paintings:"
+  = f.file_field :attach, multiple: true, name: "xml_file[attach]"
+%script{id:"template-upload", type:"text/x-tmpl"}
+  %div.upload
+    {%=o.name%}
+    %div.progress
+      %div.bar{style:"width: 0%"}
