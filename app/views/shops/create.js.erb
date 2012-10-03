@@ -1,0 +1,1 @@
+$('.well#shop_list').html("<legend>список магазинов:</legend><%= escape_javascript(render partial: 'cities/shop',  collection: Shop.where(area_id: @area.id).where(chain_id: @chain.id).order('created_at DESC'))%>");

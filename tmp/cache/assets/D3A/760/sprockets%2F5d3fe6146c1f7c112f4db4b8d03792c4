@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347389717.5908132:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347315154.3366888:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%a61d460ffa9315f2bcd4ca8a4a68e5ccI"logical_path;
+F"%728c54c5901349170f6aa8c6199fca31I"logical_path;
 FI"jquery_nested_form.js;
 FI"pathname;
 FI"|/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/bbenezech-nested_form-0.0.6/vendor/assets/javascripts/jquery_nested_form.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-11T22:08:46+04:00;
+FI"2012-09-10T23:19:44+04:00;
 FI"	body;
 FI"‹jQuery(function($) {
   window.NestedFormEvents = function() {
@@ -90,8 +90,8 @@ F[{I"	path;
 FI"|/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/bbenezech-nested_form-0.0.6/vendor/assets/javascripts/jquery_nested_form.js;
 FI"
 mtime;
-FIu:	Timer!€žNë"
+FIu:	TimeS!€½ÏN
 :@_zoneI"MSK;
-T:nano_numi;:nano_deni:submicro"‚p:offseti@8I"hexdigest;
-F"%7b658ad0652107b8ab6a9ffe82ad0030I"_version;
-F"%1c9609bc58b1e77c196de29021583379
+T:nano_numiØ:nano_deni:submicro"G :offseti@8I"hexdigest;
+F"%5d781e8ddf84d5b1829eb66fc8f6a70fI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

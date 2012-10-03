@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347389709.9137373:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347312526.0039332:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%5dda5ba1daff5accc46995f6f3e8d922I"logical_path;
+F"%2b9adf00c28874bf8a54bca2ee71f276I"logical_path;
 FI"bootstrap.js;
 FI"pathname;
 FI"5$root/app/assets/javascripts/bootstrap.js.coffee;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-11T22:27:52+04:00;
+FI"2012-09-11T00:55:35+04:00;
 FI"	body;
 FI"‡
   jQuery(function() {
@@ -25,8 +25,8 @@ F[{I"	path;
 FI"5$root/app/assets/javascripts/bootstrap.js.coffee;
 FI"
 mtime;
-FIu:	Timer!€‹ÒBo
+FIu:	TimeT!€`)0Þ
 :@_zoneI"MSK;
-T:nano_numiö:nano_deni:submicro"u€:offseti@8I"hexdigest;
-F"%9ccab68fdeeab60e5cdf7e47bf247accI"_version;
-F"%1c9609bc58b1e77c196de29021583379
+T:nano_numi¦:nano_deni:submicro"B :offseti@8I"hexdigest;
+F"%de3289fb6cc9d49b6e3dadb10080f1e6I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

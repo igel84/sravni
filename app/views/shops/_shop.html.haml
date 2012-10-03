@@ -1,0 +1,20 @@
+= form_for([@area, shop], html: {class:"form-inline", style:"margin:0;"}, remote: true) do |f|        
+  .controlls          
+    = f.text_field :adds, id:'shop_adds', placeholder:"адрес", class:'span5 offset1', style:"margin-top:8px;"
+    = f.text_field :phone, id:'shop_phone', placeholder:"телефон", class:'span3', style:"margin-top:8px;"
+    .btn-group
+      %button.btn.btn-success{:type => "submit", style: 'width:60px;', title: 'сохранить изменения'}
+        %i.icon-ok.icon-white
+      = link_to [@area, shop], method: 'delete', remote: true, confirm: 'вы уверены?', class: 'btn btn-danger btn-pop', style: 'width:30px;', title: 'удалить магазин' do
+        %i.icon-trash.icon-white
+= form_for XmlFile.new(shop_id: shop.id), html: {style:"padding-top:10px;padding-left:70px;padding-right:90px;"} do |f|
+  .controlls 
+    = f.hidden_field :shop_id
+    %label.control-label{:for => "xml_file_attach", style: 'display:inline'} Добавить прайс магазина:&nbsp;&nbsp;&nbsp;
+    = f.file_field :attach, name: "xml_file[attach]", class: 'btn btn-mini new_xml_file'
+  %script{id:"template-upload", type:"text/x-tmpl"}
+    %div.upload
+      {%=o.name%}
+      %div.progress
+        %div.bar{style:"width: 0%"}
+%hr/

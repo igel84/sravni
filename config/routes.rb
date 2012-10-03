@@ -1,5 +1,9 @@
 InitialRelease::Application.routes.draw do
   
+  
+
+  mount Ckeditor::Engine => '/ckeditor'
+
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   resources :password_resets
@@ -9,6 +13,21 @@ InitialRelease::Application.routes.draw do
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
   
+
+  resources :cities do
+    resources :areas do
+      resources :chains do 
+        resources :shops
+      end
+    end
+  end
+
+  resources :areas do
+    resources :shops
+  end
+
+  resources :xml_files
+
   resources :users do
     member do
       get :activate
@@ -17,6 +36,8 @@ InitialRelease::Application.routes.draw do
 
   
   root to: "home#wellcom"
+
+  get "/:city" => "home#wellcom"
 
 
   # The priority is based upon order of creation:

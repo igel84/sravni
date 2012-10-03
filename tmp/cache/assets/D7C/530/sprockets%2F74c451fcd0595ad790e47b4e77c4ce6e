@@ -1,0 +1,22 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349168503.2111742:@value{	I"length:EFiHI"digest;
+F"%e9a3ac4d453533456a854625ec37c585I"source;
+FI"HjQuery ->
+  $('#new_xml_file').fileupload
+    dataType: "script"
+    add: (e, data) ->
+      types = /(\.|\/)(xml)$/i
+      file = data.files[0]
+      if types.test(file.type) || types.test(file.name)
+        data.context = $(tmpl("template-upload", file))
+        $('#new_xml_file').append(data.context)
+        data.submit()
+      else
+        alert("#{file.name} is not a gif, jpeg, or png image file")
+    progress: (e, data) ->
+      if data.context
+        progress = parseInt(data.loaded / data.total * 100, 10)
+        data.context.find('.bar').css('width', progress + '%')
+;
+;
+FI"_version;
+F"%a955ee10967c122140ffd355cef034c2

@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347389709.8625932:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347312525.9599426:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%220a85b6b236ea0ddf093fdcc91d6847I"logical_path;
+F"%db019971c13816a027f9e7e700299849I"logical_path;
 FI")twitter/bootstrap/bootstrap-affix.js;
 FI"pathname;
 FI"ç/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-affix.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-11T22:26:59+04:00;
+FI"2012-09-11T00:55:58+04:00;
 FI"	body;
 FI"á/* ==========================================================
  * bootstrap-affix.js v2.1.0
@@ -124,8 +124,8 @@ F[{I"	path;
 FI"ç/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-affix.js;
 FI"
 mtime;
-FIu:	Timer!ÄN∏k
+FIu:	TimeT!Ä!c¶ﬂ
 :@_zoneI"MSK;
-T:nano_numin:nano_deni:submicro"P:offseti@8I"hexdigest;
-F"%47e0c1f50eb3936334af3d52b199ded7I"_version;
-F"%1c9609bc58b1e77c196de29021583379
+T:nano_numi€:nano_deni:submicro"!ê:offseti@8I"hexdigest;
+F"%4f174d3a4b924e642d278a64aefc1a98I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

@@ -1,17 +1,17 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347389709.7620122:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347310667.7684581:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%2883eeee40cb54f7fac68bb3e1afb51cI"logical_path;
+F"%9d6ee7bbfe934cbd27aa5b67f40a41d9I"logical_path;
 FI"favicon.ico;
-FI"pathname;
+TI"pathname;
 FI"($root/app/assets/images/favicon.ico;
 FI"content_type;
 FI"image/vnd.microsoft.icon;
 FI"
 mtime;
-FI"2012-09-11T21:59:27+04:00;
+FI"2012-09-11T00:55:35+04:00;
 FI"length;
 FI"	1742;
 FI"digest;
-F"%fc8a7b2c72e54da9611680dd8a7d4eafI"_version;
-F"%1c9609bc58b1e77c196de29021583379
+F"%cfad961db84a9d40a7880ad38815736dI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

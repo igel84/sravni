@@ -12,6 +12,7 @@ gem 'rake'
 gem 'haml-rails'
 
 gem 'sorcery'
+gem 'roo'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -20,10 +21,15 @@ group :assets do
   gem 'sass-rails',   '~> 3.1.4'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'jquery-fileupload-rails'
 end
 
 gem 'jquery-rails'
 gem 'rails_admin'
+gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
+#gem "ckeditor", "3.6.3"
+gem "ckeditor", "3.7.1"
+gem 'friendly_id', "~> 4.0.1"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -1,0 +1,51 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349167483.7826564:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%fcc458c172872114f795990094eadae3I"logical_path;
+FI"jquery-fileupload/basic.js;
+FI"pathname;
+FI"É/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/basic.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-10-02T12:35:41+04:00;
+FI"	body;
+FI"
+;
+FI"asset_paths;
+F[	I"ï/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/vendor/jquery.ui.widget.js;
+FI"ï/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/jquery.iframe-transport.js;
+FI"è/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/jquery.fileupload.js;
+FI"É/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/basic.js;
+FI"dependency_paths;
+F[	{I"	path;
+FI"É/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/basic.js;
+FI"
+mtime;
+FIu:	TimeH$Ä9öé
+:@_zoneI"MSK;
+T:nano_numi":nano_deni:submicro"ê:offseti@8I"hexdigest;
+F"%d9a422bf2747c162d874c0b1721ab2fc{I"	path;
+FI"ï/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/vendor/jquery.ui.widget.js;
+FI"
+mtime;
+FIu;H$Ä9öé
+;I"MSK;
+T;i";i;"ê;i@8I"hexdigest;
+F"%5befcdf4fc798038ea0a15ec55f544f9{I"	path;
+FI"ï/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/jquery.iframe-transport.js;
+FI"
+mtime;
+FIu;H$Ä9öé
+;I"MSK;
+T;i";i;"ê;i@8I"hexdigest;
+F"%88bc0bb39565d3b74bf3b90bf784bbc9{I"	path;
+FI"è/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/jquery.fileupload.js;
+FI"
+mtime;
+FIu;H$Ä9öé
+;I"MSK;
+T;i";i;"ê;i@8I"hexdigest;
+F"%7eeb3f80ab3be2e61b85de6a2cc46943I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

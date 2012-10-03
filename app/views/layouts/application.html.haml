@@ -17,17 +17,17 @@
                   %span.icon-bar
                   %span.icon-bar
                   %span.icon-bar
-                %a.brand{:href => "#"} Сравним-ка
+                = link_to "Сравним-ка", root_path, class: 'brand'
                 %ul.nav
                   %li.divider-vertical
                   %li.dropdown
                     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                      Воронеж
+                      = @city == nil ? 'Выберите город' : @city.name
                       %b.caret
                     %ul.dropdown-menu
                       - City.all.each do |city|
                         %li
-                          = link_to city.name, '#'
+                          = link_to city.name, {controller: 'home', action: 'wellcom', city: city}
                   %li.active
                     %a{:href => "#"} главная
                   %li
@@ -43,7 +43,7 @@
                     %ul.dropdown-menu
                       - if current_user
                         %li
-                          = link_to '#' do
+                          = link_to edit_user_path(current_user) do
                             %i.icon-user
                             профиль
                         %li
@@ -63,7 +63,7 @@
                             %i.icon-remove-circle
                             выход                         
                       - else
-                        %li= link_to "вход", login_path                      
+                        %li= link_to "вход", login_path
                         %li= link_to "регистрация", signup_path  
       .row
         .span12= image_tag 'top.jpg', width:940, hight:80
@@ -75,7 +75,7 @@
           = yield          
         .span2
           -#%br/
-          -#%button.btn.btn-info{style:'width:140px'} дать рекламу
+          -#%button.btn.btn-info{style:'width:130px'} дать рекламу
           -#%br/
           %br/
           = link_to(image_tag("banner-mlip.png", class:"img-rounded"), 'http://mlip.ru', target:'_blank')

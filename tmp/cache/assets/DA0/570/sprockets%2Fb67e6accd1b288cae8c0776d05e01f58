@@ -1,0 +1,19 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347315154.572944:@value{	I"length:EFiI"digest;
+F"%aff6b5bac32afe26a6bec9d4895895e3I"source;
+FI"/*
+  Theme's JS behaviour
+
+  Available resources:
+
+  http://twitter.github.com/bootstrap/javascript.html
+  https://github.com/twitter/bootstrap/tree/master/js
+  http://jquery.com/
+  http://jqueryui.com/ (parts of it)
+
+  rename to ui.js.coffee if needed.
+*/
+
+;
+;
+FI"_version;
+F"%6bdde92676cc8bf998bfb18171c5d807
