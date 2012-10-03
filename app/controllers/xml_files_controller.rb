@@ -1,8 +1,49 @@
 class XmlFilesController < ApplicationController
   skip_before_filter :require_login, :only => :wellcom
+  require 'fileutils'
+  require 'iconv'
+  require 'roo'
 
   def create
-    @xml_file = XmlFile.create(params[:xml_file])
+    tmp = params[:xml_file][:attach].tempfile
+    file = File.join("public", "#{(0...50).map{ ('a'..'z').to_a[rand(26)] }.join}.xls")
+    FileUtils.cp tmp.path, file
+
+    @count = 0
+
+    if params[:xml_file][:chain_id]
+      chain = Chain.find(params[:xml_file][:chain_id])
+      chain.shops.each do |shop|
+        shop.shop_products.destroy_all
+      end
+      oo = Excel.new(file)
+      oo.default_sheet = oo.sheets.first
+      2.upto(20) do |line|
+        product = oo.cell(line,'A')
+        name = oo.cell(line,'B')
+        price = oo.cell(line,'C')        
+        if !name.blank? && !product.blank? && !price.blank? && (prod = Product.find_by_name(product))
+          chain.shops.each do |shop|
+            ShopProduct.create(shop_id: shop.id, name: name, product_id: prod.id, price: price)
+          end
+          @count += 1
+        end
+      end
+    elsif params[:xml_file][:shop_id]
+      ShopProduct.where(shop_id: params[:xml_file][:shop_id]).destroy_all           
+      oo = Excel.new(file)
+      oo.default_sheet = oo.sheets.first
+      2.upto(20) do |line|
+        product = oo.cell(line,'A')
+        name = oo.cell(line,'B')
+        price = oo.cell(line,'C')        
+        if !name.blank? && !product.blank? && !price.blank? && (prod = Product.find_by_name(product))
+          ShopProduct.create(shop_id: params[:xml_file][:shop_id], name: name, product_id: prod.id, price: price)
+          @count += 1
+        end   
+      end
+    end
+    FileUtils.rm file
   end
 
 end

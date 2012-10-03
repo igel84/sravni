@@ -30,7 +30,7 @@ RailsAdmin.config do |config|
   # or for a dynamic name:
   # config.main_app_name = Proc.new { |controller| [Rails.application.engine_name.titleize, controller.params['action'].titleize] }
 
-  config.excluded_models = [ShopProduct] #, UserShop Ckeditor::AttachmentFile, Ckeditor::Picture, Ckeditor::Asset]
+  #config.excluded_models = [ShopProduct] #, UserShop Ckeditor::AttachmentFile, Ckeditor::Picture, Ckeditor::Asset]
   
   config.model Area do
     object_label_method do

@@ -1,5 +1,6 @@
-<% if @xml_file.new_record? %>
+<% if !@count #@xml_file.new_record? 
+%>
   alert('no');
 <% else %>
-  alert('данные успешно добавлены');
+  alert("<%= @count %> продуктов считано и сохранено");
 <% end %>
