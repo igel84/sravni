@@ -48,8 +48,8 @@
   - Product.all.each do |product|
     %tr
       %td= product.name
-      - 1.upto(5) do |n|
-        %td цена
+      - @temp_shops.each do |shop|
+        %td= shop.shop_products.where(product_id: product.id).first.price if shop.shop_products.where(product_id: product.id).first
 %br/
 %blockquote.pull-right
   %p Экономика должна быть экономной
