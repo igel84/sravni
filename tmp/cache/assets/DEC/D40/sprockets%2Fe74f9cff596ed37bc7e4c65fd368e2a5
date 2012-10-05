@@ -1,31 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347606719.594552:@value{	I"length:EFi0I"digest;
-F"%5ab159625a6a4890c067833f1a063a4cI"source;
-FI"0/*
-Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.html or http://ckeditor.com/license
-*/
-
-
-body
-{
-	/* Font */
-	font-family: Arial, Verdana, sans-serif;
-	font-size: 12px;
-
-	/* Text color */
-	color: #222;
-
-	/* Remove the background color to make it transparent */
-	background-color: #fff;
-}
-
-ol,ul,dl
-{
-	/* IE7: reset rtl list margin. (#7334) */
-	*margin-right:0px;
-	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
-    padding:0 40px;
-}
-;
-FI"_version;
-F"%aef23acf165da02becc940c32fbefbc9

@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477986.7124255:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%4e44ce93c50f58ec256a1eb93413d90dI"logical_path;
+FI"/ckeditor/filebrowser/images/thumbs/pdf.gif;
+FI"pathname;
+FI"„/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/images/thumbs/pdf.gif;
+FI"content_type;
+FI"image/gif;
+FI"
+mtime;
+FI"2012-10-03T19:26:40+04:00;
+FI"length;
+FI"	1505;
+FI"digest;
+F"%464e0ebc70f62819c88436d5c512c919I"_version;
+F"%1c9609bc58b1e77c196de29021583379

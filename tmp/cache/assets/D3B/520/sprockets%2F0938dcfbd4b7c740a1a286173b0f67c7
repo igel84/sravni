@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477987.292364:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%632c44393aa1057102e1969a209040d7I"logical_path;
+FI"/rails_admin/aristo/images/progress_bar.gif;
+FI"pathname;
+FI"/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/images/rails_admin/aristo/images/progress_bar.gif;
+FI"content_type;
+FI"image/gif;
+FI"
+mtime;
+FI"2012-09-11T22:09:07+04:00;
+FI"length;
+FI"502;
+FI"digest;
+F"%d62259b73fbfae5fc0dfb0d13b3b05edI"_version;
+F"%1c9609bc58b1e77c196de29021583379

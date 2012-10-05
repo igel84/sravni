@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347606857.828377:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477983.8658261:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%fce8538c338742a044d9e86e4856fcceI"logical_path;
+F"%3b5ead48e513670b3bd1c08de10808c9I"logical_path;
 FI"8ckeditor/filebrowser/javascripts/jquery.tmpl.min.js;
 FI"pathname;
 FI"ç/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/javascripts/jquery.tmpl.min.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-14T10:58:10+04:00;
+FI"2012-10-03T19:26:40+04:00;
 FI"	body;
 FI"Â/*
  * jQuery Templates Plugin 1.0.0pre
@@ -30,8 +30,8 @@ F[{I"	path;
 FI"ç/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/javascripts/jquery.tmpl.min.js;
 FI"
 mtime;
-FIu:	Time∆!Ä@=¶Ë
+FIu:	Timeo$Ä˚Äj
 :@_zoneI"MSK;
-T:nano_numi!:nano_deni:submicro"Ä:offseti@8I"hexdigest;
-F"%e59e6637aea2de61da7b924ad41e3c17I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+T:nano_numi":nano_deni:submicro"Ä :offseti@8I"hexdigest;
+F"%96829b6af52ebf01e0ad3882abd3e00eI"_version;
+F"%1c9609bc58b1e77c196de29021583379

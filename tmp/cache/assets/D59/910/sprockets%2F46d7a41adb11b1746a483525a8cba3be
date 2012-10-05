@@ -1,17 +1,17 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347310667.6802244:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477975.1477652:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%cd213883e95b8e4e83c3ee9b48935976I"logical_path;
+F"%8a73751735ccd93a277c6aa17afd1e22I"logical_path;
 FI"banner-mlip.png;
-TI"pathname;
+FI"pathname;
 FI",$root/app/assets/images/banner-mlip.png;
 FI"content_type;
 FI"image/png;
 FI"
 mtime;
-FI"2012-09-11T00:55:35+04:00;
+FI"2012-09-11T21:59:27+04:00;
 FI"length;
 FI"	4869;
 FI"digest;
-F"%3c3283d684729bd02ace2a8f3aa7b1d8I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+F"%19874df27dffc2e4b6f71796d22b8ca6I"_version;
+F"%1c9609bc58b1e77c196de29021583379

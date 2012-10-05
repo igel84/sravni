@@ -1,0 +1,18 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349478003.9421065:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%21590be191700323681da63f92540890I"logical_path;
+FI"/twitter/bootstrap/glyphicons-halflings.png;
+FI"pathname;
+FI"Ž/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/images/twitter/bootstrap/glyphicons-halflings.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-09-11T22:26:59+04:00;
+FI"length;
+FI"
+13826;
+FI"digest;
+F"%4fae08ebae3831361244b6de0c6e950aI"_version;
+F"%1c9609bc58b1e77c196de29021583379

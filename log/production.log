@@ -1,0 +1,1207 @@
+Compiled application.js  (110ms)  (pid 5681)
+Compiled jquery.js  (4ms)  (pid 5681)
+Compiled jquery_ujs.js  (0ms)  (pid 5681)
+Compiled twitter/bootstrap.js  (38ms)  (pid 5681)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 5681)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 5681)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 5681)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 5681)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 5681)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 5681)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 5681)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 5681)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 5681)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 5681)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (66ms)  (pid 5681)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 5681)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 5681)
+Compiled chosen/chosen.jquery.js  (0ms)  (pid 5681)
+Compiled home.js  (57ms)  (pid 5681)
+Compiled password_resets.js  (1ms)  (pid 5681)
+Compiled sessions.js  (0ms)  (pid 5681)
+Compiled users.js  (0ms)  (pid 5681)
+Compiled xml_files.js  (13ms)  (pid 5681)
+Compiled jquery-fileupload/basic.js  (5ms)  (pid 5681)
+Compiled jquery-fileupload/vendor/jquery.ui.widget.js  (0ms)  (pid 5681)
+Compiled jquery-fileupload/jquery.iframe-transport.js  (0ms)  (pid 5681)
+Compiled jquery-fileupload/jquery.fileupload.js  (0ms)  (pid 5681)
+Compiled jquery-fileupload/vendor/tmpl.js  (0ms)  (pid 5681)
+Compiled application.css  (2ms)  (pid 5681)
+Compiled bootstrap-responsive.css  (0ms)  (pid 5681)
+Compiled bootstrap_and_overrides.css  (1112ms)  (pid 5681)
+Compiled chosen/chosen.css  (0ms)  (pid 5681)
+Compiled home.css  (8ms)  (pid 5681)
+Compiled password_resets.css  (2ms)  (pid 5681)
+Compiled sessions.css  (1ms)  (pid 5681)
+Compiled users.css  (1ms)  (pid 5681)
+Compiled ckeditor/application.js  (6ms)  (pid 5681)
+Compiled ckeditor/filebrowser/javascripts/jquery.min.js  (1ms)  (pid 5681)
+Compiled ckeditor/filebrowser/javascripts/jquery.tmpl.min.js  (0ms)  (pid 5681)
+Compiled ckeditor/filebrowser/javascripts/fileuploader.js  (1ms)  (pid 5681)
+Compiled ckeditor/filebrowser/javascripts/rails.js  (0ms)  (pid 5681)
+Compiled ckeditor/filebrowser/javascripts/application.js  (0ms)  (pid 5681)
+Compiled ckeditor/application.css  (3ms)  (pid 5681)
+Compiled ckeditor/filebrowser/stylesheets/uploader.css  (0ms)  (pid 5681)
+Compiled rails_admin/jquery.colorpicker.js  (0ms)  (pid 5681)
+Compiled rails_admin/rails_admin.js  (28ms)  (pid 5681)
+Compiled jquery.remotipart.js  (2ms)  (pid 5681)
+Compiled jquery.iframe-transport.js  (0ms)  (pid 5681)
+Compiled jquery.effects.core.js  (0ms)  (pid 5681)
+Compiled jquery.ui.sortable.js  (5ms)  (pid 5681)
+Compiled jquery.ui.core.js  (2ms)  (pid 5681)
+Compiled jquery.ui.widget.js  (0ms)  (pid 5681)
+Compiled jquery.ui.mouse.js  (2ms)  (pid 5681)
+Compiled jquery.ui.autocomplete.js  (3ms)  (pid 5681)
+Compiled jquery.ui.position.js  (0ms)  (pid 5681)
+Compiled jquery.ui.datepicker.js  (2ms)  (pid 5681)
+Compiled rails_admin/jquery.ui.timepicker.js  (0ms)  (pid 5681)
+Compiled rails_admin/ra.datetimepicker.js  (0ms)  (pid 5681)
+Compiled rails_admin/ra.filter-box.js  (0ms)  (pid 5681)
+Compiled rails_admin/ra.filtering-multiselect.js  (0ms)  (pid 5681)
+Compiled rails_admin/ra.filtering-select.js  (0ms)  (pid 5681)
+Compiled rails_admin/ra.remote-form.js  (0ms)  (pid 5681)
+Compiled rails_admin/jquery.pjax.js  (133ms)  (pid 5681)
+Compiled jquery_nested_form.js  (0ms)  (pid 5681)
+Compiled rails_admin/ra.nested-form-hooks.js  (13ms)  (pid 5681)
+Compiled bootstrap.js  (19ms)  (pid 5681)
+Compiled bootstrap-transition.js  (0ms)  (pid 5681)
+Compiled bootstrap-affix.js  (0ms)  (pid 5681)
+Compiled bootstrap-alert.js  (0ms)  (pid 5681)
+Compiled bootstrap-button.js  (0ms)  (pid 5681)
+Compiled bootstrap-carousel.js  (0ms)  (pid 5681)
+Compiled bootstrap-collapse.js  (0ms)  (pid 5681)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 5681)
+Compiled bootstrap-modal.js  (0ms)  (pid 5681)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 5681)
+Compiled bootstrap-tab.js  (0ms)  (pid 5681)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 5681)
+Compiled bootstrap-popover.js  (0ms)  (pid 5681)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 5681)
+Compiled rails_admin/ra.widgets.js  (114ms)  (pid 5681)
+Compiled rails_admin/ui.js  (14ms)  (pid 5681)
+Compiled rails_admin/themes/default/ui.js  (0ms)  (pid 5681)
+Compiled rails_admin/custom/ui.js  (0ms)  (pid 5681)
+Compiled rails_admin/jquery.colorpicker.css  (48ms)  (pid 5681)
+Compiled rails_admin/rails_admin.css  (1ms)  (pid 5681)
+Compiled rails_admin/imports.css  (6930ms)  (pid 5681)
+Compiled application.js  (126ms)  (pid 5657)
+Compiled jquery.js  (69ms)  (pid 5657)
+Compiled jquery_ujs.js  (31ms)  (pid 5657)
+Compiled twitter/bootstrap.js  (33ms)  (pid 5657)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 5657)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 5657)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 5657)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 5657)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 5657)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 5657)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 5657)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 5657)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 5657)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 5657)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 5657)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 5657)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 5657)
+Compiled chosen/chosen.jquery.js  (0ms)  (pid 5657)
+Compiled home.js  (581ms)  (pid 5657)
+Compiled password_resets.js  (28ms)  (pid 5657)
+Compiled sessions.js  (4ms)  (pid 5657)
+Compiled users.js  (0ms)  (pid 5657)
+Compiled xml_files.js  (14ms)  (pid 5657)
+Compiled jquery-fileupload/basic.js  (43ms)  (pid 5657)
+Compiled jquery-fileupload/vendor/jquery.ui.widget.js  (28ms)  (pid 5657)
+Compiled jquery-fileupload/jquery.iframe-transport.js  (21ms)  (pid 5657)
+Compiled jquery-fileupload/jquery.fileupload.js  (5ms)  (pid 5657)
+Compiled jquery-fileupload/vendor/tmpl.js  (12ms)  (pid 5657)
+Compiled application.css  (21ms)  (pid 5657)
+Compiled bootstrap-responsive.css  (7ms)  (pid 5657)
+Compiled bootstrap_and_overrides.css  (1937ms)  (pid 5657)
+Compiled chosen/chosen.css  (16ms)  (pid 5657)
+Compiled home.css  (98ms)  (pid 5657)
+Compiled password_resets.css  (29ms)  (pid 5657)
+Compiled sessions.css  (10ms)  (pid 5657)
+Compiled users.css  (1ms)  (pid 5657)
+Compiled ckeditor/application.js  (190ms)  (pid 5657)
+Compiled ckeditor/filebrowser/javascripts/jquery.min.js  (41ms)  (pid 5657)
+Compiled ckeditor/filebrowser/javascripts/jquery.tmpl.min.js  (20ms)  (pid 5657)
+Compiled ckeditor/filebrowser/javascripts/fileuploader.js  (28ms)  (pid 5657)
+Compiled ckeditor/filebrowser/javascripts/rails.js  (2ms)  (pid 5657)
+Compiled ckeditor/filebrowser/javascripts/application.js  (14ms)  (pid 5657)
+Compiled ckeditor/application.css  (17ms)  (pid 5657)
+Compiled ckeditor/filebrowser/stylesheets/uploader.css  (0ms)  (pid 5657)
+Compiled rails_admin/jquery.colorpicker.js  (1ms)  (pid 5657)
+Compiled rails_admin/rails_admin.js  (97ms)  (pid 5657)
+Compiled jquery.remotipart.js  (89ms)  (pid 5657)
+Compiled jquery.iframe-transport.js  (17ms)  (pid 5657)
+Compiled jquery.effects.core.js  (9ms)  (pid 5657)
+Compiled jquery.ui.sortable.js  (99ms)  (pid 5657)
+Compiled jquery.ui.core.js  (17ms)  (pid 5657)
+Compiled jquery.ui.widget.js  (22ms)  (pid 5657)
+Compiled jquery.ui.mouse.js  (25ms)  (pid 5657)
+Compiled jquery.ui.autocomplete.js  (42ms)  (pid 5657)
+Compiled jquery.ui.position.js  (10ms)  (pid 5657)
+Compiled jquery.ui.datepicker.js  (14ms)  (pid 5657)
+Compiled rails_admin/jquery.ui.timepicker.js  (26ms)  (pid 5657)
+Compiled rails_admin/ra.datetimepicker.js  (4ms)  (pid 5657)
+Compiled rails_admin/ra.filter-box.js  (1ms)  (pid 5657)
+Compiled rails_admin/ra.filtering-multiselect.js  (1ms)  (pid 5657)
+Compiled rails_admin/ra.filtering-select.js  (0ms)  (pid 5657)
+Compiled rails_admin/ra.remote-form.js  (26ms)  (pid 5657)
+Compiled rails_admin/jquery.pjax.js  (10ms)  (pid 5657)
+Compiled jquery_nested_form.js  (14ms)  (pid 5657)
+Compiled rails_admin/ra.nested-form-hooks.js  (34ms)  (pid 5657)
+Compiled bootstrap.js  (31ms)  (pid 5657)
+Compiled bootstrap-transition.js  (9ms)  (pid 5657)
+Compiled bootstrap-affix.js  (5ms)  (pid 5657)
+Compiled bootstrap-alert.js  (0ms)  (pid 5657)
+Compiled bootstrap-button.js  (46ms)  (pid 5657)
+Compiled bootstrap-carousel.js  (6ms)  (pid 5657)
+Compiled bootstrap-collapse.js  (14ms)  (pid 5657)
+Compiled bootstrap-dropdown.js  (15ms)  (pid 5657)
+Compiled bootstrap-modal.js  (24ms)  (pid 5657)
+Compiled bootstrap-scrollspy.js  (14ms)  (pid 5657)
+Compiled bootstrap-tab.js  (0ms)  (pid 5657)
+Compiled bootstrap-tooltip.js  (26ms)  (pid 5657)
+Compiled bootstrap-popover.js  (24ms)  (pid 5657)
+Compiled bootstrap-typeahead.js  (24ms)  (pid 5657)
+Compiled rails_admin/ra.widgets.js  (70ms)  (pid 5657)
+Compiled rails_admin/ui.js  (13ms)  (pid 5657)
+Compiled rails_admin/themes/default/ui.js  (33ms)  (pid 5657)
+Compiled rails_admin/custom/ui.js  (16ms)  (pid 5657)
+Compiled rails_admin/jquery.colorpicker.css  (117ms)  (pid 5657)
+Compiled rails_admin/rails_admin.css  (39ms)  (pid 5657)
+Compiled rails_admin/imports.css  (6874ms)  (pid 5657)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:34:51 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (367.3ms)
+Completed 200 OK in 1055ms (Views: 661.3ms | ActiveRecord: 51.9ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:34:55 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (111.5ms)
+Completed 200 OK in 426ms (Views: 98.6ms | ActiveRecord: 61.8ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:34:58 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (200.2ms)
+Completed 200 OK in 456ms (Views: 182.2ms | ActiveRecord: 76.8ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:35:12 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (146.8ms)
+Completed 200 OK in 297ms (Views: 123.6ms | ActiveRecord: 63.0ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:35:16 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (114.1ms)
+Completed 200 OK in 363ms (Views: 185.2ms | ActiveRecord: 54.6ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:35:20 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (118.7ms)
+Completed 200 OK in 288ms (Views: 100.6ms | ActiveRecord: 58.0ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:35:24 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (141.3ms)
+Completed 200 OK in 368ms (Views: 113.8ms | ActiveRecord: 73.5ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:36:25 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (233.7ms)
+Completed 200 OK in 393ms (Views: 195.4ms | ActiveRecord: 74.8ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:36:27 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (162.4ms)
+Completed 200 OK in 336ms (Views: 150.7ms | ActiveRecord: 61.9ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:39:36 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (262.1ms)
+Completed 200 OK in 391ms (Views: 105.8ms | ActiveRecord: 191.9ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:39:39 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (390.8ms)
+Completed 200 OK in 524ms (Views: 213.7ms | ActiveRecord: 208.8ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:39:42 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (310.2ms)
+Completed 200 OK in 442ms (Views: 122.6ms | ActiveRecord: 220.7ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:40:12 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (299.3ms)
+Completed 200 OK in 453ms (Views: 104.2ms | ActiveRecord: 229.4ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:40:15 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (392.0ms)
+Completed 200 OK in 518ms (Views: 189.9ms | ActiveRecord: 229.1ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:44:58 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (613.2ms)
+Completed 200 OK in 818ms (Views: 114.5ms | ActiveRecord: 542.3ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:01 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (628.4ms)
+Completed 200 OK in 765ms (Views: 101.1ms | ActiveRecord: 557.9ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:03 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (703.4ms)
+Completed 200 OK in 839ms (Views: 290.9ms | ActiveRecord: 437.2ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:05 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (602.1ms)
+Completed 200 OK in 714ms (Views: 100.3ms | ActiveRecord: 527.8ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:06 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (536.6ms)
+Completed 200 OK in 766ms (Views: 208.3ms | ActiveRecord: 444.3ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:08 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (533.7ms)
+Completed 200 OK in 649ms (Views: 117.1ms | ActiveRecord: 441.8ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:10 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (628.3ms)
+Completed 200 OK in 757ms (Views: 112.3ms | ActiveRecord: 544.6ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:11 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (639.6ms)
+Completed 200 OK in 879ms (Views: 199.7ms | ActiveRecord: 557.5ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:13 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (612.5ms)
+Completed 200 OK in 752ms (Views: 98.5ms | ActiveRecord: 534.9ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:15 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (627.4ms)
+Completed 200 OK in 755ms (Views: 110.1ms | ActiveRecord: 545.7ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:16 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (764.4ms)
+Completed 200 OK in 977ms (Views: 195.4ms | ActiveRecord: 685.0ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:18 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (631.7ms)
+Completed 200 OK in 768ms (Views: 111.1ms | ActiveRecord: 546.1ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:20 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (642.1ms)
+Completed 200 OK in 777ms (Views: 100.1ms | ActiveRecord: 568.3ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:21 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (649.8ms)
+Completed 200 OK in 881ms (Views: 214.5ms | ActiveRecord: 569.7ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:23 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (537.1ms)
+Completed 200 OK in 649ms (Views: 107.6ms | ActiveRecord: 448.4ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:28 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (631.7ms)
+Completed 200 OK in 756ms (Views: 104.9ms | ActiveRecord: 551.3ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:52 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (651.7ms)
+Completed 200 OK in 879ms (Views: 198.9ms | ActiveRecord: 574.5ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:54 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (556.9ms)
+Completed 200 OK in 694ms (Views: 112.7ms | ActiveRecord: 467.4ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:45:56 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (570.6ms)
+Completed 200 OK in 702ms (Views: 114.3ms | ActiveRecord: 478.0ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:49:05 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1011.7ms)
+Completed 200 OK in 1563ms (Views: 112.0ms | ActiveRecord: 930.9ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:49:08 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (839.1ms)
+Completed 200 OK in 975ms (Views: 102.8ms | ActiveRecord: 757.1ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:49:10 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (898.5ms)
+Completed 200 OK in 1011ms (Views: 105.3ms | ActiveRecord: 815.4ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:49:12 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (950.6ms)
+Completed 200 OK in 1099ms (Views: 195.4ms | ActiveRecord: 776.2ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:49:14 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (854.3ms)
+Completed 200 OK in 972ms (Views: 99.1ms | ActiveRecord: 776.1ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:49:16 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (896.0ms)
+Completed 200 OK in 1020ms (Views: 113.2ms | ActiveRecord: 809.1ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:49:18 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (996.5ms)
+Completed 200 OK in 1111ms (Views: 207.9ms | ActiveRecord: 809.6ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:49:20 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (717.5ms)
+Completed 200 OK in 850ms (Views: 110.7ms | ActiveRecord: 626.3ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:49:22 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (869.5ms)
+Completed 200 OK in 1002ms (Views: 96.5ms | ActiveRecord: 792.5ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:49:24 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (875.9ms)
+Completed 200 OK in 1003ms (Views: 111.9ms | ActiveRecord: 782.5ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:50:34 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (793.7ms)
+Completed 200 OK in 928ms (Views: 114.6ms | ActiveRecord: 702.1ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:50:37 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (943.5ms)
+Completed 200 OK in 1067ms (Views: 109.0ms | ActiveRecord: 853.8ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:51:47 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1152.4ms)
+Completed 200 OK in 1270ms (Views: 201.2ms | ActiveRecord: 970.6ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:51:51 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1050.8ms)
+Completed 200 OK in 1189ms (Views: 107.7ms | ActiveRecord: 968.6ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:53:44 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (980.4ms)
+Completed 200 OK in 1121ms (Views: 125.3ms | ActiveRecord: 875.1ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:53:46 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1280.3ms)
+Completed 200 OK in 1399ms (Views: 195.3ms | ActiveRecord: 1102.9ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:53:49 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (982.8ms)
+Completed 200 OK in 1098ms (Views: 118.4ms | ActiveRecord: 886.0ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:53:51 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1270.1ms)
+Completed 200 OK in 1384ms (Views: 102.3ms | ActiveRecord: 1186.1ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:53:54 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1120.6ms)
+Completed 200 OK in 1356ms (Views: 103.1ms | ActiveRecord: 1041.4ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:53:57 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1135.8ms)
+Completed 200 OK in 1255ms (Views: 103.1ms | ActiveRecord: 1054.1ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:55:48 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1783.0ms)
+Completed 200 OK in 1912ms (Views: 117.4ms | ActiveRecord: 1700.4ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:55:51 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1318.8ms)
+Completed 200 OK in 1466ms (Views: 105.9ms | ActiveRecord: 1236.7ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:56:21 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1078.7ms)
+Completed 200 OK in 1216ms (Views: 113.8ms | ActiveRecord: 986.2ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:56:24 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1316.3ms)
+Completed 200 OK in 1452ms (Views: 109.0ms | ActiveRecord: 1235.5ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:56:26 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1338.3ms)
+Completed 200 OK in 1452ms (Views: 99.6ms | ActiveRecord: 1257.4ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:57:46 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1324.9ms)
+Completed 200 OK in 1459ms (Views: 111.5ms | ActiveRecord: 1233.1ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:57:50 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1416.7ms)
+Completed 200 OK in 1545ms (Views: 103.1ms | ActiveRecord: 1333.9ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:57:52 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1140.4ms)
+Completed 200 OK in 1283ms (Views: 115.6ms | ActiveRecord: 1047.2ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:57:55 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1148.2ms)
+Completed 200 OK in 1267ms (Views: 111.3ms | ActiveRecord: 1056.6ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:57:57 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1480.8ms)
+Completed 200 OK in 1707ms (Views: 204.3ms | ActiveRecord: 1388.4ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:57:59 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1407.3ms)
+Completed 200 OK in 1536ms (Views: 107.8ms | ActiveRecord: 1322.2ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:58:01 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1376.5ms)
+Completed 200 OK in 1492ms (Views: 100.8ms | ActiveRecord: 1293.4ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:58:05 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1151.3ms)
+Completed 200 OK in 1362ms (Views: 209.6ms | ActiveRecord: 1058.0ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:58:07 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1184.0ms)
+Completed 200 OK in 1300ms (Views: 112.0ms | ActiveRecord: 1091.2ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:58:10 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1452.9ms)
+Completed 200 OK in 1569ms (Views: 104.2ms | ActiveRecord: 1367.2ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:58:12 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1284.6ms)
+Completed 200 OK in 1398ms (Views: 114.3ms | ActiveRecord: 1189.9ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:58:45 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1476.2ms)
+Completed 200 OK in 1591ms (Views: 99.3ms | ActiveRecord: 1397.8ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:58:48 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1489.2ms)
+Completed 200 OK in 1608ms (Views: 104.4ms | ActiveRecord: 1406.6ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 10:58:50 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1699.1ms)
+Completed 200 OK in 1818ms (Views: 194.6ms | ActiveRecord: 1529.9ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 11:00:14 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1525.4ms)
+Completed 200 OK in 1649ms (Views: 102.7ms | ActiveRecord: 1443.8ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 11:00:23 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1577.0ms)
+Completed 200 OK in 1691ms (Views: 99.4ms | ActiveRecord: 1496.9ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 11:00:27 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1850.0ms)
+Completed 200 OK in 1971ms (Views: 189.4ms | ActiveRecord: 1680.8ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 11:00:30 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1535.6ms)
+Completed 200 OK in 1668ms (Views: 101.1ms | ActiveRecord: 1458.9ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 11:00:32 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1291.7ms)
+Completed 200 OK in 1410ms (Views: 114.9ms | ActiveRecord: 1197.6ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 11:01:53 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1791.1ms)
+Completed 200 OK in 1913ms (Views: 206.0ms | ActiveRecord: 1603.4ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 11:04:53 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1934.4ms)
+Completed 200 OK in 2061ms (Views: 101.2ms | ActiveRecord: 1852.9ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 11:04:57 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1892.7ms)
+Completed 200 OK in 2031ms (Views: 111.0ms | ActiveRecord: 1810.2ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 11:09:14 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (2188.2ms)
+Completed 200 OK in 2310ms (Views: 212.3ms | ActiveRecord: 1995.8ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 11:09:17 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (2168.4ms)
+Completed 200 OK in 2308ms (Views: 102.7ms | ActiveRecord: 2093.1ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 11:09:21 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (2169.3ms)
+Completed 200 OK in 2289ms (Views: 101.2ms | ActiveRecord: 2087.8ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 11:09:24 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (1858.6ms)
+Completed 200 OK in 2006ms (Views: 206.2ms | ActiveRecord: 1673.0ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2012-10-05 11:11:27 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered cities/show.html.haml within layouts/application (2319.6ms)
+Completed 200 OK in 2436ms (Views: 104.3ms | ActiveRecord: 2236.7ms)
+
+
+Started GET "/cities/2/areas/141" for 127.0.0.1 at 2012-10-05 11:11:33 +0400
+  Processing by AreasController#show as HTML
+  Parameters: {"city_id"=>"2", "id"=>"141"}
+Rendered cities/show.html.haml within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    49:     %tr
+    50:       %td= product.name
+    51:       - @temp_shops.each do |shop|
+    52:         %td= shop.shop_products.where(product_id: product.id).first.price if shop.shop_products.where(product_id: product.id).first
+    53: %br/
+    54: %blockquote.pull-right
+    55:   %p Экономика должна быть экономной
+  app/views/cities/show.html.haml:52:in `block in _app_views_cities_show_html_haml___2352397749856226244_47043360'
+  app/views/cities/show.html.haml:50:in `each'
+  app/views/cities/show.html.haml:50:in `_app_views_cities_show_html_haml___2352397749856226244_47043360'
+  app/controllers/areas_controller.rb:15:in `show'
+
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.3ms)
+
+
+Started GET "/cities/2/areas/144" for 127.0.0.1 at 2012-10-05 11:11:41 +0400
+  Processing by AreasController#show as HTML
+  Parameters: {"city_id"=>"2", "id"=>"144"}
+Rendered cities/show.html.haml within layouts/application (19.2ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    49:     %tr
+    50:       %td= product.name
+    51:       - @temp_shops.each do |shop|
+    52:         %td= shop.shop_products.where(product_id: product.id).first.price if shop.shop_products.where(product_id: product.id).first
+    53: %br/
+    54: %blockquote.pull-right
+    55:   %p Экономика должна быть экономной
+  app/views/cities/show.html.haml:52:in `block in _app_views_cities_show_html_haml___2352397749856226244_47043360'
+  app/views/cities/show.html.haml:50:in `each'
+  app/views/cities/show.html.haml:50:in `_app_views_cities_show_html_haml___2352397749856226244_47043360'
+  app/controllers/areas_controller.rb:15:in `show'
+
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.8ms)
+
+
+Started GET "/cities/2/with_area/144" for 127.0.0.1 at 2012-10-05 11:28:21 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"cities"=>"cities", "id"=>"2", "area_id"=>"144"}
+Rendered cities/show.html.haml within layouts/application (3512.3ms)
+Completed 200 OK in 4098ms (Views: 672.8ms | ActiveRecord: 3013.0ms)
+
+
+Started GET "/cities/2/with_area/139" for 127.0.0.1 at 2012-10-05 11:28:28 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"cities"=>"cities", "id"=>"2", "area_id"=>"139"}
+Rendered cities/show.html.haml within layouts/application (3317.0ms)
+Completed 200 OK in 3435ms (Views: 123.4ms | ActiveRecord: 3232.3ms)
+
+
+Started GET "/cities/2/with_area/145" for 127.0.0.1 at 2012-10-05 11:28:34 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"cities"=>"cities", "id"=>"2", "area_id"=>"145"}
+Rendered cities/show.html.haml within layouts/application (3245.7ms)
+Completed 200 OK in 3398ms (Views: 120.5ms | ActiveRecord: 3170.7ms)
+
+
+Started GET "/cities/2/with_area/147" for 127.0.0.1 at 2012-10-05 11:28:42 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"cities"=>"cities", "id"=>"2", "area_id"=>"147"}
+Rendered cities/show.html.haml within layouts/application (2399.9ms)
+Completed 200 OK in 2672ms (Views: 200.4ms | ActiveRecord: 2232.6ms)
+
+
+Started GET "/cities/2/with_area/147" for 127.0.0.1 at 2012-10-05 11:29:38 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"cities"=>"cities", "id"=>"2", "area_id"=>"147"}
+Rendered cities/show.html.haml within layouts/application (360.8ms)
+Completed 200 OK in 938ms (Views: 530.0ms | ActiveRecord: 46.9ms)
+
+
+Started GET "/cities/2/with_area/147" for 127.0.0.1 at 2012-10-05 11:29:40 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"cities"=>"cities", "id"=>"2", "area_id"=>"147"}
+Rendered cities/show.html.haml within layouts/application (25.2ms)
+Completed 200 OK in 378ms (Views: 36.8ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/cities/2/with_area/145" for 127.0.0.1 at 2012-10-05 11:29:43 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"cities"=>"cities", "id"=>"2", "area_id"=>"145"}
+Rendered cities/show.html.haml within layouts/application (30.3ms)
+Completed 200 OK in 211ms (Views: 51.3ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/cities/2/with_area/139" for 127.0.0.1 at 2012-10-05 11:29:45 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"cities"=>"cities", "id"=>"2", "area_id"=>"139"}
+Rendered cities/show.html.haml within layouts/application (28.1ms)
+Completed 200 OK in 163ms (Views: 41.6ms | ActiveRecord: 23.5ms)
+
+
+Started GET "/cities/2/with_area/149" for 127.0.0.1 at 2012-10-05 11:29:49 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"cities"=>"cities", "id"=>"2", "area_id"=>"149"}
+Rendered cities/show.html.haml within layouts/application (28.5ms)
+Completed 200 OK in 169ms (Views: 41.8ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/cities/2/with_area/140" for 127.0.0.1 at 2012-10-05 11:29:52 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"cities"=>"cities", "id"=>"2", "area_id"=>"140"}
+Rendered cities/show.html.haml within layouts/application (136.5ms)
+Completed 200 OK in 305ms (Views: 149.5ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/cities/2/with_area/143" for 127.0.0.1 at 2012-10-05 11:30:07 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"cities"=>"cities", "id"=>"2", "area_id"=>"143"}
+Rendered cities/show.html.haml within layouts/application (30.4ms)
+Completed 200 OK in 202ms (Views: 44.8ms | ActiveRecord: 34.7ms)
+
+
+Started GET "/cities/2/with_area/146" for 127.0.0.1 at 2012-10-05 11:30:10 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"cities"=>"cities", "id"=>"2", "area_id"=>"146"}
+Rendered cities/show.html.haml within layouts/application (29.4ms)
+Completed 200 OK in 180ms (Views: 43.2ms | ActiveRecord: 26.4ms)
+
+
+Started GET "/cities/2/with_area/139" for 127.0.0.1 at 2012-10-05 11:30:13 +0400
+  Processing by CitiesController#show as HTML
+  Parameters: {"cities"=>"cities", "id"=>"2", "area_id"=>"139"}
+Rendered cities/show.html.haml within layouts/application (31.0ms)
+Completed 200 OK in 189ms (Views: 43.2ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 02:58:28 +0400
+  Processing by CitiesController#show as HTML
+Rendered cities/show.html.haml within layouts/application (394.5ms)
+Completed 200 OK in 587ms (Views: 287.3ms | ActiveRecord: 220.1ms)
+
+
+Started GET "/assets/application-92555e027c3501ee238b0bd54e4c55bb.css" for 127.0.0.1 at 2012-10-06 02:58:29 +0400
+Compiled application-92555e027c3501ee238b0bd54e4c55bb.css  (2ms)  (pid 22103)
+Compiled bootstrap-responsive.css  (0ms)  (pid 22103)
+Error compiling asset application-92555e027c3501ee238b0bd54e4c55bb.css:
+Less::Error: 'twitter/bootstrap/bootstrap.less' wasn't found.
+
+  (in /home/igel/proj/sravni/app/assets/stylesheets/bootstrap_and_overrides.css.less)
+Served asset /application-92555e027c3501ee238b0bd54e4c55bb.css - 500 Internal Server Error
+
+
+
+Started GET "/assets/application-f7047561791b65cc766e0ee5ea894243.js" for 127.0.0.1 at 2012-10-06 02:58:29 +0400
+Error compiling asset application-f7047561791b65cc766e0ee5ea894243.js:
+Sprockets::FileNotFound: couldn't find file 'twitter/bootstrap'
+  (in /home/igel/proj/sravni/app/assets/javascripts/application.js:9)
+Served asset /application-f7047561791b65cc766e0ee5ea894243.js - 500 Internal Server Error
+
+Compiled application.js  (17ms)  (pid 22173)
+Compiled jquery.js  (3ms)  (pid 22173)
+Compiled jquery_ujs.js  (0ms)  (pid 22173)
+Compiled twitter/bootstrap.js  (27ms)  (pid 22173)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 22173)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 22173)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 22173)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 22173)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 22173)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 22173)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 22173)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 22173)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 22173)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 22173)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 22173)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 22173)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 22173)
+Compiled chosen/chosen.jquery.js  (0ms)  (pid 22173)
+Compiled home.js  (44ms)  (pid 22173)
+Compiled password_resets.js  (0ms)  (pid 22173)
+Compiled sessions.js  (0ms)  (pid 22173)
+Compiled users.js  (0ms)  (pid 22173)
+Compiled xml_files.js  (9ms)  (pid 22173)
+Compiled jquery-fileupload/basic.js  (5ms)  (pid 22173)
+Compiled jquery-fileupload/vendor/jquery.ui.widget.js  (0ms)  (pid 22173)
+Compiled jquery-fileupload/jquery.iframe-transport.js  (0ms)  (pid 22173)
+Compiled jquery-fileupload/jquery.fileupload.js  (0ms)  (pid 22173)
+Compiled jquery-fileupload/vendor/tmpl.js  (0ms)  (pid 22173)
+Compiled application.css  (2ms)  (pid 22173)
+Compiled bootstrap-responsive.css  (0ms)  (pid 22173)
+Compiled bootstrap_and_overrides.css  (701ms)  (pid 22173)
+Compiled chosen/chosen.css  (0ms)  (pid 22173)
+Compiled home.css  (5ms)  (pid 22173)
+Compiled password_resets.css  (0ms)  (pid 22173)
+Compiled sessions.css  (0ms)  (pid 22173)
+Compiled users.css  (0ms)  (pid 22173)
+Compiled ckeditor/application.js  (5ms)  (pid 22173)
+Compiled ckeditor/filebrowser/javascripts/jquery.min.js  (1ms)  (pid 22173)
+Compiled ckeditor/filebrowser/javascripts/jquery.tmpl.min.js  (0ms)  (pid 22173)
+Compiled ckeditor/filebrowser/javascripts/fileuploader.js  (1ms)  (pid 22173)
+Compiled ckeditor/filebrowser/javascripts/rails.js  (0ms)  (pid 22173)
+Compiled ckeditor/filebrowser/javascripts/application.js  (0ms)  (pid 22173)
+Compiled ckeditor/application.css  (1ms)  (pid 22173)
+Compiled ckeditor/filebrowser/stylesheets/uploader.css  (0ms)  (pid 22173)
+Compiled rails_admin/jquery.colorpicker.js  (0ms)  (pid 22173)
+Compiled rails_admin/rails_admin.js  (25ms)  (pid 22173)
+Compiled jquery.remotipart.js  (1ms)  (pid 22173)
+Compiled jquery.iframe-transport.js  (0ms)  (pid 22173)
+Compiled jquery.effects.core.js  (0ms)  (pid 22173)
+Compiled jquery.ui.sortable.js  (3ms)  (pid 22173)
+Compiled jquery.ui.core.js  (1ms)  (pid 22173)
+Compiled jquery.ui.widget.js  (0ms)  (pid 22173)
+Compiled jquery.ui.mouse.js  (2ms)  (pid 22173)
+Compiled jquery.ui.autocomplete.js  (3ms)  (pid 22173)
+Compiled jquery.ui.position.js  (0ms)  (pid 22173)
+Compiled jquery.ui.datepicker.js  (1ms)  (pid 22173)
+Compiled rails_admin/jquery.ui.timepicker.js  (0ms)  (pid 22173)
+Compiled rails_admin/ra.datetimepicker.js  (0ms)  (pid 22173)
+Compiled rails_admin/ra.filter-box.js  (0ms)  (pid 22173)
+Compiled rails_admin/ra.filtering-multiselect.js  (0ms)  (pid 22173)
+Compiled rails_admin/ra.filtering-select.js  (0ms)  (pid 22173)
+Compiled rails_admin/ra.remote-form.js  (0ms)  (pid 22173)
+Compiled rails_admin/jquery.pjax.js  (0ms)  (pid 22173)
+Compiled jquery_nested_form.js  (0ms)  (pid 22173)
+Compiled rails_admin/ra.nested-form-hooks.js  (9ms)  (pid 22173)
+Compiled bootstrap.js  (16ms)  (pid 22173)
+Compiled bootstrap-transition.js  (0ms)  (pid 22173)
+Compiled bootstrap-affix.js  (0ms)  (pid 22173)
+Compiled bootstrap-alert.js  (0ms)  (pid 22173)
+Compiled bootstrap-button.js  (0ms)  (pid 22173)
+Compiled bootstrap-carousel.js  (0ms)  (pid 22173)
+Compiled bootstrap-collapse.js  (0ms)  (pid 22173)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 22173)
+Compiled bootstrap-modal.js  (0ms)  (pid 22173)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 22173)
+Compiled bootstrap-tab.js  (0ms)  (pid 22173)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 22173)
+Compiled bootstrap-popover.js  (0ms)  (pid 22173)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 22173)
+Compiled rails_admin/ra.widgets.js  (47ms)  (pid 22173)
+Compiled rails_admin/ui.js  (12ms)  (pid 22173)
+Compiled rails_admin/themes/default/ui.js  (0ms)  (pid 22173)
+Compiled rails_admin/custom/ui.js  (0ms)  (pid 22173)
+Compiled rails_admin/jquery.colorpicker.css  (27ms)  (pid 22173)
+Compiled rails_admin/rails_admin.css  (1ms)  (pid 22173)
+Compiled rails_admin/imports.css  (3795ms)  (pid 22173)
+Compiled application.js  (17ms)  (pid 22153)
+Compiled jquery.js  (4ms)  (pid 22153)
+Compiled jquery_ujs.js  (0ms)  (pid 22153)
+Compiled twitter/bootstrap.js  (62ms)  (pid 22153)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 22153)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 22153)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 22153)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 22153)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 22153)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 22153)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 22153)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 22153)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 22153)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 22153)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 22153)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 22153)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 22153)
+Compiled chosen/chosen.jquery.js  (0ms)  (pid 22153)
+Compiled home.js  (44ms)  (pid 22153)
+Compiled password_resets.js  (0ms)  (pid 22153)
+Compiled sessions.js  (0ms)  (pid 22153)
+Compiled users.js  (0ms)  (pid 22153)
+Compiled xml_files.js  (10ms)  (pid 22153)
+Compiled jquery-fileupload/basic.js  (5ms)  (pid 22153)
+Compiled jquery-fileupload/vendor/jquery.ui.widget.js  (0ms)  (pid 22153)
+Compiled jquery-fileupload/jquery.iframe-transport.js  (0ms)  (pid 22153)
+Compiled jquery-fileupload/jquery.fileupload.js  (0ms)  (pid 22153)
+Compiled jquery-fileupload/vendor/tmpl.js  (0ms)  (pid 22153)
+Compiled application.css  (2ms)  (pid 22153)
+Compiled bootstrap-responsive.css  (0ms)  (pid 22153)
+Compiled bootstrap_and_overrides.css  (726ms)  (pid 22153)
+Compiled chosen/chosen.css  (39ms)  (pid 22153)
+Compiled home.css  (5ms)  (pid 22153)
+Compiled password_resets.css  (0ms)  (pid 22153)
+Compiled sessions.css  (0ms)  (pid 22153)
+Compiled users.css  (0ms)  (pid 22153)
+Compiled ckeditor/application.js  (7ms)  (pid 22153)
+Compiled ckeditor/filebrowser/javascripts/jquery.min.js  (1ms)  (pid 22153)
+Compiled ckeditor/filebrowser/javascripts/jquery.tmpl.min.js  (0ms)  (pid 22153)
+Compiled ckeditor/filebrowser/javascripts/fileuploader.js  (1ms)  (pid 22153)
+Compiled ckeditor/filebrowser/javascripts/rails.js  (0ms)  (pid 22153)
+Compiled ckeditor/filebrowser/javascripts/application.js  (0ms)  (pid 22153)
+Compiled ckeditor/application.css  (2ms)  (pid 22153)
+Compiled ckeditor/filebrowser/stylesheets/uploader.css  (0ms)  (pid 22153)
+Compiled rails_admin/jquery.colorpicker.js  (0ms)  (pid 22153)
+Compiled rails_admin/rails_admin.js  (25ms)  (pid 22153)
+Compiled jquery.remotipart.js  (2ms)  (pid 22153)
+Compiled jquery.iframe-transport.js  (0ms)  (pid 22153)
+Compiled jquery.effects.core.js  (0ms)  (pid 22153)
+Compiled jquery.ui.sortable.js  (4ms)  (pid 22153)
+Compiled jquery.ui.core.js  (2ms)  (pid 22153)
+Compiled jquery.ui.widget.js  (0ms)  (pid 22153)
+Compiled jquery.ui.mouse.js  (58ms)  (pid 22153)
+Compiled jquery.ui.autocomplete.js  (4ms)  (pid 22153)
+Compiled jquery.ui.position.js  (0ms)  (pid 22153)
+Compiled jquery.ui.datepicker.js  (2ms)  (pid 22153)
+Compiled rails_admin/jquery.ui.timepicker.js  (1ms)  (pid 22153)
+Compiled rails_admin/ra.datetimepicker.js  (0ms)  (pid 22153)
+Compiled rails_admin/ra.filter-box.js  (0ms)  (pid 22153)
+Compiled rails_admin/ra.filtering-multiselect.js  (0ms)  (pid 22153)
+Compiled rails_admin/ra.filtering-select.js  (0ms)  (pid 22153)
+Compiled rails_admin/ra.remote-form.js  (0ms)  (pid 22153)
+Compiled rails_admin/jquery.pjax.js  (0ms)  (pid 22153)
+Compiled jquery_nested_form.js  (0ms)  (pid 22153)
+Compiled rails_admin/ra.nested-form-hooks.js  (35ms)  (pid 22153)
+Compiled bootstrap.js  (16ms)  (pid 22153)
+Compiled bootstrap-transition.js  (0ms)  (pid 22153)
+Compiled bootstrap-affix.js  (0ms)  (pid 22153)
+Compiled bootstrap-alert.js  (0ms)  (pid 22153)
+Compiled bootstrap-button.js  (0ms)  (pid 22153)
+Compiled bootstrap-carousel.js  (0ms)  (pid 22153)
+Compiled bootstrap-collapse.js  (0ms)  (pid 22153)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 22153)
+Compiled bootstrap-modal.js  (0ms)  (pid 22153)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 22153)
+Compiled bootstrap-tab.js  (0ms)  (pid 22153)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 22153)
+Compiled bootstrap-popover.js  (0ms)  (pid 22153)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 22153)
+Compiled rails_admin/ra.widgets.js  (23ms)  (pid 22153)
+Compiled rails_admin/ui.js  (10ms)  (pid 22153)
+Compiled rails_admin/themes/default/ui.js  (0ms)  (pid 22153)
+Compiled rails_admin/custom/ui.js  (0ms)  (pid 22153)
+Compiled rails_admin/jquery.colorpicker.css  (69ms)  (pid 22153)
+Compiled rails_admin/rails_admin.css  (1ms)  (pid 22153)
+Compiled rails_admin/imports.css  (3973ms)  (pid 22153)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 03:02:13 +0400
+  Processing by CitiesController#show as HTML
+Rendered cities/show.html.haml within layouts/application (386.4ms)
+Completed 200 OK in 576ms (Views: 293.0ms | ActiveRecord: 169.4ms)
+
+
+Started GET "/prices.js?ids%5B%5D=87&ids%5B%5D=90&ids%5B%5D=91&ids%5B%5D=100&ids%5B%5D=109" for 127.0.0.1 at 2012-10-06 03:02:14 +0400
+  Processing by PricesController#index as JS
+  Parameters: {"ids"=>["87", "90", "91", "100", "109"]}
+Rendered prices/index.js.erb (0.8ms)
+Completed 200 OK in 204ms (Views: 7.3ms | ActiveRecord: 82.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 03:02:15 +0400
+  Processing by CitiesController#show as HTML
+Rendered cities/show.html.haml within layouts/application (369.2ms)
+Completed 200 OK in 424ms (Views: 150.9ms | ActiveRecord: 235.0ms)
+
+
+Started GET "/prices.js?ids%5B%5D=136&ids%5B%5D=138&ids%5B%5D=139&ids%5B%5D=141&ids%5B%5D=143" for 127.0.0.1 at 2012-10-06 03:02:16 +0400
+  Processing by PricesController#index as JS
+  Parameters: {"ids"=>["136", "138", "139", "141", "143"]}
+Rendered prices/index.js.erb (0.4ms)
+Completed 200 OK in 230ms (Views: 6.7ms | ActiveRecord: 113.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 03:02:17 +0400
+  Processing by CitiesController#show as HTML
+Rendered cities/show.html.haml within layouts/application (480.5ms)
+Completed 200 OK in 573ms (Views: 158.3ms | ActiveRecord: 339.4ms)
+
+
+Started GET "/prices.js?ids%5B%5D=204&ids%5B%5D=207&ids%5B%5D=210&ids%5B%5D=213&ids%5B%5D=218" for 127.0.0.1 at 2012-10-06 03:02:18 +0400
+  Processing by PricesController#index as JS
+  Parameters: {"ids"=>["204", "207", "210", "213", "218"]}
+Rendered prices/index.js.erb (0.9ms)
+Completed 200 OK in 299ms (Views: 10.5ms | ActiveRecord: 174.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 03:02:23 +0400
+  Processing by CitiesController#show as HTML
+Rendered cities/show.html.haml within layouts/application (333.7ms)
+Completed 200 OK in 388ms (Views: 147.7ms | ActiveRecord: 202.8ms)
+
+
+Started GET "/prices.js?ids%5B%5D=118&ids%5B%5D=122&ids%5B%5D=123&ids%5B%5D=124&ids%5B%5D=127" for 127.0.0.1 at 2012-10-06 03:02:23 +0400
+  Processing by PricesController#index as JS
+  Parameters: {"ids"=>["118", "122", "123", "124", "127"]}
+Rendered prices/index.js.erb (0.4ms)
+Completed 200 OK in 223ms (Views: 6.7ms | ActiveRecord: 106.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 03:02:26 +0400
+  Processing by CitiesController#show as HTML
+Rendered cities/show.html.haml within layouts/application (158.7ms)
+Completed 200 OK in 249ms (Views: 135.4ms | ActiveRecord: 39.9ms)
+
+
+Started GET "/prices.js?ids%5B%5D=4&ids%5B%5D=7&ids%5B%5D=9&ids%5B%5D=11&ids%5B%5D=14" for 127.0.0.1 at 2012-10-06 03:02:26 +0400
+  Processing by PricesController#index as JS
+  Parameters: {"ids"=>["4", "7", "9", "11", "14"]}
+Rendered prices/index.js.erb (0.4ms)
+Completed 200 OK in 130ms (Views: 6.9ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 03:02:27 +0400
+  Processing by CitiesController#show as HTML
+Rendered cities/show.html.haml within layouts/application (661.1ms)
+Completed 200 OK in 715ms (Views: 167.5ms | ActiveRecord: 510.1ms)
+
+
+Started GET "/prices.js?ids%5B%5D=305&ids%5B%5D=308&ids%5B%5D=313&ids%5B%5D=323&ids%5B%5D=324" for 127.0.0.1 at 2012-10-06 03:02:28 +0400
+  Processing by PricesController#index as JS
+  Parameters: {"ids"=>["305", "308", "313", "323", "324"]}
+Rendered prices/index.js.erb (0.4ms)
+Completed 200 OK in 381ms (Views: 6.8ms | ActiveRecord: 251.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 03:02:29 +0400
+  Processing by CitiesController#show as HTML
+Rendered cities/show.html.haml within layouts/application (320.9ms)
+Completed 200 OK in 411ms (Views: 145.4ms | ActiveRecord: 192.7ms)
+
+
+Started GET "/prices.js?ids%5B%5D=111&ids%5B%5D=113&ids%5B%5D=114&ids%5B%5D=116&ids%5B%5D=118" for 127.0.0.1 at 2012-10-06 03:02:30 +0400
+  Processing by PricesController#index as JS
+  Parameters: {"ids"=>["111", "113", "114", "116", "118"]}
+Rendered prices/index.js.erb (0.4ms)
+Completed 200 OK in 230ms (Views: 12.5ms | ActiveRecord: 103.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 03:02:31 +0400
+  Processing by CitiesController#show as HTML
+Rendered cities/show.html.haml within layouts/application (184.7ms)
+Completed 200 OK in 239ms (Views: 134.6ms | ActiveRecord: 66.6ms)
+
+
+Started GET "/prices.js?ids%5B%5D=25&ids%5B%5D=28&ids%5B%5D=29&ids%5B%5D=31&ids%5B%5D=35" for 127.0.0.1 at 2012-10-06 03:02:31 +0400
+  Processing by PricesController#index as JS
+  Parameters: {"ids"=>["25", "28", "29", "31", "35"]}
+Rendered prices/index.js.erb (0.6ms)
+Completed 200 OK in 159ms (Views: 16.2ms | ActiveRecord: 35.1ms)

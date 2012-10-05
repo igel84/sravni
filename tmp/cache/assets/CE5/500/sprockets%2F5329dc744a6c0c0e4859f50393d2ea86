@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347312525.9046574:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477975.215552:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%e5aaf336b529982cea4cd7ddad2f4539I"logical_path;
+F"%8775351564ff824c4a333d32f929d2dfI"logical_path;
 FI".twitter/bootstrap/bootstrap-transition.js;
 FI"pathname;
 FI"í/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-transition.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-11T00:55:58+04:00;
+FI"2012-09-11T22:26:59+04:00;
 FI"	body;
 FI"‰/* ===================================================
  * bootstrap-transition.js v2.1.0
@@ -80,8 +80,8 @@ F[{I"	path;
 FI"í/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-transition.js;
 FI"
 mtime;
-FIu:	TimeT!Ä!c¶ﬂ
+FIu:	Timer!ÄÓ!∏k
 :@_zoneI"MSK;
-T:nano_numi€:nano_deni:submicro"!ê:offseti@8I"hexdigest;
-F"%a4d480066b2e4bfc8d0f1b2c23d64d64I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+T:nano_numin:nano_deni:submicro"P:offseti@8I"hexdigest;
+F"%3f1e541f69386e4a331150d13d6d7aa6I"_version;
+F"%1c9609bc58b1e77c196de29021583379

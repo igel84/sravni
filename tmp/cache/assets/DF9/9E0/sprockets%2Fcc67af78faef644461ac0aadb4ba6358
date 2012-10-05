@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477987.3697217:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%1c4fd354d125700a75eb89c21b2892faI"logical_path;
+FI"0rails_admin/colorpicker/colorpicker_hex.png;
+FI"pathname;
+FI"€/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/images/rails_admin/colorpicker/colorpicker_hex.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-09-11T22:09:07+04:00;
+FI"length;
+FI"532;
+FI"digest;
+F"%fbffe3c9580ee14e195b7c6f9ca67ca3I"_version;
+F"%1c9609bc58b1e77c196de29021583379

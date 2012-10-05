@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477987.2737164:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%6e91a370d7b9d62276183c1fa90713eaI"logical_path;
+FI")ckeditor/skins/v2/images/sprites.png;
+FI"pathname;
+FI"~/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/skins/v2/images/sprites.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-10-03T19:26:40+04:00;
+FI"length;
+FI"	5389;
+FI"digest;
+F"%c3f7ae056042da169ec1a81f18eb31e6I"_version;
+F"%1c9609bc58b1e77c196de29021583379

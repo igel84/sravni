@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477987.1306913:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%780d1f01c9d092b7cce592a461308e2fI"logical_path;
+FI"6ckeditor/plugins/uicolor/yui/assets/hue_thumb.png;
+FI"pathname;
+FI"‹/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/plugins/uicolor/yui/assets/hue_thumb.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-10-03T19:26:40+04:00;
+FI"length;
+FI"195;
+FI"digest;
+F"%1fcd818d192a2145b4889954916e6989I"_version;
+F"%1c9609bc58b1e77c196de29021583379

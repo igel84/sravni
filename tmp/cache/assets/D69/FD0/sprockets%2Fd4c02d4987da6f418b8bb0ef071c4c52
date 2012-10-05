@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349478003.762846:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%b2682552650114546a11f5d5e5736fedI"logical_path;
+FI".jquery-ui/ui-bg_glass_65_ffffff_1x400.png;
+FI"pathname;
+FI"…/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-ui-rails-1.1.1/vendor/assets/images/jquery-ui/ui-bg_glass_65_ffffff_1x400.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-09-11T22:08:48+04:00;
+FI"length;
+FI"105;
+FI"digest;
+F"%9f0af2ce0f2a9823f83f658e9c94f582I"_version;
+F"%1c9609bc58b1e77c196de29021583379

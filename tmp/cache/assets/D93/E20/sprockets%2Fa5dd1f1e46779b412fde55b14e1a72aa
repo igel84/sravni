@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477987.41224:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%a61462a8ad5550a6561c679f2cc09363I"logical_path;
+FI"-rails_admin/colorpicker/custom_rgb_b.png;
+FI"pathname;
+FI"}/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/images/rails_admin/colorpicker/custom_rgb_b.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-09-11T22:09:07+04:00;
+FI"length;
+FI"	1008;
+FI"digest;
+F"%ef10959cdc9cab88ff521049bf5a53bbI"_version;
+F"%1c9609bc58b1e77c196de29021583379

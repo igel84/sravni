@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347312525.9168391:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477975.2612245:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%95120d9617a18b89cdd861183209b8acI"logical_path;
+F"%c5fb344b36b0a19a6b7104cd2aa12f7bI"logical_path;
 FI"'twitter/bootstrap/bootstrap-tab.js;
 FI"pathname;
 FI"ã/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-tab.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-11T00:55:58+04:00;
+FI"2012-09-11T22:26:59+04:00;
 FI"	body;
 FI"8/* ========================================================
  * bootstrap-tab.js v2.1.0
@@ -155,8 +155,8 @@ F[{I"	path;
 FI"ã/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-tab.js;
 FI"
 mtime;
-FIu:	TimeT!Ä!c¶ﬂ
+FIu:	Timer!ÄÓ!∏k
 :@_zoneI"MSK;
-T:nano_numi€:nano_deni:submicro"!ê:offseti@8I"hexdigest;
-F"%03f4316219ab319aed9ff6675c31de39I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+T:nano_numin:nano_deni:submicro"P:offseti@8I"hexdigest;
+F"%7bd0548a09cb03dcddb812d9200cc960I"_version;
+F"%1c9609bc58b1e77c196de29021583379

@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477993.9828131:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%0df92ec98530ba9dedd7f539790d20c9I"logical_path;
+FI"rails_admin/base/README;
+FI"pathname;
+FI"v/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/stylesheets/rails_admin/base/README;
+FI"content_type;
+FI"application/octet-stream;
+FI"
+mtime;
+FI"2012-09-11T22:09:07+04:00;
+FI"length;
+FI"134;
+FI"digest;
+F"%2548edaafd6246a95225bcc1f313f029I"_version;
+F"%1c9609bc58b1e77c196de29021583379

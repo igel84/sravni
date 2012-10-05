@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349167483.5778053:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477975.356531:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%7eaeb066bc1ad27ae6ecca2d71b2ae43I"logical_path;
+F"%de5a7511a812b0df63e486c2a5a340b8I"logical_path;
 FI"1jquery-fileupload/vendor/jquery.ui.widget.js;
 FI"pathname;
 FI"ï/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/vendor/jquery.ui.widget.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-10-02T12:35:41+04:00;
+FI"2012-10-03T19:26:43+04:00;
 FI"	body;
 FI"r/*
  * jQuery UI Widget 1.8.23+amd
@@ -302,8 +302,8 @@ F[{I"	path;
 FI"ï/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/vendor/jquery.ui.widget.js;
 FI"
 mtime;
-FIu:	TimeH$Ä9öé
+FIu:	Timeo$Äœƒ≥j
 :@_zoneI"MSK;
-T:nano_numi":nano_deni:submicro"ê:offseti@8I"hexdigest;
-F"%5befcdf4fc798038ea0a15ec55f544f9I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+T:nano_numiê:nano_deni:submicro"e`:offseti@8I"hexdigest;
+F"%eeb06adc1cdda7c0cb5c767e86a47996I"_version;
+F"%1c9609bc58b1e77c196de29021583379

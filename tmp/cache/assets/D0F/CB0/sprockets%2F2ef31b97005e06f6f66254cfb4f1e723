@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347753120.0580258:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477975.2821517:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%45be1f1c73c9d5053adc2bb243ef6894I"logical_path;
+F"%4b460d6efd2a001850112aa359f6d62fI"logical_path;
 FI"chosen/chosen.jquery.js;
 FI"pathname;
 FI"9$root/app/assets/javascripts/chosen/chosen.jquery.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-16T03:48:00+04:00;
+FI"2012-10-03T19:26:14+04:00;
 FI"	body;
 FI"˚Ü// Chosen, a Select Box Enhancer for jQuery and Protoype
 // by Patrick Filler for Harvest, http://getharvest.com
@@ -975,7 +975,8 @@ F[{I"	path;
 FI"9$root/app/assets/javascripts/chosen/chosen.jquery.js;
 FI"
 mtime;
-FIu:	Time˜!Ä   ¿:@_zoneI"MSK;
-T:offseti@8I"hexdigest;
-F"%4046ed8b36195259e64a0999135cb369I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+FIu:	Timeo$ÄÙèÌh
+:@_zoneI"MSK;
+T:nano_numiò:nano_deni:submicro"í:offseti@8I"hexdigest;
+F"%4666ad46b6fdb75613c223de104d42a4I"_version;
+F"%1c9609bc58b1e77c196de29021583379

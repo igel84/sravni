@@ -1,14 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347606719.3598306:@value{	I"length:EFi�I"digest;
-F"%01c0cc4cc81d9df8a8fc8f1c501ea2ecI"source;
-FI"�CKEDITOR.plugins.setLang('embed', 'ru',
-{
-  embed : 
-  {
-    title : "Вставить embed",
-    button : "Вставить embed",
-    pasteMsg : "Пожалуйста, вставьте embed-код с Youtube, Myspace, Flickr и других ресурсов в прямоугольник, используя сочетание клавиш (Ctrl+V), и нажмите OK."
-  }
-});
-;
-TI"_version;
-F"%710ca0c88681b6e8355dd12e34a1a47f

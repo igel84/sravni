@@ -1,6 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347606719.2301178:@value{	I"length:EFiëI"digest;
-F"%992e9c8e203ac77d920581ac5766cf09I"source;
-FI"ë(function(){var attachmentCmd={exec:function(editor){editor.openDialog('attachment');return}};CKEDITOR.plugins.add('attachment',{lang:['en','ru','uk'],requires:['dialog'],init:function(editor){var commandName='attachment';editor.addCommand(commandName,attachmentCmd);editor.ui.addButton('Attachment',{label:editor.lang.attachment.button,command:commandName,icon:this.path+"images/attachment.png"});CKEDITOR.dialog.add(commandName,CKEDITOR.getUrl(this.path+'dialogs/attachment.js'))}})})();
-;
-FI"_version;
-F"%17765ae996b9f89ddc3d9d1b80a9560e

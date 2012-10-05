@@ -1,17 +1,17 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347753683.1466055:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477975.1527865:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%1f415d301d7c01d6fb78152c3de68dacI"logical_path;
+F"%2fd1c995497b43f3729ed91df384bc8cI"logical_path;
 FI"chosen/chosen-sprite.png;
-TI"pathname;
+FI"pathname;
 FI"5$root/app/assets/images/chosen/chosen-sprite.png;
 FI"content_type;
 FI"image/png;
 FI"
 mtime;
-FI"2012-09-16T03:48:00+04:00;
+FI"2012-10-03T19:26:14+04:00;
 FI"length;
 FI"559;
 FI"digest;
-F"%c5fd91279fde738a6c4c7027396686f7I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+F"%3ef1c0f64ad6a3e323a6687208ab015cI"_version;
+F"%1c9609bc58b1e77c196de29021583379

@@ -5,7 +5,13 @@ gem 'rails', '3.1.1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
+gem 'yaml_db', git:'git://github.com/lostapathy/yaml_db.git'
+
 gem 'sqlite3'
+#gem 'mysql2'#, '> 0.3'
+
+#gem 'subdomain-fu', :git => "git://github.com/mbleigh/subdomain-fu.git"
+
 gem 'execjs'
 gem 'therubyracer'
 gem 'rake'
