@@ -14,6 +14,12 @@ InitialRelease::Application.routes.draw do
   get "signup" => "users#new", :as => "signup"
   
 
+  match 'cities/:id/with_area/:area_id' => "cities#show"
+  match 'cities/:id/with_chain/:chain_id' => "cities#show"
+  match 'cities/:id/with_area/:area_id/with_chain/:chain_id' => "cities#show"
+
+  match 'prices' => "prices#index"
+  
   resources :cities do
     resources :areas do
       resources :chains do 

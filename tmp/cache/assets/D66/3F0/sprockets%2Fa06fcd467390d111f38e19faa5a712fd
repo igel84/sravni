@@ -1,40 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347606857.659991:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%cd0a22518b816a2ccad961068eda4f77I"logical_path;
-FI"ckeditor/application.css;
-TI"pathname;
-FI"t/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/app/assets/stylesheets/ckeditor/application.css;
-FI"content_type;
-FI"text/css;
-FI"
-mtime;
-FI"2012-09-14T10:58:10+04:00;
-FI"	body;
-FI";/*
- * This is a manifest file that'll automatically include all the stylesheets available in this directory
- * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
- * the top of the compiled file, but it's generally better to create a new file per style scope.
-*/
-
-;
-FI"asset_paths;
-F[I"‡/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/stylesheets/uploader.css;
-FI"t/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/app/assets/stylesheets/ckeditor/application.css;
-FI"dependency_paths;
-F[{I"	path;
-FI"t/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/app/assets/stylesheets/ckeditor/application.css;
-FI"
-mtime;
-FIu:	TimeÆ!€`¥è
-:@_zoneI"MSK;
-T:nano_numi :nano_deni:submicro"p:offseti@8I"hexdigest;
-F"%08235e46dad2cb1a3566f6171733d356{I"	path;
-FI"‡/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/stylesheets/uploader.css;
-FI"
-mtime;
-FIu;Æ!€@=¦è
-;I"MSK;
-T;i!;i;"€;i@8I"hexdigest;
-F"%4b066da6bc63a6a52dc40828e6b118c8I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5

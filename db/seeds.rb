@@ -22,17 +22,18 @@
 
 #user.activate!
 
-#Chain.all.each do |chain|
-#  1.upto(100) do |i|
-#    area_id = rand(Area.all.count)
-#    area_id += 1 if area_id == 0
-#    Shop.create(chain_id: chain.id, area_id: area_id, adds: i.to_s)
-#  end
-#end
+Chain.all.each do |chain|
+  1.upto(200) do |i|
+    area_id = rand(Area.all.count)
+    area_id += 1 if area_id == 0
+    adds = 'адрес магазина ' + i.to_s
+    Shop.create(chain_id: chain.id, area_id: area_id, adds: adds)
+  end
+end
 
 Shop.all.each do |shop|
   Product.all.each do |prod|
-    1.upto(3) do |i|
+    1.upto(2) do |i|
       name = 'продовольственный товар № ' + i.to_s
       ShopProduct.create(product_id: prod.id, shop_id: shop.id, price: rand(1000), name: name)
     end
