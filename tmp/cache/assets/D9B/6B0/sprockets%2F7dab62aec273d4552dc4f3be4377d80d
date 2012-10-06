@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347315154.440084:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.7456677:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%cb13d1029c3ef8584138b58d8c776461I"logical_path;
+F"%88867ae2a7e60f7e10f280b31b8fb949I"logical_path;
 FI"rails_admin/ra.widgets.js;
 FI"pathname;
 FI"|/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/ra.widgets.coffee;
@@ -208,5 +208,5 @@ mtime;
 FIu:	TimeS!Ä~kP
 :@_zoneI"MSK;
 T:nano_numi≥:nano_deni:submicro"ê:offseti@8I"hexdigest;
-F"%67c8e7ac2843106c61eaabb5ac50a11aI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+F"%5b48ff903de4609b44b86bcad5b4f262I"_version;
+F"%1c9609bc58b1e77c196de29021583379

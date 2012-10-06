@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347312525.9540353:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.0742056:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%1a6fac12579156961f2dd3f10829ff68I"logical_path;
+F"%9994b235837e9edd1baf76fdb3c1ee91I"logical_path;
 FI",twitter/bootstrap/bootstrap-carousel.js;
 FI"pathname;
 FI"ê/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-carousel.js;

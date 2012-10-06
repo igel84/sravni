@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347606857.8383243:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541550.420533:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%b1149031549b267c28802cb499e46973I"logical_path;
+F"%e2bc01254e707089ea685071d1fbce88I"logical_path;
 FI"5ckeditor/filebrowser/javascripts/fileuploader.js;
 FI"pathname;
 FI"Š/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/javascripts/fileuploader.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-14T10:58:10+04:00;
+FI"2012-09-16T04:28:51+04:00;
 FI"	body;
 FI"è£/**
  * http://github.com/valums/file-uploader
@@ -1320,8 +1320,8 @@ F[{I"	path;
 FI"Š/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/javascripts/fileuploader.js;
 FI"
 mtime;
-FIu:	TimeÆ!€@=¦è
+FIu:	Time "€ O9s
 :@_zoneI"MSK;
-T:nano_numi!:nano_deni:submicro"€:offseti@8I"hexdigest;
-F"%b00a49de41a853501c17dd82e1b5bbb7I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+T:nano_numi<:nano_deni:submicro"P:offseti@8I"hexdigest;
+F"%55b1fa883997ed0b7a60d06a95f1ffefI"_version;
+F"%1c9609bc58b1e77c196de29021583379

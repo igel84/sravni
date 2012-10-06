@@ -17,19 +17,19 @@
                   %span.icon-bar
                   %span.icon-bar
                   %span.icon-bar
-                = link_to "Сравним-ка", root_path, class: 'brand'
+                = link_to "Сравним-ка", url_for(controller: 'cities', action: 'index', subdomain: false), class: 'brand'
                 %ul.nav
                   %li.divider-vertical
                   %li.dropdown
-                    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                      = @city == nil ? 'Выберите город' : @city.name
+                    %a.dropdown-toggle{:"data-toggle" => "dropdown", :href => "#"}
+                      = @current_city == nil ? 'Выберите город' : @current_city.alias
                       %b.caret
                     %ul.dropdown-menu
                       - City.all.each do |city|
                         %li
-                          = link_to city.name, city
+                          = link_to city.alias, root_url(subdomain: city.name)
                   %li.active
-                    %a{:href => "#"} главная
+                    = link_to 'главная', url_for(controller: 'cities', action: 'index', subdomain: false)
                   %li
                     %a{:href => "#"} какая-нибудь
                   %li
@@ -49,7 +49,7 @@
                         %li
                           = link_to '' do
                             %i.icon-envelope
-                            рассылка
+                            подписка
                         %li
                           = link_to '' do
                             %i.icon-eye-open

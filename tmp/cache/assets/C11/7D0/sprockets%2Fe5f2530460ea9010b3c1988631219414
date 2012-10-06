@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347606857.848101:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541550.4226034:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%29f68f5186e6aebf35b85fa66db69be1I"logical_path;
+F"%2b40ad49a2725b076b73129f6cce796aI"logical_path;
 FI".ckeditor/filebrowser/javascripts/rails.js;
 FI"pathname;
 FI"ƒ/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/javascripts/rails.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-14T10:58:10+04:00;
+FI"2012-09-16T04:28:51+04:00;
 FI"	body;
 FI"ç;(function($, undefined) {
 
@@ -392,8 +392,8 @@ F[{I"	path;
 FI"ƒ/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/javascripts/rails.js;
 FI"
 mtime;
-FIu:	TimeÆ!€@=¦è
+FIu:	Time "€ O9s
 :@_zoneI"MSK;
-T:nano_numi!:nano_deni:submicro"€:offseti@8I"hexdigest;
-F"%2caafa0c2617f9985c1a0b07ebaefadfI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+T:nano_numi<:nano_deni:submicro"P:offseti@8I"hexdigest;
+F"%bb8b5b2f69bac3290543c2deb24085c9I"_version;
+F"%1c9609bc58b1e77c196de29021583379

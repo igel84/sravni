@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347312526.0385072:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.1250722:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%9b3e5252670fe482488e3c0f2060a1e9I"logical_path;
+F"%4722cdf300bb02c1c061d5922261367fI"logical_path;
 FI"users.js;
 FI"pathname;
 FI"1$root/app/assets/javascripts/users.js.coffee;

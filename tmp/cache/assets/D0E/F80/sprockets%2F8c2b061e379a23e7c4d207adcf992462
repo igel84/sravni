@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347311154.610264:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541582.7427402:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%a51ab9c1520459ba4eefa667c20d6243I"logical_path;
+F"%fe0b17f345b77540cbed1868cc6ee08dI"logical_path;
 FI" bootstrap_and_overrides.css;
 FI"pathname;
 FI"B$root/app/assets/stylesheets/bootstrap_and_overrides.css.less;

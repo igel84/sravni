@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347606857.821547:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541550.4148738:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%f54f02685d1c6a2988d5c6dcd0675d87I"logical_path;
+F"%d956a286ef6f0f1a0eabf37e654035a1I"logical_path;
 FI"3ckeditor/filebrowser/javascripts/jquery.min.js;
 FI"pathname;
 FI"ˆ/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/javascripts/jquery.min.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-14T10:58:10+04:00;
+FI"2012-09-16T04:28:51+04:00;
 FI"	body;
 FI"®n/*! jQuery v1.7.1 jquery.com | jquery.org/license */
 
@@ -24,8 +24,8 @@ F[{I"	path;
 FI"ˆ/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/javascripts/jquery.min.js;
 FI"
 mtime;
-FIu:	TimeÆ!€@=¦è
+FIu:	Time "€ O9s
 :@_zoneI"MSK;
-T:nano_numi!:nano_deni:submicro"€:offseti@8I"hexdigest;
-F"%f7e12755275a601bef724940cedae440I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+T:nano_numi<:nano_deni:submicro"P:offseti@8I"hexdigest;
+F"%724244618c0f0ae0325e1f604c3484b7I"_version;
+F"%1c9609bc58b1e77c196de29021583379

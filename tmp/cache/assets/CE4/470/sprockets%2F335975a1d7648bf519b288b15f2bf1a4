@@ -1,17 +1,17 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347606719.8332186:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.054896:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%0e27743aa0998912d78b8a8b2e87ad55I"logical_path;
+F"%6064110b269b192fce28594430f7f3deI"logical_path;
 FI""ckeditor/skins/kama/icons.png;
-TI"pathname;
+FI"pathname;
 FI"|/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/skins/kama/icons.png;
 FI"content_type;
 FI"image/png;
 FI"
 mtime;
-FI"2012-09-14T10:58:10+04:00;
+FI"2012-09-16T04:28:51+04:00;
 FI"length;
 FI"	5598;
 FI"digest;
-F"%513234d2a4df1176fde33039de1eedffI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+F"%9d3eca06a539035ef6b1c3bd81df1aacI"_version;
+F"%1c9609bc58b1e77c196de29021583379

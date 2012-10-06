@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347753120.0580258:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.0827274:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%45be1f1c73c9d5053adc2bb243ef6894I"logical_path;
+F"%7455e4699d6259e714f041c1b0339395I"logical_path;
 FI"chosen/chosen.jquery.js;
 FI"pathname;
 FI"9$root/app/assets/javascripts/chosen/chosen.jquery.js;

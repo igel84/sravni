@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541567.431885:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%90eed5671e8fe71147658a6976f462daI"logical_path;
+FI"loading.gif;
+FI"pathname;
+FI"t/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/images/loading.gif;
+FI"content_type;
+FI"image/gif;
+FI"
+mtime;
+FI"2012-10-01T02:18:18+04:00;
+FI"length;
+FI"	3897;
+FI"digest;
+F"%4aec309c41e2af79984dbae2a0238108I"_version;
+F"%1c9609bc58b1e77c196de29021583379

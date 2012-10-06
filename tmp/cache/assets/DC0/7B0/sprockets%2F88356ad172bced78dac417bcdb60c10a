@@ -1,19 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347315154.5749402:@value{	I"length:EFiTI"digest;
-F"%117b6ed6fdb9809a84c70a1647c200fbI"source;
-FI"T/*
-  Meant to be overriden in user's app/assets/javascripts/rails_admin/custom directory. no content here
-
-  Available resources:
-
-  http://twitter.github.com/bootstrap/javascript.html
-  https://github.com/twitter/bootstrap/tree/master/js
-  http://jquery.com/
-  http://jqueryui.com/ (parts of it)
-
-  rename to ui.js.coffee if needed.
-*/
-
-;
-;
-FI"_version;
-F"%9c2441ed55a2a9418445bfeca871bc53

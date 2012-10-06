@@ -1,4 +1,4 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347312526.0988877:@value{	I"length:EFi‡I"digest;
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.2304652:@value{	I"length:EFi‡I"digest;
 F"%0c2f6d78e94a32d82973f8737e1537a8I"source;
 FI"‡/* ==========================================================
  * bootstrap-affix.js v2.1.0
@@ -107,4 +107,4 @@ FI"‡/* ==========================================================
 }(window.jQuery);
 ;
 FI"_version;
-F"%db019971c13816a027f9e7e700299849
+F"%dfa71fefd7b741001da2e7ff297575a2

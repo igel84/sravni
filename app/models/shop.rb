@@ -11,4 +11,8 @@ class Shop < ActiveRecord::Base
 
   has_many :xml_files
 
+  def label
+    name + ' ' + adds
+  end
+
 end

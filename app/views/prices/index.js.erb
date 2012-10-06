@@ -1,0 +1,3 @@
+<%- if @prices %>
+  $('table.table.table-hover.table-striped').append('<%= (@prices).html_safe %>');
+<% end %>

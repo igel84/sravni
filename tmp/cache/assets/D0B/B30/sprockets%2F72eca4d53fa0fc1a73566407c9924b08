@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541552.5865834:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%3740beda7bb44ad8b165fe075d78e868I"logical_path;
+FI"ckeditor/ckeditor.pack;
+FI"pathname;
+FI"u/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/ckeditor.pack;
+FI"content_type;
+FI"application/octet-stream;
+FI"
+mtime;
+FI"2012-09-16T04:28:51+04:00;
+FI"length;
+FI"	7424;
+FI"digest;
+F"%09c977cdbeec2e9322e440cb54e5a0bcI"_version;
+F"%1c9609bc58b1e77c196de29021583379

@@ -1,6 +1,4 @@
-InitialRelease::Application.routes.draw do
-  
-  
+InitialRelease::Application.routes.draw do  
 
   mount Ckeditor::Engine => '/ckeditor'
 
@@ -13,6 +11,23 @@ InitialRelease::Application.routes.draw do
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
   
+  #constraints(Subdomain) do
+  #  match '/' => 'cities#this'
+  #end
+  match '', to: 'cities#show', constraints: lambda { |r| r.subdomain.present? && r.subdomain != 'www' }
+  
+  #match "/cities/:id", :to => "cities#show"
+  root :to => "cities#index"
+
+  defaults :subdomain => false do
+    root :to => 'cities#index'
+  end
+
+  match 'cities/:id/with_area/:area_id' => "cities#show"
+  match 'cities/:id/with_chain/:chain_id' => "cities#show"
+  match 'cities/:id/with_area/:area_id/with_chain/:chain_id' => "cities#show"
+
+  match 'prices' => "prices#index"
 
   resources :cities do
     resources :areas do
@@ -29,15 +44,16 @@ InitialRelease::Application.routes.draw do
   resources :xml_files
 
   resources :users do
+    resources :roles
     member do
       get :activate
     end
   end
 
   
-  root to: "home#wellcom"
+  #root to: "home#wellcom"
 
-  get "/:city" => "home#wellcom"
+  #get "/:city" => "home#wellcom"
 
 
   # The priority is based upon order of creation:

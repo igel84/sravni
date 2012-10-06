@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1347312526.010161:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.1210961:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%38e321d8ebd343ded3dcaea08218c507I"logical_path;
+F"%8a19ddadf0ecaa5cfe3972d7518d793eI"logical_path;
 FI"password_resets.js;
 FI"pathname;
 FI";$root/app/assets/javascripts/password_resets.js.coffee;

@@ -1,5 +1,6 @@
-$('#shops .area').html("<%= escape_javascript select('area', 'name', @areas.collect {|p| [ p.name, p.id ] }, {:include_blank => true}, html_options = {class: 'chzn-select-deselect chzn-areas', :'data-placeholder' => 'Выберите район'}) %>");
+$('#shops .area').html("<%= escape_javascript select('role', 'area_id', @areas.collect {|p| [ p.name, p.id ] }, {:include_blank => true}, html_options = {class: 'chzn-select-deselect chzn-areas', :'data-placeholder' => 'Выберите район'}) %>");
 $('.chzn-areas').chosen().change(function() {
   var id = $(this).val();
-  $.get('/areas/'+id+'/shops.js', function(data){});
+  var chain_id = $('#chain').val();
+  $.get('/areas/'+id+'/shops.js?chain_id='+ chain_id, function(data){});
 });

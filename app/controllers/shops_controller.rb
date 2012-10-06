@@ -2,10 +2,13 @@ class ShopsController < ApplicationController
   skip_before_filter :require_login, :only => :wellcom
 
   def index
-    if params[:area_id]
+    if params[:area_id] && !params[:chain_id]
       @area = Area.find(params[:area_id])
       #@shops = Shop.where(area_id: @area.id).order('created_at DESC')
-      current_user.admin == true ? @shops = Shop.where(area_id: @area.id).order('created_at DESC') :  @shops = Shop.where(area_id: @area.id).where(chain_id: current_user.chain.id).order('created_at DESC')
+      current_user.admin == true ? @shops = Shop.where(area_id: @area.id).order('adds') :  @shops = Shop.where(area_id: @area.id).where(chain_id: current_user.chain.id).order('created_at DESC')
+    elsif params[:area_id] && params[:chain_id]
+      @area = Area.find(params[:area_id])
+      @shops = Shop.where(area_id: @area.id, chain_id: params[:chain_id]).order('adds')      
     else
       @area = Area.first
     end
