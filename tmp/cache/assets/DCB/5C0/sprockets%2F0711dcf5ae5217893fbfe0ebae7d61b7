@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477975.3485088:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349513382.1506042:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%69283f6d3bebb6abea7467a9476adad5I"logical_path;
+F"%e1f6b38a25248eba195273bf5aee125fI"logical_path;
 FI"xml_files.js;
 FI"pathname;
 FI"5$root/app/assets/javascripts/xml_files.js.coffee;
@@ -47,5 +47,5 @@ mtime;
 FIu:	Timeo$ÄÙèÌh
 :@_zoneI"MSK;
 T:nano_numiò:nano_deni:submicro"í:offseti@8I"hexdigest;
-F"%4815bda59cd9687d65b2dbc41456b707I"_version;
-F"%1c9609bc58b1e77c196de29021583379
+F"%d77c1487fbe0a928ed2f8d734b70ae25I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

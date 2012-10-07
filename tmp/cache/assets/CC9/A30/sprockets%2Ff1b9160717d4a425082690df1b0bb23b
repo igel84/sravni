@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477975.275625:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349513382.0840724:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%c8cbadeeb6bde97a978220247d72fed2I"logical_path;
+F"%f4b6dfc3ed1f4bf09ff06e0b1f5e0720I"logical_path;
 FI"-twitter/bootstrap/bootstrap-typeahead.js;
 FI"pathname;
 FI"‘/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-typeahead.js;
@@ -323,5 +323,5 @@ mtime;
 FIu:	Timer!€î!¸k
 :@_zoneI"MSK;
 T:nano_numin:nano_deni:submicro"P:offseti@8I"hexdigest;
-F"%ac736936cfe3720251f64c584abeeb8aI"_version;
-F"%1c9609bc58b1e77c196de29021583379
+F"%3440be9972c66289e2ddcefb8f80aba1I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5
