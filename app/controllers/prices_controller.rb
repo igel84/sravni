@@ -30,7 +30,7 @@ class PricesController < ApplicationController
 
     @shop = 0
 
-    if params[:city_id]
+    if params[:city_id] && !params[:city_id].blank?
       @current_city = City.find(params[:city_id])
       ActiveRecord::Base.clear_cache!
       ActiveRecord::Base.establish_connection(
@@ -55,13 +55,37 @@ class PricesController < ApplicationController
         end
       # on AREA
       elsif params[:area_id] && !params[:area_id].blank? && params[:type] == 'area'
-        shop = 'dsf'
+        Shop.where(area_id: params[:area_id], chain_id: params[:chain_id]).each do |shop|
+          @price_list.each do |price|
+            sh_pr = ShopProduct.where(shop_id: shop.id, product_id: price.product_id, name: price.name).first
+            if sh_pr
+              sh_pr.destroy if price.value == '-'
+              if price.value != '-'
+                sh_pr.price = price.value
+                sh_pr.save 
+              end 
+            else
+              ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.value)
+            end
+          end
+        end
       # on CITY
-      else  params[:city_id] && !params[:city_id].blank? && params[:type] == 'city'
-        shop = 'dsf'
-      end 
-      @shop += Shop.all.count
-    
+      elsif  params[:city_id] && !params[:city_id].blank? && params[:type] == 'city'
+        Shop.where(chain_id: params[:chain_id]).each do |shop|
+          @price_list.each do |price|
+            sh_pr = ShopProduct.where(shop_id: shop.id, product_id: price.product_id, name: price.name).first
+            if sh_pr
+              sh_pr.destroy if price.value == '-'
+              if price.value != '-'
+                sh_pr.price = price.value
+                sh_pr.save 
+              end 
+            else
+              ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.value)
+            end
+          end
+        end 
+      end
     #on CHAIN
     elsif params[:chain_id] && !params[:chain_id].blank? && params[:type] == 'chain'
       City.all.each do |city|
@@ -72,9 +96,21 @@ class PricesController < ApplicationController
             database: "db/#{city.name}.sqlite3",
             pool: 5,
             timeout: 5000
-        ) 
-        @shop += Shop.all.count
-        #@shop = 10
+        )
+        Shop.where(chain_id: params[:chain_id]).each do |shop|
+          @price_list.each do |price|
+            sh_pr = ShopProduct.where(shop_id: shop.id, product_id: price.product_id, name: price.name).first
+            if sh_pr
+              sh_pr.destroy if price.value == '-'
+              if price.value != '-'
+                sh_pr.price = price.value
+                sh_pr.save 
+              end 
+            else
+              ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.value)
+            end
+          end         
+        end
       end
     end
 
