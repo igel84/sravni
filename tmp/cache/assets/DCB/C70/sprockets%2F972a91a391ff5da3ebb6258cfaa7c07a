@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349590329.366101:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%8be760a62d4c41a2ecf5d668d2bef796I"logical_path;
+FI"excel.png;
+TI"pathname;
+FI"&$root/app/assets/images/excel.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-10-07T10:12:06+04:00;
+FI"length;
+FI"	3462;
+FI"digest;
+F"%25e9c0a2a3f913202eba99722df2d308I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

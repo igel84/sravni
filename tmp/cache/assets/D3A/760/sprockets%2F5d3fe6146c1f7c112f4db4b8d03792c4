@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.631256:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.3633916:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%42181fbf38fc9b155613632fe6a4d354I"logical_path;
+F"%f7e4cfbf82dc9bad2280a98d8df5082cI"logical_path;
 FI"jquery_nested_form.js;
 FI"pathname;
 FI"|/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/bbenezech-nested_form-0.0.6/vendor/assets/javascripts/jquery_nested_form.js;

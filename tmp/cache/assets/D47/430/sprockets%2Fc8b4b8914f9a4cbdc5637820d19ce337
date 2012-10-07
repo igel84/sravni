@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541567.455866:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586740.448934:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%5db94b9571c04926d80364543a0342c9I"logical_path;
+F"%8abbbbe9f94c2ab04362d1cc6a86980aI"logical_path;
 FI"fontawesome-webfont.woff;
 FI"pathname;
 FI"{/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/fonts/fontawesome-webfont.woff;

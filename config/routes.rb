@@ -30,6 +30,8 @@ InitialRelease::Application.routes.draw do
   match 'prices' => "prices#index"
 
   resources :cities do
+    resources :shops
+    resources :xml_files
     resources :areas do
       resources :chains do 
         resources :shops
@@ -41,10 +43,9 @@ InitialRelease::Application.routes.draw do
     resources :shops
   end
 
-  resources :xml_files
-
   resources :users do
     resources :roles
+    resources :xml_files
     member do
       get :activate
     end

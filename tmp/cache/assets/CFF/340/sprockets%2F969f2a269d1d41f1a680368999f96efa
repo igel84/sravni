@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.197842:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586725.9449952:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%9d3a38208dcb81a3cb84ef277c75ec08I"logical_path;
+F"%149846edcbfea100978e5260d122a829I"logical_path;
 FI"1rails_admin/aristo/images/slider_handles.png;
 FI"pathname;
 FI"Å/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/images/rails_admin/aristo/images/slider_handles.png;

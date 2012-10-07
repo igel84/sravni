@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.194664:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349587134.9224517:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%8c123327f51a7c32de8dd652a11dc1ccI"logical_path;
+F"%0fbb64049aa2287db1c17babd9c7cb31I"logical_path;
 FI"1jquery-fileupload/jquery.iframe-transport.js;
 FI"pathname;
 FI"•/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/jquery.iframe-transport.js;

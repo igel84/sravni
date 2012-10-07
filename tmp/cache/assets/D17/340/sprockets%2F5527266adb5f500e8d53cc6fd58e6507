@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.0599878:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349587134.3695567:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%bc7d617098592b2c5f31f211e2dec583I"logical_path;
+F"%3866cd05786476a76e5d0a66a2f3aed1I"logical_path;
 FI",twitter/bootstrap/bootstrap-dropdown.js;
 FI"pathname;
 FI"ê/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-dropdown.js;

@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586717.5905252:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%8b9b6095251e1838bd8965551e2ab5c5I"logical_path;
+FI"	_old;
+FI"pathname;
+FI"&$root/app/assets/javascripts/_old;
+FI"content_type;
+FI"application/octet-stream;
+FI"
+mtime;
+FI"2012-10-06T20:55:01+04:00;
+FI"length;
+FI"570;
+FI"digest;
+F"%8bd91e22b5ebf1851caee87ffee82763I"_version;
+F"%1c9609bc58b1e77c196de29021583379

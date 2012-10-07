@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.6755807:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.4963436:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%2bbeec4574aa8eb71eb4e7af99a6470cI"logical_path;
+F"%71827e66f2eb2607568aab64a816c955I"logical_path;
 FI"bootstrap-tab.js;
 FI"pathname;
 FI"w/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-tab.js;

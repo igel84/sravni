@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.0677187:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349587134.3896835:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%2173137666b72ce072ae411e6aa0d1a1I"logical_path;
+F"%999862bbab29ad08e67f67e79d8f5d59I"logical_path;
 FI"+twitter/bootstrap/bootstrap-popover.js;
 FI"pathname;
 FI"è/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-popover.js;

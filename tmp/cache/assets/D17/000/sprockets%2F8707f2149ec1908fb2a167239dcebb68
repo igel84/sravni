@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.061898:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349587134.3802936:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%3fed7b3780ad584cc683302fc9993802I"logical_path;
+F"%f06dc758dd8751454d91a54e6afd0fdcI"logical_path;
 FI"-twitter/bootstrap/bootstrap-scrollspy.js;
 FI"pathname;
 FI"‘/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-scrollspy.js;

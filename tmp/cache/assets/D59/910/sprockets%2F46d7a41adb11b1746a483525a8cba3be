@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541543.0384576:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586717.5738368:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%55eee88f61cad689126e58e775003fb6I"logical_path;
+F"%8869ed59a0225ce4928ed02262631602I"logical_path;
 FI"banner-mlip.png;
 FI"pathname;
 FI",$root/app/assets/images/banner-mlip.png;

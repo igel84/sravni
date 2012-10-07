@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.1332276:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349587433.847783:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%c4b864e4d461b7d941471c487a7e94e3I"logical_path;
+F"%2828b115a07a6691313cf792ab474d24I"logical_path;
 FI"xml_files.js;
 FI"pathname;
 FI"5$root/app/assets/javascripts/xml_files.js.coffee;
@@ -9,11 +9,11 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-10-01T02:17:59+04:00;
+FI"2012-10-07T09:23:42+04:00;
 FI"	body;
-FI"
+FI"ý
   jQuery.fn.my_upload = function() {
-    return $('.new_xml_file').fileupload({
+    return $(this).fileupload({
       dataType: "script",
       add: function(e, data) {
         var file, types;
@@ -44,8 +44,8 @@ F[{I"	path;
 FI"5$root/app/assets/javascripts/xml_files.js.coffee;
 FI"
 mtime;
-FIu:	TimeÖ#€(µG
+FIu:	Timeå$€s©¬^
 :@_zoneI"MSK;
-T:nano_numiÃ:nano_deni:submicro"E:offseti@8I"hexdigest;
-F"%d77c1487fbe0a928ed2f8d734b70ae25I"_version;
+T:nano_numi!:nano_deni:submicro"TP:offseti@8I"hexdigest;
+F"%520ddb62a46b3a8a2f52d14c74955ac0I"_version;
 F"%46dde6621c301f4928e3b34efee9e3b5

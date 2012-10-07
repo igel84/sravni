@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.272216:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586725.9742312:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%2a060e847c056d3d6964fcc317d2835cI"logical_path;
+F"%c16a05b0d3f70848c77fae2778d07ddaI"logical_path;
 FI"2rails_admin/colorpicker/colorpicker_hsb_h.png;
 FI"pathname;
 FI"‚/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/images/rails_admin/colorpicker/colorpicker_hsb_h.png;

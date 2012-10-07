@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.0723133:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349587134.5738492:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%2ff8aae57caa37fadeb688af901456e8I"logical_path;
+F"%09bc227479340534277294f946e395f7I"logical_path;
 FI",twitter/bootstrap/bootstrap-collapse.js;
 FI"pathname;
 FI"ê/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-collapse.js;

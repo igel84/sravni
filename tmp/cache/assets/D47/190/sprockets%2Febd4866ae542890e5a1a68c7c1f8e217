@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541558.5528963:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586731.3583016:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%51076d4b630c34f4e762cc0c90375735I"logical_path;
+F"%4b42903929a0e5c4b396eeae60620a28I"logical_path;
 FI"rails_admin/base/README;
 FI"pathname;
 FI"v/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/stylesheets/rails_admin/base/README;

@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541550.420533:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586723.0034196:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%e2bc01254e707089ea685071d1fbce88I"logical_path;
+F"%ef6647648bab4a68e680a2d5d1d9eb06I"logical_path;
 FI"5ckeditor/filebrowser/javascripts/fileuploader.js;
 FI"pathname;
 FI"Š/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/javascripts/fileuploader.js;

@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.0484204:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586725.7952883:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%9d5ba1b06ce9824ff91361f38e756c56I"logical_path;
+F"%989d5ff7cbbac3c066af437ebc46402dI"logical_path;
 FI".ckeditor/plugins/wsc/dialogs/ciframe.html;
 FI"pathname;
 FI"ƒ/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/plugins/wsc/dialogs/ciframe.html;

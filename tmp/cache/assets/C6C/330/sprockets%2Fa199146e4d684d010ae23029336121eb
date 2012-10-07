@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.0559628:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349587134.3600247:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%2fbcb66835ee6456207327151535a4b5I"logical_path;
+F"%ce4fc82be4d4a1a1a765b60a17ba7368I"logical_path;
 FI")twitter/bootstrap/bootstrap-alert.js;
 FI"pathname;
 FI"ç/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-alert.js;

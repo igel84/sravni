@@ -14,12 +14,12 @@
 = form_for [@user, Role.new] do |f|
   #shops 
     - if current_user.admin?
-      .span6= select_tag("role[chain_id]", options_from_collection_for_select(Chain.order('name'), 'id', 'name'), prompt: 'выберите сеть', id: 'chain', class: 'select')
+      .span6= select_tag("chain_id", options_from_collection_for_select(Chain.order('name'), 'id', 'name'), prompt: 'выберите сеть', id: 'chain', class: 'select')
       %br/
       %br/    
     - elsif current_user.has_role? :seller, :any
-      = hidden_field_tag 'role[chain_id]', current_user.roles.find_by_name('seller').resource_id, id: 'chain'
-    .span6= select_tag("role[city_id]", options_from_collection_for_select(City.order('alias'), 'id', 'alias'), prompt: 'выберите город', class: 'chzn-select-deselect')
+      = hidden_field_tag 'chain_id', current_user.roles.find_by_name('seller').resource_id, id: 'chain'
+    .span6= select_tag("city_id", options_from_collection_for_select(City.order('alias'), 'id', 'alias'), prompt: 'выберите город', class: 'chzn-select-deselect chzn-city')
     .span6.area   
     %br/ 
     .span6.shop    

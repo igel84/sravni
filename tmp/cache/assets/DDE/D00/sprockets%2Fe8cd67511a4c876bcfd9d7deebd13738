@@ -1,30 +1,5 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.28478:@value{	I"length:EFiI"digest;
-F"%6547caeac615c47fd726e517c9f226e2I"source;
-FI"
-  jQuery.fn.my_upload = function() {
-    return $('.new_xml_file').fileupload({
-      dataType: "script",
-      add: function(e, data) {
-        var file, types;
-        types = /(\.|\/)(xls)$/i;
-        file = data.files[0];
-        if (types.test(file.type) || types.test(file.name)) {
-          data.context = $(tmpl("template-upload", file));
-          $(this).append(data.context);
-          return data.submit();
-        } else {
-          return alert("" + file.name + " is not a xls file");
-        }
-      },
-      progress: function(e, data) {
-        var progress;
-        if (data.context) {
-          progress = parseInt(data.loaded / data.total * 100, 10);
-          return data.context.find('.bar').css('width', progress + '%');
-        }
-      }
-    });
-  };
-;
-FI"_version;
-F"%c4b864e4d461b7d941471c487a7e94e3
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349587433.9441786:@value{	I"length:EFi£I"digest;
+F"%fc6fcb1f28f15184841fde7d04f20beeI"source;
+FI"£jQuery.fn.my_upload=function(){return $(this).fileupload({dataType:"script",add:function(a,b){var c,d;return d=/(\.|\/)(xls)$/i,c=b.files[0],d.test(c.type)||d.test(c.name)?(b.context=$(tmpl("template-upload",c)),$(this).append(b.context),b.submit()):alert(""+c.name+" is not a xls file")},progress:function(a,b){var c;if(b.context)return c=parseInt(b.loaded/b.total*100,10),b.context.find(".bar").css("width",c+"%")}})};
+TI"_version;
+F"%2828b115a07a6691313cf792ab474d24

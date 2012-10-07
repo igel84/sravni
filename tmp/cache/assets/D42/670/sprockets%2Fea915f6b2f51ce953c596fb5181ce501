@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.5461247:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.3122065:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%23ed9b27686faa3faa54a63050c8f8bdI"logical_path;
+F"%edec37b06570cb405888188b1829a282I"logical_path;
 FI"jquery.remotipart.js;
 FI"pathname;
 FI"u/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/remotipart-1.0.2/vendor/assets/javascripts/jquery.remotipart.js;

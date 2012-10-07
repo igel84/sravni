@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.1990666:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349587134.9927018:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%131691391f347caf7b995661172f6b89I"logical_path;
+F"%0e867499834024026af1bf1427b411a3I"logical_path;
 FI"jquery-fileupload/basic.js;
 FI"pathname;
 FI"ƒ/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/basic.js;

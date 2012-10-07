@@ -1,5 +1,5 @@
 jQuery.fn.my_upload = ->
-  $('.new_xml_file').fileupload
+  $(this).fileupload
     dataType: "script"
     add: (e, data) ->
       types = /(\.|\/)(xls)$/i

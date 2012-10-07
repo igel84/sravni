@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.6597147:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.4792416:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%307a39c8eeebf65a4c9e7e3262a1f9beI"logical_path;
+F"%51e0a70c756008e35d4cc7ed460318e0I"logical_path;
 FI"bootstrap-affix.js;
 FI"pathname;
 FI"y/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-affix.js;

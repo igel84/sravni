@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.2012327:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349587134.9964907:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%456440b924dec2b7a1d9c2f545d93a81I"logical_path;
+F"%09314420af02b7a46d6074c05d206b18I"logical_path;
 FI"%jquery-fileupload/vendor/tmpl.js;
 FI"pathname;
 FI"‰/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/javascripts/jquery-fileupload/vendor/tmpl.js;

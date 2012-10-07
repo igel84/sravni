@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541550.4249432:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586723.008043:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%0e9d1d4be3b39c130ae36fe4c82e3b94I"logical_path;
+F"%c6af3c765f4fceb531372ee2025a63f8I"logical_path;
 FI"4ckeditor/filebrowser/javascripts/application.js;
 FI"pathname;
 FI"‰/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/javascripts/application.js;

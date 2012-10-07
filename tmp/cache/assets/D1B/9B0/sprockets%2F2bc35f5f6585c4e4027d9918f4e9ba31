@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.1894636:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586725.936033:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%a364877eb57caf85fb6b6834213f2799I"logical_path;
+F"%25f3f52451df0b853496620054c55730I"logical_path;
 FI".rails_admin/aristo/images/bg_fallback.png;
 FI"pathname;
 FI"~/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/images/rails_admin/aristo/images/bg_fallback.png;

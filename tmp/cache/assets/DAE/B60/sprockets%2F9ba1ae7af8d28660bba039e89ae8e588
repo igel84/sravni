@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.0636811:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349587134.3828793:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%d5d5991e2ff9689fe53e43e7376c2548I"logical_path;
+F"%76311a27bfb5ed5371af21c08810d848I"logical_path;
 FI"'twitter/bootstrap/bootstrap-tab.js;
 FI"pathname;
 FI"‹/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/twitter-bootstrap-rails-2.1.2/vendor/assets/javascripts/twitter/bootstrap/bootstrap-tab.js;

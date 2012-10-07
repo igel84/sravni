@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.6662655:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.4856186:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%1c5e2903db8c04aa4299d78152ef0f7aI"logical_path;
+F"%c224d72c66755d7ff31c61dc66a5dda4I"logical_path;
 FI"bootstrap-carousel.js;
 FI"pathname;
 FI"|/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-carousel.js;

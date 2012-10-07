@@ -10,17 +10,15 @@ class RolesController < ApplicationController
   end
 
   def create
-
-
     @user = User.find(params[:user_id])
-    if params[:role][:shop_id] && !params[:role][:shop_id].blank?
-      @user.add_role :shop, Shop.find(params[:role][:shop_id])
-    elsif params[:role][:area_id] && !params[:role][:area_id].blank?
-      @user.add_role :area, Area.find(params[:role][:area_id])
-    elsif params[:role][:city_id] && !params[:role][:city_id].blank?
-      @user.add_role :city, City.find(params[:role][:city_id])
+    if params[:shop_id] && !params[:shop_id].blank?
+      @user.add_role :shop, Shop.find(params[:shop_id])
+    elsif params[:area_id] && !params[:area_id].blank?
+      @user.add_role :area, Area.find(params[:area_id])
+    elsif params[:city_id] && !params[:city_id].blank?
+      @user.add_role :city, City.find(params[:city_id])
     else
-      @user.add_role :seller, Chain.find(params[:role][:chain_id])
+      @user.add_role :seller, Chain.find(params[:chain_id])
     end
     flash[:info] = "Роль для пользователя " + @user.email + " успешно добавлена"
     redirect_to [@user, :roles]

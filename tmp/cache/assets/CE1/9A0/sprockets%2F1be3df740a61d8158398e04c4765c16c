@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.5558684:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.3225935:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%9a2e883f91acbb2b7fbe2763db577a57I"logical_path;
+F"%75aff51b12b98e586cd91fc82b1ed83fI"logical_path;
 FI"jquery.ui.core.js;
 FI"pathname;
 FI"w/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-ui-rails-1.1.1/vendor/assets/javascripts/jquery.ui.core.js;

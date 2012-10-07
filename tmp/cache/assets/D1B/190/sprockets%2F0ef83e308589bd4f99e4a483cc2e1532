@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.0508132:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586725.7976627:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%ba82c6e20c6553d3edd7403ba64adb4bI"logical_path;
+F"%ffbef83879e819d029a14e3713490897I"logical_path;
 FI"2ckeditor/plugins/wsc/dialogs/tmpFrameset.html;
 FI"pathname;
 FI"‡/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/plugins/wsc/dialogs/tmpFrameset.html;

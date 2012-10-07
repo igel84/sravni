@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.6235418:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.3563359:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%dc0bb6748590001e5286533d5d58b4b7I"logical_path;
+F"%db60156655e3e982240ae7ba20f1c35cI"logical_path;
 FI",rails_admin/ra.filtering-multiselect.js;
 FI"pathname;
 FI"Å/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/ra.filtering-multiselect.js;
