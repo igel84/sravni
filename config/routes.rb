@@ -28,7 +28,7 @@ InitialRelease::Application.routes.draw do
   match 'cities/:id/with_area/:area_id/with_chain/:chain_id' => "cities#show"
 
   match 'prices' => "prices#index"
-  
+
   resources :cities do
     resources :areas do
       resources :chains do 
@@ -44,6 +44,7 @@ InitialRelease::Application.routes.draw do
   resources :xml_files
 
   resources :users do
+    resources :roles
     member do
       get :activate
     end

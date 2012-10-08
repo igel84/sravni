@@ -1,3 +1,4 @@
+#encoding: utf-8
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
@@ -19,9 +20,12 @@ class ApplicationController < ActionController::Base
   private
   # Собственно сам метод переключения 
   def override_db
-    @current_city = City.find_by_name(request.subdomain)
+    @current_city = City.find_by_name(request.subdomain) 
+    @current_city = City.find(params[:city_id]) if params[:city_id] && @current_city.nil?
     @products = Product.all
-    not_found unless @current_city
+    @users = User.all
+    @chains = Chain.all
+    #not_found unless @current_city
 
     if @current_city
       ActiveRecord::Base.clear_cache!
@@ -31,8 +35,12 @@ class ApplicationController < ActionController::Base
           pool: 5,
           timeout: 5000
       )      
+    elsif current_user
+      #
+    elsif request.subdomain == 'sravnim-ka'
+      #
     else
-      redirect_to root_url
+      #redirect_to root_url
     end    
   end
 

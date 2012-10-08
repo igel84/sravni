@@ -1,5 +1,6 @@
 class Chain < ActiveRecord::Base
   establish_connection "production"
+  resourcify
   
 	has_many :shops
 

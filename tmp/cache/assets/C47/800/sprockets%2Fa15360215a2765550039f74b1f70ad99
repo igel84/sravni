@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477987.4320345:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.3361025:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%4762da24597f43810810d2292a6ab700I"logical_path;
+F"%f6f71dc8bc850efd14373054e321901aI"logical_path;
 FI"rails_admin/magnifier.png;
 FI"pathname;
 FI"s/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/images/rails_admin/magnifier.png;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"image/png;
 FI"
 mtime;
-FI"2012-09-11T22:09:07+04:00;
+FI"2012-09-10T23:20:06+04:00;
 FI"length;
 FI"565;
 FI"digest;

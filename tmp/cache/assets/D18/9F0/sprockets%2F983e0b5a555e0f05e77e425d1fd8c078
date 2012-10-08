@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477987.2688766:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.1704345:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%8fca8fd64a118b79da625aafcc6a18edI"logical_path;
+F"%31e049a20b9af6be5cfa405154709e87I"logical_path;
 FI"&ckeditor/skins/v2/images/mini.gif;
 FI"pathname;
 FI"{/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/skins/v2/images/mini.gif;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"image/gif;
 FI"
 mtime;
-FI"2012-10-03T19:26:40+04:00;
+FI"2012-09-16T04:28:51+04:00;
 FI"length;
 FI"183;
 FI"digest;

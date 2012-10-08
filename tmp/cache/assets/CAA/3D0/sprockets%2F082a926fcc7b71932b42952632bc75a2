@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477987.3975735:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.2978842:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%522e42a738a9400cada0829b080bcd73I"logical_path;
+F"%77d62c466cecc64596ee694a83a04e92I"logical_path;
 FI"2rails_admin/colorpicker/custom_background.png;
 FI"pathname;
 FI"‚/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/images/rails_admin/colorpicker/custom_background.png;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"image/png;
 FI"
 mtime;
-FI"2012-09-11T22:09:07+04:00;
+FI"2012-09-10T23:20:06+04:00;
 FI"length;
 FI"	1916;
 FI"digest;

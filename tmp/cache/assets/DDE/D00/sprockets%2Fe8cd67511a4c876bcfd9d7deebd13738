@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349513382.3092206:@value{	I"length:EFiI"digest;
+=======
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.28478:@value{	I"length:EFiI"digest;
+>>>>>>> a9e0bc390dbd981e8daf92703167d73c4e35bb85
 F"%6547caeac615c47fd726e517c9f226e2I"source;
 FI"
   jQuery.fn.my_upload = function() {
@@ -27,4 +31,8 @@ FI"
   };
 ;
 FI"_version;
+<<<<<<< HEAD
 F"%e1f6b38a25248eba195273bf5aee125f
+=======
+F"%c4b864e4d461b7d941471c487a7e94e3
+>>>>>>> a9e0bc390dbd981e8daf92703167d73c4e35bb85

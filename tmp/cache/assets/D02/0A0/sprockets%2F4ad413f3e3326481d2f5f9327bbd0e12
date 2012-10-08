@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349513382.138324:@value{I"
 class:EFI"BundledAsset;
 FI"id;
 F"%60091cbc617a2845ef1dfabff180087dI"logical_path;
+=======
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.1250722:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%4722cdf300bb02c1c061d5922261367fI"logical_path;
+>>>>>>> a9e0bc390dbd981e8daf92703167d73c4e35bb85
 FI"users.js;
 FI"pathname;
 FI"1$root/app/assets/javascripts/users.js.coffee;
@@ -9,7 +16,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-11T21:59:27+04:00;
+FI"2012-09-10T22:50:35+04:00;
 FI"	body;
 FI"
 
@@ -21,8 +28,12 @@ F[{I"	path;
 FI"1$root/app/assets/javascripts/users.js.coffee;
 FI"
 mtime;
-FIu:	Timeq!€W‚µí
+FIu:	TimeR!€BÎ1Ê
 :@_zoneI"MSK;
+<<<<<<< HEAD
 T:nano_numiþ:nano_deni:submicro"v`:offseti@8I"hexdigest;
+=======
+T:nano_numim:nano_deni:submicro"@:offseti@8I"hexdigest;
+>>>>>>> a9e0bc390dbd981e8daf92703167d73c4e35bb85
 F"%c12f0621e8cbf15a5c4dfa732f9f322aI"_version;
 F"%46dde6621c301f4928e3b34efee9e3b5

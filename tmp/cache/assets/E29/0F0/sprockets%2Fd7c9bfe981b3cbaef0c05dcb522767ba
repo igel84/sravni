@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477986.9462605:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541552.8521745:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%0e263a96a19117c6eda03a005abf07edI"logical_path;
+F"%e534fe08c09fdf34094fc35a78ed6cf8I"logical_path;
 FI"4ckeditor/plugins/pagebreak/images/pagebreak.gif;
 FI"pathname;
 FI"‰/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/plugins/pagebreak/images/pagebreak.gif;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"image/gif;
 FI"
 mtime;
-FI"2012-10-03T19:26:40+04:00;
+FI"2012-09-16T04:28:51+04:00;
 FI"length;
 FI"54;
 FI"digest;

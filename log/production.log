@@ -1205,3 +1205,361 @@ Started GET "/prices.js?ids%5B%5D=25&ids%5B%5D=28&ids%5B%5D=29&ids%5B%5D=31&ids%
   Parameters: {"ids"=>["25", "28", "29", "31", "35"]}
 Rendered prices/index.js.erb (0.6ms)
 Completed 200 OK in 159ms (Views: 16.2ms | ActiveRecord: 35.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 18:59:14 +0400
+  Processing by CitiesController#show as HTML
+Rendered cities/show.html.haml within layouts/application (108.6ms)
+Completed 200 OK in 285ms (Views: 201.2ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/prices.js?ids%5B%5D=145&ids%5B%5D=146&ids%5B%5D=150&ids%5B%5D=151&ids%5B%5D=152" for 127.0.0.1 at 2012-10-06 18:59:15 +0400
+  Processing by PricesController#index as JS
+  Parameters: {"ids"=>["145", "146", "150", "151", "152"]}
+Rendered prices/index.js.erb (0.4ms)
+Completed 200 OK in 255ms (Views: 7.7ms | ActiveRecord: 114.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-10-06 18:59:17 +0400
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 76ms (Views: 15.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-10-06 18:59:28 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"seller", "password"=>"[FILTERED]"}
+Rendered sessions/new.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 608ms (Views: 11.4ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-10-06 18:59:33 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"seller", "password"=>"[FILTERED]"}
+Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 95ms (Views: 10.7ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-10-06 18:59:35 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"seller", "password"=>"[FILTERED]"}
+Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 95ms (Views: 11.6ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-10-06 18:59:38 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"seller", "password"=>"[FILTERED]"}
+Rendered sessions/new.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 96ms (Views: 12.4ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-10-06 18:59:45 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"seller@mlip.ru", "password"=>"[FILTERED]"}
+Rendered sessions/new.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 91ms (Views: 10.9ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-10-06 18:59:47 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"seller@mlip.ru", "password"=>"[FILTERED]"}
+Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 91ms (Views: 12.1ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-10-06 19:00:08 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"yulianavtolit@yandex.ru", "password"=>"[FILTERED]"}
+Rendered sessions/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 95ms (Views: 11.6ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-10-06 19:00:13 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"yulianavtolit@yandex.ru", "password"=>"[FILTERED]"}
+Rendered sessions/new.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 98ms (Views: 11.8ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-10-06 19:00:15 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"yulianavtolit@yandex.ru", "password"=>"[FILTERED]"}
+Rendered sessions/new.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 97ms (Views: 12.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/password_resets/new" for 127.0.0.1 at 2012-10-06 19:00:16 +0400
+  Processing by PasswordResetsController#new as HTML
+Rendered password_resets/new.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 81ms (Views: 49.3ms)
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2012-10-06 19:00:21 +0400
+  Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"yulianavtolit@yandex.ru"}
+Redirected to http://voronezh.sravnim-ka.com:3000/
+Completed 302 Found in 51ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 19:00:21 +0400
+  Processing by CitiesController#show as HTML
+Rendered cities/show.html.haml within layouts/application (51.1ms)
+Completed 200 OK in 100ms (Views: 61.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/prices.js?ids%5B%5D=171&ids%5B%5D=179&ids%5B%5D=180&ids%5B%5D=182&ids%5B%5D=188" for 127.0.0.1 at 2012-10-06 19:00:21 +0400
+  Processing by PricesController#index as JS
+  Parameters: {"ids"=>["171", "179", "180", "182", "188"]}
+Rendered prices/index.js.erb (0.1ms)
+Completed 200 OK in 252ms (Views: 6.4ms | ActiveRecord: 158.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-10-06 19:02:04 +0400
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 12.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-10-06 19:02:16 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"yulianavtolit@yandex.ru", "password"=>"[FILTERED]"}
+Rendered sessions/new.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 58ms (Views: 12.0ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-10-06 19:02:19 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"yulianavtolit@yandex.ru", "password"=>"[FILTERED]"}
+Rendered sessions/new.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 93ms (Views: 11.5ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-10-06 19:02:21 +0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"yulianavtolit@yandex.ru", "password"=>"[FILTERED]"}
+Rendered sessions/new.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 98ms (Views: 12.7ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/password_resets/new" for 127.0.0.1 at 2012-10-06 19:02:24 +0400
+  Processing by PasswordResetsController#new as HTML
+Rendered password_resets/new.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 78ms (Views: 13.3ms)
+
+
+Started POST "/password_resets" for 127.0.0.1 at 2012-10-06 19:02:27 +0400
+  Processing by PasswordResetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFXgZRWcE/hRMIMOE9oe0gBhGgdGrP3Y5OXZua7A14A=", "email"=>"yulianavtolit@yandex.ru"}
+Redirected to http://voronezh.sravnim-ka.com:3000/
+Completed 302 Found in 79ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 19:02:27 +0400
+  Processing by CitiesController#show as HTML
+Rendered cities/show.html.haml within layouts/application (20.7ms)
+Completed 200 OK in 103ms (Views: 30.0ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/prices.js?ids%5B%5D=198&ids%5B%5D=199&ids%5B%5D=201&ids%5B%5D=204&ids%5B%5D=207" for 127.0.0.1 at 2012-10-06 19:02:27 +0400
+  Processing by PricesController#index as JS
+  Parameters: {"ids"=>["198", "199", "201", "204", "207"]}
+Rendered prices/index.js.erb (0.1ms)
+Completed 200 OK in 269ms (Views: 6.0ms | ActiveRecord: 141.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 19:04:39 +0400
+  Processing by CitiesController#show as HTML
+Completed 500 Internal Server Error in 72ms
+
+ActiveRecord::StatementInvalid (SQLite3::MismatchException: datatype mismatch: SELECT  "shops".* FROM "shops"  ORDER BY raiting LIMIT 5 OFFSET -4.316115214302771):
+  app/controllers/cities_controller.rb:23:in `show'
+
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-06 19:04:46 +0400
+  Processing by CitiesController#show as HTML
+Rendered cities/show.html.haml within layouts/application (18.9ms)
+Completed 200 OK in 99ms (Views: 59.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/prices.js?ids%5B%5D=27&ids%5B%5D=30&ids%5B%5D=32&ids%5B%5D=36&ids%5B%5D=43" for 127.0.0.1 at 2012-10-06 19:04:46 +0400
+  Processing by PricesController#index as JS
+  Parameters: {"ids"=>["27", "30", "32", "36", "43"]}
+Rendered prices/index.js.erb (0.1ms)
+Completed 200 OK in 189ms (Views: 38.7ms | ActiveRecord: 50.9ms)
+Compiled application.js  (47ms)  (pid 6242)
+Compiled jquery.js  (4ms)  (pid 6242)
+Compiled jquery_ujs.js  (0ms)  (pid 6242)
+Compiled twitter/bootstrap.js  (24ms)  (pid 6242)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 6242)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 6242)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 6242)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 6242)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 6242)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 6242)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 6242)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 6242)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 6242)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 6242)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 6242)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 6242)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 6242)
+Compiled chosen/chosen.jquery.js  (0ms)  (pid 6242)
+Compiled home.js  (37ms)  (pid 6242)
+Compiled password_resets.js  (1ms)  (pid 6242)
+Compiled sessions.js  (0ms)  (pid 6242)
+Compiled users.js  (0ms)  (pid 6242)
+Compiled xml_files.js  (10ms)  (pid 6242)
+Compiled jquery-fileupload/basic.js  (4ms)  (pid 6242)
+Compiled jquery-fileupload/vendor/jquery.ui.widget.js  (0ms)  (pid 6242)
+Compiled jquery-fileupload/jquery.iframe-transport.js  (0ms)  (pid 6242)
+Compiled jquery-fileupload/jquery.fileupload.js  (0ms)  (pid 6242)
+Compiled jquery-fileupload/vendor/tmpl.js  (0ms)  (pid 6242)
+Compiled application.css  (1ms)  (pid 6242)
+Compiled bootstrap-responsive.css  (0ms)  (pid 6242)
+Compiled bootstrap_and_overrides.css  (616ms)  (pid 6242)
+Compiled chosen/chosen.css  (0ms)  (pid 6242)
+Compiled home.css  (5ms)  (pid 6242)
+Compiled password_resets.css  (0ms)  (pid 6242)
+Compiled sessions.css  (0ms)  (pid 6242)
+Compiled users.css  (0ms)  (pid 6242)
+Compiled ckeditor/application.js  (4ms)  (pid 6242)
+Compiled ckeditor/filebrowser/javascripts/jquery.min.js  (1ms)  (pid 6242)
+Compiled ckeditor/filebrowser/javascripts/jquery.tmpl.min.js  (0ms)  (pid 6242)
+Compiled ckeditor/filebrowser/javascripts/fileuploader.js  (0ms)  (pid 6242)
+Compiled ckeditor/filebrowser/javascripts/rails.js  (0ms)  (pid 6242)
+Compiled ckeditor/filebrowser/javascripts/application.js  (0ms)  (pid 6242)
+Compiled ckeditor/application.css  (1ms)  (pid 6242)
+Compiled ckeditor/filebrowser/stylesheets/uploader.css  (0ms)  (pid 6242)
+Compiled rails_admin/jquery.colorpicker.js  (0ms)  (pid 6242)
+Compiled rails_admin/rails_admin.js  (23ms)  (pid 6242)
+Compiled jquery.remotipart.js  (1ms)  (pid 6242)
+Compiled jquery.iframe-transport.js  (0ms)  (pid 6242)
+Compiled jquery.effects.core.js  (0ms)  (pid 6242)
+Compiled jquery.ui.sortable.js  (3ms)  (pid 6242)
+Compiled jquery.ui.core.js  (1ms)  (pid 6242)
+Compiled jquery.ui.widget.js  (0ms)  (pid 6242)
+Compiled jquery.ui.mouse.js  (2ms)  (pid 6242)
+Compiled jquery.ui.autocomplete.js  (3ms)  (pid 6242)
+Compiled jquery.ui.position.js  (0ms)  (pid 6242)
+Compiled jquery.ui.datepicker.js  (1ms)  (pid 6242)
+Compiled rails_admin/jquery.ui.timepicker.js  (0ms)  (pid 6242)
+Compiled rails_admin/ra.datetimepicker.js  (0ms)  (pid 6242)
+Compiled rails_admin/ra.filter-box.js  (0ms)  (pid 6242)
+Compiled rails_admin/ra.filtering-multiselect.js  (0ms)  (pid 6242)
+Compiled rails_admin/ra.filtering-select.js  (0ms)  (pid 6242)
+Compiled rails_admin/ra.remote-form.js  (0ms)  (pid 6242)
+Compiled rails_admin/jquery.pjax.js  (0ms)  (pid 6242)
+Compiled jquery_nested_form.js  (0ms)  (pid 6242)
+Compiled rails_admin/ra.nested-form-hooks.js  (7ms)  (pid 6242)
+Compiled bootstrap.js  (15ms)  (pid 6242)
+Compiled bootstrap-transition.js  (0ms)  (pid 6242)
+Compiled bootstrap-affix.js  (0ms)  (pid 6242)
+Compiled bootstrap-alert.js  (0ms)  (pid 6242)
+Compiled bootstrap-button.js  (0ms)  (pid 6242)
+Compiled bootstrap-carousel.js  (0ms)  (pid 6242)
+Compiled bootstrap-collapse.js  (0ms)  (pid 6242)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 6242)
+Compiled bootstrap-modal.js  (0ms)  (pid 6242)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 6242)
+Compiled bootstrap-tab.js  (0ms)  (pid 6242)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 6242)
+Compiled bootstrap-popover.js  (0ms)  (pid 6242)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 6242)
+Compiled rails_admin/ra.widgets.js  (59ms)  (pid 6242)
+Compiled rails_admin/ui.js  (7ms)  (pid 6242)
+Compiled rails_admin/themes/default/ui.js  (0ms)  (pid 6242)
+Compiled rails_admin/custom/ui.js  (0ms)  (pid 6242)
+Compiled rails_admin/jquery.colorpicker.css  (23ms)  (pid 6242)
+Compiled rails_admin/rails_admin.css  (1ms)  (pid 6242)
+Compiled rails_admin/imports.css  (3313ms)  (pid 6242)
+Compiled application.js  (45ms)  (pid 6212)
+Compiled jquery.js  (12ms)  (pid 6212)
+Compiled jquery_ujs.js  (7ms)  (pid 6212)
+Compiled twitter/bootstrap.js  (23ms)  (pid 6212)
+Compiled twitter/bootstrap/bootstrap-transition.js  (41ms)  (pid 6212)
+Compiled twitter/bootstrap/bootstrap-alert.js  (3ms)  (pid 6212)
+Compiled twitter/bootstrap/bootstrap-modal.js  (3ms)  (pid 6212)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (1ms)  (pid 6212)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 6212)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 6212)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 6212)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 6212)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 6212)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 6212)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 6212)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 6212)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 6212)
+Compiled chosen/chosen.jquery.js  (0ms)  (pid 6212)
+Compiled home.js  (36ms)  (pid 6212)
+Compiled password_resets.js  (1ms)  (pid 6212)
+Compiled sessions.js  (10ms)  (pid 6212)
+Compiled users.js  (0ms)  (pid 6212)
+Compiled xml_files.js  (23ms)  (pid 6212)
+Compiled jquery-fileupload/basic.js  (5ms)  (pid 6212)
+Compiled jquery-fileupload/vendor/jquery.ui.widget.js  (21ms)  (pid 6212)
+Compiled jquery-fileupload/jquery.iframe-transport.js  (4ms)  (pid 6212)
+Compiled jquery-fileupload/jquery.fileupload.js  (10ms)  (pid 6212)
+Compiled jquery-fileupload/vendor/tmpl.js  (0ms)  (pid 6212)
+Compiled application.css  (2ms)  (pid 6212)
+Compiled bootstrap-responsive.css  (9ms)  (pid 6212)
+Compiled bootstrap_and_overrides.css  (660ms)  (pid 6212)
+Compiled chosen/chosen.css  (6ms)  (pid 6212)
+Compiled home.css  (39ms)  (pid 6212)
+Compiled password_resets.css  (1ms)  (pid 6212)
+Compiled sessions.css  (1ms)  (pid 6212)
+Compiled users.css  (12ms)  (pid 6212)
+Compiled ckeditor/application.js  (18ms)  (pid 6212)
+Compiled ckeditor/filebrowser/javascripts/jquery.min.js  (10ms)  (pid 6212)
+Compiled ckeditor/filebrowser/javascripts/jquery.tmpl.min.js  (8ms)  (pid 6212)
+Compiled ckeditor/filebrowser/javascripts/fileuploader.js  (1ms)  (pid 6212)
+Compiled ckeditor/filebrowser/javascripts/rails.js  (9ms)  (pid 6212)
+Compiled ckeditor/filebrowser/javascripts/application.js  (0ms)  (pid 6212)
+Compiled ckeditor/application.css  (2ms)  (pid 6212)
+Compiled ckeditor/filebrowser/stylesheets/uploader.css  (1ms)  (pid 6212)
+Compiled rails_admin/jquery.colorpicker.js  (0ms)  (pid 6212)
+Compiled rails_admin/rails_admin.js  (50ms)  (pid 6212)
+Compiled jquery.remotipart.js  (14ms)  (pid 6212)
+Compiled jquery.iframe-transport.js  (5ms)  (pid 6212)
+Compiled jquery.effects.core.js  (2ms)  (pid 6212)
+Compiled jquery.ui.sortable.js  (7ms)  (pid 6212)
+Compiled jquery.ui.core.js  (2ms)  (pid 6212)
+Compiled jquery.ui.widget.js  (0ms)  (pid 6212)
+Compiled jquery.ui.mouse.js  (2ms)  (pid 6212)
+Compiled jquery.ui.autocomplete.js  (3ms)  (pid 6212)
+Compiled jquery.ui.position.js  (24ms)  (pid 6212)
+Compiled jquery.ui.datepicker.js  (3ms)  (pid 6212)
+Compiled rails_admin/jquery.ui.timepicker.js  (42ms)  (pid 6212)
+Compiled rails_admin/ra.datetimepicker.js  (0ms)  (pid 6212)
+Compiled rails_admin/ra.filter-box.js  (0ms)  (pid 6212)
+Compiled rails_admin/ra.filtering-multiselect.js  (0ms)  (pid 6212)
+Compiled rails_admin/ra.filtering-select.js  (0ms)  (pid 6212)
+Compiled rails_admin/ra.remote-form.js  (0ms)  (pid 6212)
+Compiled rails_admin/jquery.pjax.js  (0ms)  (pid 6212)
+Compiled jquery_nested_form.js  (19ms)  (pid 6212)
+Compiled rails_admin/ra.nested-form-hooks.js  (6ms)  (pid 6212)
+Compiled bootstrap.js  (28ms)  (pid 6212)
+Compiled bootstrap-transition.js  (8ms)  (pid 6212)
+Compiled bootstrap-affix.js  (0ms)  (pid 6212)
+Compiled bootstrap-alert.js  (11ms)  (pid 6212)
+Compiled bootstrap-button.js  (0ms)  (pid 6212)
+Compiled bootstrap-carousel.js  (6ms)  (pid 6212)
+Compiled bootstrap-collapse.js  (7ms)  (pid 6212)
+Compiled bootstrap-dropdown.js  (12ms)  (pid 6212)
+Compiled bootstrap-modal.js  (7ms)  (pid 6212)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 6212)
+Compiled bootstrap-tab.js  (0ms)  (pid 6212)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 6212)
+Compiled bootstrap-popover.js  (0ms)  (pid 6212)
+Compiled bootstrap-typeahead.js  (16ms)  (pid 6212)
+Compiled rails_admin/ra.widgets.js  (60ms)  (pid 6212)
+Compiled rails_admin/ui.js  (8ms)  (pid 6212)
+Compiled rails_admin/themes/default/ui.js  (0ms)  (pid 6212)
+Compiled rails_admin/custom/ui.js  (0ms)  (pid 6212)
+Compiled rails_admin/jquery.colorpicker.css  (26ms)  (pid 6212)
+Compiled rails_admin/rails_admin.css  (1ms)  (pid 6212)
+Compiled rails_admin/imports.css  (3541ms)  (pid 6212)

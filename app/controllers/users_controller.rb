@@ -16,11 +16,13 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = current_user
+    @user = User.find(params[:id])
+    redirect_to edit_user_path(current_user) if !current_user.admin? && @user != current_user
   end
 
   def update
     @user = User.find(params[:id])
+    redirect_to edit_user_path(current_user) if !current_user.admin? && @user != current_user
     if params[:user] && (@user == current_user || current_user.admin?) 
       @user.email = params[:user][:email]
       @user.city_id = params[:user][:city_id]
@@ -29,15 +31,15 @@ class UsersController < ApplicationController
 
       if params[:old_password] && !params[:old_password].blank? 
         if @user.update_password(params[:old_password], params[:user][:password], params[:user][:password_confirmation])
-          flash.now.alert = "Пароль успешно изменен"
+          flash[:info] = "Пароль успешно изменен"
         else
-          flash.now.alert = "Неверный пароль"
+          flash[:info] = "Неверный пароль"
         end
       end
     end
-    render 'edit'
+    #render 'edit'
     #@user.update_attributes(params[:user]) #if @user == current_user || current_user.admin?
-    #redirect_to edit_user_path(@user)
+    redirect_to edit_user_path(@user)
   end
 
   def activate

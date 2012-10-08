@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477994.0154743:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541558.581482:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%c552c14862653e269b37c1ab80820233I"logical_path;
+F"%fc310e7ec1252a5539b72606378395c0I"logical_path;
 FI"'rails_admin/jquery.colorpicker.css;
 FI"pathname;
 FI"Å/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/stylesheets/rails_admin/jquery.colorpicker.css.scss;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"text/css;
 FI"
 mtime;
-FI"2012-09-11T22:09:07+04:00;
+FI"2012-09-10T23:20:06+04:00;
 FI"	body;
 FI"y/* line 1, /home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/stylesheets/rails_admin/jquery.colorpicker.css.scss */
 .colorSelector {
@@ -249,8 +249,8 @@ F[{I"	path;
 FI"Å/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/stylesheets/rails_admin/jquery.colorpicker.css.scss;
 FI"
 mtime;
-FIu:	Timer!Ä=px$
+FIu:	TimeS!Äæ4kP
 :@_zoneI"MSK;
-T:nano_numiÉ:nano_deni:submicro"âê:offseti@8I"hexdigest;
+T:nano_numi±:nano_deni:submicro"p:offseti@8I"hexdigest;
 F"%f7390555562296d0f1cc898790d79537I"_version;
 F"%1c9609bc58b1e77c196de29021583379

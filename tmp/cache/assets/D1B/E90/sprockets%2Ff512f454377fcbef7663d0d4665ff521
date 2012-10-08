@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477987.1278336:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.0368369:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%9b6eef910091b310ccbc017d62a49a08I"logical_path;
+F"%bfc610b0e5914d36817afc27e847a15fI"logical_path;
 FI"3ckeditor/plugins/uicolor/yui/assets/hue_bg.png;
 FI"pathname;
 FI"ˆ/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/plugins/uicolor/yui/assets/hue_bg.png;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"image/png;
 FI"
 mtime;
-FI"2012-10-03T19:26:40+04:00;
+FI"2012-09-16T04:28:51+04:00;
 FI"length;
 FI"	1120;
 FI"digest;

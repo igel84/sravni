@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477986.9994645:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541552.9066374:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%ff3c94b852f8d7400fa9619f3641a72eI"logical_path;
+F"%a44db54d1eed28a5ee126eb96e839f45I"logical_path;
 FI"4ckeditor/plugins/smiley/images/broken_heart.gif;
 FI"pathname;
 FI"‰/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/plugins/smiley/images/broken_heart.gif;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"image/gif;
 FI"
 mtime;
-FI"2012-10-03T19:26:40+04:00;
+FI"2012-09-16T04:28:51+04:00;
 FI"length;
 FI"192;
 FI"digest;

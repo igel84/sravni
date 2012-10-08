@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477987.8123567:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.6812758:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%6de46c1b4c805e46be845d3081ae16e2I"logical_path;
+F"%6430ae262f116342915e40668873ad80I"logical_path;
 FI"bootstrap-typeahead.js;
 FI"pathname;
 FI"}/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-11T22:08:47+04:00;
+FI"2012-09-10T23:19:45+04:00;
 FI"	body;
 FI")/* =============================================================
  * bootstrap-typeahead.js v2.1.0
@@ -320,8 +320,8 @@ F[{I"	path;
 FI"}/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js;
 FI"
 mtime;
-FIu:	Timer!€^Ðõ"
+FIu:	TimeS!€}ª×N
 :@_zoneI"MSK;
-T:nano_numi:nano_deni:submicro"y€:offseti@8I"hexdigest;
+T:nano_numiÖ:nano_deni:submicro"G:offseti@8I"hexdigest;
 F"%ac736936cfe3720251f64c584abeeb8aI"_version;
 F"%1c9609bc58b1e77c196de29021583379

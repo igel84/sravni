@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477987.4100933:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.3119547:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%70cc8d9379658438608ac8a0114e5c00I"logical_path;
+F"%d50d158d55885c929bc69e2173066ac2I"logical_path;
 FI"-rails_admin/colorpicker/custom_indic.gif;
 FI"pathname;
 FI"}/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/images/rails_admin/colorpicker/custom_indic.gif;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"image/gif;
 FI"
 mtime;
-FI"2012-09-11T22:09:07+04:00;
+FI"2012-09-10T23:20:06+04:00;
 FI"length;
 FI"86;
 FI"digest;

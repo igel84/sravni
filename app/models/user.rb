@@ -1,4 +1,13 @@
 class User < ActiveRecord::Base
+  rolify
+  establish_connection "production"  
+  
+  rolify :before_add => :before_add_method
+
+  def before_add_method(role)
+    # do something before it gets added
+  end
+
   authenticates_with_sorcery!
 
   has_many :shops, through: :user_shops
@@ -21,11 +30,11 @@ class User < ActiveRecord::Base
   end
 
   def seller?
-    self.user_shops != []
+    self.has_role?(:seller, :any) || self.has_role?(:city, :any) || self.has_role?(:area, :any)
   end
 
   def chain
-    self.user_shops.first.shop.chain if self.seller?
+    Chain.find(roles.find_by_name('seller').resource_id)
   end
 
   def update_password(current_password, new_password, new_password_confirmation)

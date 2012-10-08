@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477986.8273177:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541552.739314:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%d9d7e7dd8cb6ebe15fc68de1f7a65bf7I"logical_path;
+F"%f63123f3fc56353cb7ba243142c829beI"logical_path;
 FI"ckeditor/images/spacer.gif;
 FI"pathname;
 FI"y/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/images/spacer.gif;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"image/gif;
 FI"
 mtime;
-FI"2012-10-03T19:26:40+04:00;
+FI"2012-09-16T04:28:51+04:00;
 FI"length;
 FI"43;
 FI"digest;

@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477986.7842333:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541552.7038205:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%ff683d8dc2a5b1aa43efbdff997e6c7cI"logical_path;
+F"%7753b747e289ca4430750b7129c16276I"logical_path;
 FI"0ckeditor/filebrowser/images/thumbs/xlsx.gif;
 FI"pathname;
 FI"…/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/images/thumbs/xlsx.gif;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"image/gif;
 FI"
 mtime;
-FI"2012-10-03T19:26:40+04:00;
+FI"2012-09-16T04:28:51+04:00;
 FI"length;
 FI"	1522;
 FI"digest;

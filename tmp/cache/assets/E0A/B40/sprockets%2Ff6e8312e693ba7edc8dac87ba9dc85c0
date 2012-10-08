@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477986.6632113:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541552.5832725:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%2cc99a30216b08d47abacec53b451c79I"logical_path;
+F"%0475b490799b5fee05ee1690d1c2103eI"logical_path;
 FI"ckeditor/LICENSE.html;
 FI"pathname;
 FI"t/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/LICENSE.html;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"text/html;
 FI"
 mtime;
-FI"2012-10-03T19:26:40+04:00;
+FI"2012-09-16T04:28:51+04:00;
 FI"length;
 FI"
 70729;

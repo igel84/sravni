@@ -3,7 +3,7 @@ class AreasController < ApplicationController
 
   def index
     if params[:city_id]
-      @areas = City.find(params[:city_id]).areas
+      @areas = Area.all#.where(city_id: params[:city_id])
     else
       @areas = Area.all
     end

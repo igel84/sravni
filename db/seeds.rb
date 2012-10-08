@@ -34,15 +34,15 @@ ActiveRecord::Base.establish_connection(
 )      
 
 1.upto(5) do |i|
-  Area.create(name: "Район города № #{i.to_s}")
+  Area.create(name: "Район города № #{i.to_s}", city_id: 1)
 end
       
 @chains.each do |chain|
-  1.upto(rand(20)) do |i|
+  1.upto(5) do |i|
     area_id = rand(Area.all.count)
     area_id += 1 if area_id == 0
     adds = 'адрес магазина ' + i.to_s
-    Shop.create(chain_id: chain.id, area_id: area_id, adds: adds, name: chain.name, raiting: rand(3))
+    Shop.create(chain_id: chain.id, area_id: area_id, adds: adds, name: chain.name, raiting: rand(300))
   end
 end
 

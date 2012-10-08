@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349477986.679032:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541552.5986285:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%0576231cdeba7fdff09e205c1df20af4I"logical_path;
+F"%1f4fc0cdfa13469975e898fa9700434aI"logical_path;
 FI"-ckeditor/filebrowser/images/gal_more.gif;
 FI"pathname;
 FI"‚/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/images/gal_more.gif;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"image/gif;
 FI"
 mtime;
-FI"2012-10-03T19:26:40+04:00;
+FI"2012-09-16T04:28:51+04:00;
 FI"length;
 FI"	1101;
 FI"digest;

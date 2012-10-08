@@ -53,3 +53,8 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+group :test, :development do
+  gem 'thin'
+end
+gem "rolify"

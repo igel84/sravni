@@ -1,3 +1,5 @@
-$('.new_form').html("<%= escape_javascript render 'form', locals: {area: @area} %><hr />");
-$('.shops').html("<%= escape_javascript(render partial: 'shop', collection: @shops) %>");
-$('body').my_upload();
+$('#shops .shop').html("<%= escape_javascript select('role', 'shop_id', @shops.collect {|p| [ p.label, p.id ] }, {:include_blank => true}, html_options = {class: 'chzn-select-deselect chzn-areas', :'data-placeholder' => 'Выберите район'}) %>");
+$('.chzn-areas').chosen();
+//$('.new_form').html("<%= escape_javascript render 'form', locals: {area: @area} %><hr />");
+//$('.shops').html("<%= escape_javascript(render partial: 'shop', collection: @shops) %>");
+//$('body').my_upload();
