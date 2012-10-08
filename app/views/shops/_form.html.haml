@@ -2,6 +2,6 @@
   = f.hidden_field :area_id
   = f.hidden_field :chain_id
   %label.control-label{:for => "shop_adds"} Новый магазин:&nbsp;&nbsp;&nbsp;
-  = f.text_field :adds, id:'shop_adds', placeholder:"адрес"
-  = f.text_field :phone, id:'shop_phone', placeholder:"телефон"
+  = f.text_field :adds, id:'shop_adds', placeholder:"адрес", class:'span5 offset1'
+  = f.text_field :phone, id:'shop_phone', placeholder:"телефон", class:'span3'
   %button.btn{:type => "submit"} добавить

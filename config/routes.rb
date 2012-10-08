@@ -23,11 +23,11 @@ InitialRelease::Application.routes.draw do
     root :to => 'cities#index'
   end
 
-  match 'cities/:id/with_area/:area_id' => "cities#show"
-  match 'cities/:id/with_chain/:chain_id' => "cities#show"
-  match 'cities/:id/with_area/:area_id/with_chain/:chain_id' => "cities#show"
+  #match 'with_area/:area_id' => "cities#show"
+  #match 'cities/:id/with_chain/:chain_id' => "cities#show"
+  #match 'cities/:id/with_area/:area_id/with_chain/:chain_id' => "cities#show"
 
-  match 'prices' => "prices#index"
+  resources :prices
 
   resources :cities do
     resources :shops

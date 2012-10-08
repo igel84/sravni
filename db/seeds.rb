@@ -28,7 +28,7 @@
 ActiveRecord::Base.clear_cache!
 ActiveRecord::Base.establish_connection(
     adapter: 'sqlite3',
-    database: 'db/voronezh.sqlite3',
+    database: 'db/moscow.sqlite3',
     pool: 5,
     timeout: 5000
 )      

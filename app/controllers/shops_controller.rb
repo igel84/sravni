@@ -90,13 +90,14 @@ class ShopsController < ApplicationController
   end
 
   def show
-    if params[:id] 
-      @area = Area.find(params[:area_id]) if params[:area_id]
-      @chain = Chain.find(params[:id]) || Chain.first
-      render 'cities/show'
-    else
-      redirect_to cities_path(@city.id)
-    end
+    @shop = Shop.find(params[:id])
+    #if params[:id] 
+      #@area = Area.find(params[:area_id]) if params[:area_id]
+      #@chain = Chain.find(params[:id]) || Chain.first
+      #render 'cities/show'
+    #else
+      #redirect_to cities_path(@city.id)
+    #end
   end
 
 end

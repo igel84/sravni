@@ -5,46 +5,8 @@ class CitiesController < ApplicationController
   def show
     if @current_city && params[:area_id].nil? && params[:chain_id].nil?
       @city = @current_city
-      session['city'] = @city.id   
-
-      #@temp_shops = []
-
-      #1.upto(5) do
-      #  shops = nil
-      #  count = 0
-      #  while (shops == nil || shops == []) && count < 1000
-      #    shops = Shop.all(limit: 1, order: 'raiting' ) # .select("sh.chain_id").where("ci.id = ?", @city.id).joins("as sh inner join cities as ci on sh.area_id = ci.area_id")
-      #    count+=1
-      #    shops = nil if @temp_shops.include?(shops)
-      #  end
-      #  @temp_shops = @temp_shops | shops
-      #end
-
-      @temp_shops = Shop.all(limit: 5, order: 'raiting', offset: rand(Shop.count) - 5 )
-      
-      #@temp_shops.uniq!
-
-      count = @temp_shops.count
-
-      #@temp_shops += Shop.all(limit: (5 - count), order: 'raiting' ) if count < 5
-      @temp_shops.shuffle
-      
-      #@temp_shops = @temp_shops.where(chain_id: 2)
-      @shops = nil
-
-      #@city.areas.each do |area|
-      #  @temp_shops << area.shops
-      #end
-
-      #count = @temp_shops.size
-      #@temp_shops.slice!(5..count-1).shuffle if count > 0
-
-      #1.upto(7) do |i|
-      #  @shops << @temp_shops[i] if @temp_shops != []
-      #end
-
-      #@shops = nil if @shops == []
-    
+      session['city'] = @city.id
+      @temp_shops = Shop.order('raiting DESC').page params[:page]
     elsif params[:id] && params[:area_id] && params[:chain_id].nil?
       @area = Area.find(params[:area_id]) || Area.first
       @city = City.find(params[:id]) || City.first
