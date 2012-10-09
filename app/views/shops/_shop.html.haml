@@ -7,7 +7,7 @@
       %i.icon-ok.icon-white
     = link_to [@city, @shop], method: 'delete', confirm: 'вы уверены?', class: 'btn btn-danger btn-pop', style: 'width:20px;', title: 'удалить магазин' do
       %i.icon-trash.icon-white
-    = link_to [@city, @shop], class: 'btn', style: 'width:20px;', title: 'просмотр прайса' do
+    = link_to url_for(controller: 'shop_products', action: 'edit', shop_id: @shop.id, city_id: @city.id), class: 'btn', style: 'width:20px;', title: 'просмотр прайса', remote: true do
       %i.icon-list
 =# form_for [@city, XmlFile.new(shop_id: @shop.id)], html: {style:"padding-top:10px;padding-left:70px;padding-right:90px;"} do |f|
 =#  

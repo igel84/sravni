@@ -28,12 +28,14 @@
                       - City.all.each do |city|
                         %li
                           = link_to city.alias, root_url(subdomain: city.name)
-                  %li.active
+                  %li.divider-vertical
+                  %li{class: "#{controller_name == 'cities' && action_name == 'index' ? 'active' : ''}"}
                     = link_to 'главная', url_for(controller: 'cities', action: 'index', subdomain: false)
-                  %li
-                    %a{:href => "#"} какая-нибудь
-                  %li
-                    %a{:href => "#"} другая                                   
+                  %li.divider-vertical
+                  %li= link_to 'информация', '#'
+                  %li.divider-vertical
+                  %li= link_to 'помощь', '#'
+                  %li.divider-vertical
                 %ul.nav.pull-right
                   %li.divider-vertical
                   %li.dropdown

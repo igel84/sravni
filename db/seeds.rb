@@ -22,35 +22,83 @@
 
 #user.activate!
 
+@cities = City.all
 @chains = Chain.all
 @products = Product.all
 
 ActiveRecord::Base.clear_cache!
 ActiveRecord::Base.establish_connection(
     adapter: 'sqlite3',
-    database: 'db/moscow.sqlite3',
+    database: 'db/voronezh.sqlite3',
     pool: 5,
     timeout: 5000
-)      
+)
 
-1.upto(5) do |i|
-  Area.create(name: "Район города № #{i.to_s}", city_id: 1)
-end
-      
-@chains.each do |chain|
-  1.upto(5) do |i|
-    area_id = rand(Area.all.count)
-    area_id += 1 if area_id == 0
-    adds = 'адрес магазина ' + i.to_s
-    Shop.create(chain_id: chain.id, area_id: area_id, adds: adds, name: chain.name, raiting: rand(300))
-  end
-end
+Shop.destroy_all(chain_id: 1)
+Shop.destroy_all(chain_id: 2)
+Shop.destroy_all(chain_id: 3)
 
-Shop.all.each do |shop|
-  @products.each do |prod|
-    1.upto(2) do |i|
-      name = 'продовольственный товар № ' + i.to_s
-      ShopProduct.create(product_id: prod.id, shop_id: shop.id, price: rand(1000), name: name)
+@cities.each do |city|
+  if city.id == 1 || city.id == 2
+    city.chains = []
+    city.save
+
+    ActiveRecord::Base.clear_cache!
+    ActiveRecord::Base.establish_connection(
+        adapter: 'sqlite3',
+        database: "db/#{city.name}.sqlite3",
+        pool: 5,
+        timeout: 5000
+    )
+    
+    @chains.each do |chain|
+      if Shop.where(chain_id: chain.id).first
+        city.chains << chain        
+      end
     end
+
+    ActiveRecord::Base.clear_cache!
+    ActiveRecord::Base.establish_connection(
+        adapter: 'sqlite3',
+        database: "db/development.sqlite3",
+        pool: 5,
+        timeout: 5000
+    )
+    city.save
+
   end
 end
+
+#ActiveRecord::Base.clear_cache!
+#ActiveRecord::Base.establish_connection(
+#    adapter: 'sqlite3',
+#    database: 'db/voronezh.sqlite3',
+#    pool: 5,
+#    timeout: 5000
+#)      
+
+#1.upto(5) do |i|
+#  Area.create(name: "Район города № #{i.to_s}", city_id: 1)
+#end
+      
+#@chains.each do |chain|
+#  1.upto(5) do |i|
+#    area_id = rand(Area.all.count)
+#    area_id += 1 if area_id == 0
+#    adds = 'адрес магазина ' + i.to_s
+#    Shop.create(chain_id: chain.id, area_id: area_id, adds: adds, name: chain.name, raiting: rand(300))
+#  end
+#end
+
+#Shop.all.each do |shop|
+#  @products.each do |prod|
+#    1.upto(2) do |i|
+#      name = 'продовольственный товар № ' + i.to_s
+#      ShopProduct.create(product_id: prod.id, shop_id: shop.id, price: rand(1000), name: name)
+#    end
+#  end
+#end
+
+#Shop.all.each do |shop|
+#  shop.set_raiting
+#end

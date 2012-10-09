@@ -19,7 +19,7 @@
         %tr
           = hidden_field_tag 'price[][product_id]', price.product_id
           %td
-            %label= price.product
+            %label= Product.find(price.product_id).name
           %td= text_field_tag 'price[][name]', price.name, class: 'input-xlarge', style: 'margin-top:-3px'
           %td= text_field_tag 'price[][value]', price.value, class: 'input-mini', style: 'margin-top:-3px'
           %td= link_to 'удалить', '#', class: 'del-item'

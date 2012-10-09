@@ -7,6 +7,8 @@ class City < ActiveRecord::Base
   has_many :areas
 	has_many :users
 
+  has_and_belongs_to_many :chains
+
   def to_s
     name
   end

@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349718393.15794:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349814944.6206245:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%93f88bca676569defa5f5227f1ba299eI"logical_path;
+F"%2edf00b0f151389014cbaf4ea5fe051aI"logical_path;
 FI"bootstrap-responsive.css;
 FI"pathname;
 FI":$root/app/assets/stylesheets/bootstrap-responsive.css;
@@ -9,9 +9,9 @@ FI"content_type;
 FI"text/css;
 FI"
 mtime;
-FI"2012-09-07T23:26:29+04:00;
+FI"2012-10-09T22:55:53+04:00;
 FI"	body;
-FI"˜O/*!
+FI"VP/*!
  * Bootstrap Responsive v2.1.0
  *
  * Copyright 2012 Twitter, Inc
@@ -1052,6 +1052,10 @@ FI"˜O/*!
     overflow: visible !important;
   }
 }
+.popover-inner {
+  padding: 0;
+}
+.popover-title, .popover-content { padding: 2px !important; }
 ;
 FI"asset_paths;
 F[I":$root/app/assets/stylesheets/bootstrap-responsive.css;
@@ -1060,8 +1064,8 @@ F[{I"	path;
 FI":$root/app/assets/stylesheets/bootstrap-responsive.css;
 FI"
 mtime;
-FIu:	TimeÛ Ä1ﬁi
+FIu:	Time2%Ä≠ÚZﬂ
 :@_zoneI"MSK;
-T:nano_numih:nano_deni:submicro"6:offseti@8I"hexdigest;
-F"%c219aaf8ea699b474c840e0ea3b903c9I"_version;
+T:nano_numiÅ:nano_deni:submicro"8P:offseti@8I"hexdigest;
+F"%283070bcdf1fdf5ef96d763d3825c975I"_version;
 F"%46dde6621c301f4928e3b34efee9e3b5

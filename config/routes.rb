@@ -32,6 +32,7 @@ InitialRelease::Application.routes.draw do
   resources :cities do
     resources :shops
     resources :xml_files
+    resource :shop_products
     resources :areas do
       resources :chains do 
         resources :shops

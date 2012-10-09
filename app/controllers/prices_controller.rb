@@ -1,4 +1,8 @@
+#encoding: utf-8
 class PricesController < ApplicationController
+  include ActionView::Helpers::NumberHelper
+  include PricesHelper
+
   skip_before_filter :require_login, :only => :index
   skip_before_filter :override_db, :only => :index
 
@@ -8,10 +12,12 @@ class PricesController < ApplicationController
       Product.all.each do |product|  
         @prices += '<tr><td>' + product.name + '</td>'
         params[:ids].each do |key, val|
-          @prices += '<td>' + ShopProduct.where(shop_id: key, product_id: product.id).first.try(:price).to_s + '</td>' unless key.nil?
+          @prices += '<td style="text-align:center;cursor:pointer;cursor:hand;" rel="popover" data-content="' + include_all_price(key, product.id) + '" data-original-title="' + product.name + '" class="popover-text">' + number_to_currency(ShopProduct.where(shop_id: key, product_id: product.id).first.try(:price) || '0', unit: 'p.', separator: ',', format: "%n%u") + '</td>' unless key.nil?
         end
         @prices += '</tr>'          
       end
+
+      #@prices = params[:ids]
     end
     #render 'index'
   end
@@ -30,7 +36,7 @@ class PricesController < ApplicationController
 
     @shop = 0
 
-    if params[:city_id]
+    if params[:city_id] && !params[:city_id].blank?
       @current_city = City.find(params[:city_id])
       ActiveRecord::Base.clear_cache!
       ActiveRecord::Base.establish_connection(
@@ -55,13 +61,37 @@ class PricesController < ApplicationController
         end
       # on AREA
       elsif params[:area_id] && !params[:area_id].blank? && params[:type] == 'area'
-        shop = 'dsf'
+        Shop.where(area_id: params[:area_id], chain_id: params[:chain_id]).each do |shop|
+          @price_list.each do |price|
+            sh_pr = ShopProduct.where(shop_id: shop.id, product_id: price.product_id, name: price.name).first
+            if sh_pr
+              sh_pr.destroy if price.value == '-'
+              if price.value != '-'
+                sh_pr.price = price.value
+                sh_pr.save 
+              end 
+            else
+              ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.value)
+            end
+          end
+        end
       # on CITY
-      else  params[:city_id] && !params[:city_id].blank? && params[:type] == 'city'
-        shop = 'dsf'
-      end 
-      @shop += Shop.all.count
-    
+      elsif  params[:city_id] && !params[:city_id].blank? && params[:type] == 'city'
+        Shop.where(chain_id: params[:chain_id]).each do |shop|
+          @price_list.each do |price|
+            sh_pr = ShopProduct.where(shop_id: shop.id, product_id: price.product_id, name: price.name).first
+            if sh_pr
+              sh_pr.destroy if price.value == '-'
+              if price.value != '-'
+                sh_pr.price = price.value
+                sh_pr.save 
+              end 
+            else
+              ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.value)
+            end
+          end
+        end 
+      end
     #on CHAIN
     elsif params[:chain_id] && !params[:chain_id].blank? && params[:type] == 'chain'
       City.all.each do |city|
@@ -72,13 +102,25 @@ class PricesController < ApplicationController
             database: "db/#{city.name}.sqlite3",
             pool: 5,
             timeout: 5000
-        ) 
-        @shop += Shop.all.count
-        #@shop = 10
+        )
+        Shop.where(chain_id: params[:chain_id]).each do |shop|
+          @price_list.each do |price|
+            sh_pr = ShopProduct.where(shop_id: shop.id, product_id: price.product_id, name: price.name).first
+            if sh_pr
+              sh_pr.destroy if price.value == '-'
+              if price.value != '-'
+                sh_pr.price = price.value
+                sh_pr.save 
+              end 
+            else
+              ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.value)
+            end
+          end         
+        end
       end
     end
 
-    render js: "$('.close-btn').click();alert('#{@shop}');"
+    render js: "$('.close-btn').click();alert('информация успешно обновлена');"
   end
 
 end

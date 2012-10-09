@@ -26,24 +26,24 @@
     .row
       .offset1.span3
         .btn-group
-          %a.btn.btn-info.dropdown-toggle{:'data-toggle' => 'dropdown', href: '#'}
-            Выберите район
+          %a.btn.btn-info.dropdown-toggle{:'data-toggle' => 'dropdown', href: '#', style: 'width: 180px'}
+            = @area == nil ? 'Выберите район' : @area.name
             %span.caret
           %ul.dropdown-menu
             - Area.all.each do |area|
               %li= link_to area.name, {controller: 'cities', action: 'show', area_id: area.id}
       .span3
         .btn-group
-          %a.btn.btn-info.dropdown-toggle{:'data-toggle' => 'dropdown', href: '#'}
-            Выберите сеть
+          %a.btn.btn-info.dropdown-toggle{:'data-toggle' => 'dropdown', href: '#', style: 'width: 180px'}
+            = @chain == nil ? 'Выберите сеть' : @chain.name
             %span.caret
           %ul.dropdown-menu
-            - Chain.all.each do |chain|
+            - @current_city.chains.each do |chain|
               %li= link_to chain.name, {controller: 'cities', action: 'show', chain_id: chain.id}
       .span3
         .btn-group
-          %a.btn.btn-info.dropdown-toggle{:'data-toggle' => 'dropdown', href: '#'}
-            Выберите магазин
+          %a.btn.btn-info.dropdown-toggle{:'data-toggle' => 'dropdown', href: '#', style: 'width: 180px'}
+            = @shop == nil ? 'Выберите магазин' : truncate(@shop.label, length: 23, ommission: '...')
             %span.caret
           %ul.dropdown-menu
             - Shop.order('name').each do |shop|
@@ -54,9 +54,11 @@
     - if @temp_shops
       - @temp_shops.each do |shop|
         %td.shops{style: 'width:100px;text-align:center;', id:"shop_#{shop.id}"}
-          = link_to shop.name, root_path if shop.name
+          = link_to shop.name, '#' if shop.name
           %br/
           .muted{style: 'font-size:9px'}= link_to truncate(shop.adds, length: 15, ommission: '...'), [@current_city, shop], title: shop.adds, rel: "tooltip", :'data-placement' => 'right'
+      - if @temp_shops.count < 5
+        %td{colspan: "#{5 -@temp_shops.count}", style: 'width:116px'}
 = paginate @temp_shops, outer_window: 3 if @temp_shops != []
 %br/
 %blockquote.pull-right
