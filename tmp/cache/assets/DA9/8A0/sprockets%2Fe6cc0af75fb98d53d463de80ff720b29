@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.6271145:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.359533:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%002576ded86cdd4a8ee824276f511dabI"logical_path;
+F"%8a5ffe9a6e0216e99b99df621dba2d4bI"logical_path;
 FI""rails_admin/ra.remote-form.js;
 FI"pathname;
 FI"|/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/ra.remote-form.js;

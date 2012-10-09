@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.6293314:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.3613975:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%5569a96cb49281f98b64c3154cfe0ab9I"logical_path;
+F"%80f0ba5685c11d2dacd03aedf2878d6bI"logical_path;
 FI"rails_admin/jquery.pjax.js;
 FI"pathname;
 FI"y/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/jquery.pjax.js;

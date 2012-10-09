@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349513382.2371747:@value{	I"length:EFiäI"digest;
-=======
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.2132125:@value{	I"length:EFiäI"digest;
->>>>>>> a9e0bc390dbd981e8daf92703167d73c4e35bb85
-F"%740565da01559ea7fc3888b679a4d025I"source;
-FI"ä/* ===================================================
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349718408.9902623:@value{	I"length:EFiÌI"digest;
+F"%5216aa0a0b76407f7b03f8ed74874117I"source;
+FI"Ì/* ===================================================
  * bootstrap-transition.js v2.1.0
  * http://twitter.github.com/bootstrap/javascript.html#transitions
  * ===================================================
@@ -22,53 +18,6 @@ FI"ä/* ===================================================
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================== */
-
-
-
-!function ($) {
-
-  $(function () {
-
-    "use strict"; // jshint ;_;
-
-
-    /* CSS TRANSITION SUPPORT (http://www.modernizr.com/)
-     * ======================================================= */
-
-    $.support.transition = (function () {
-
-      var transitionEnd = (function () {
-
-        var el = document.createElement('bootstrap')
-          , transEndEventNames = {
-               'WebkitTransition' : 'webkitTransitionEnd'
-            ,  'MozTransition'    : 'transitionend'
-            ,  'OTransition'      : 'oTransitionEnd otransitionend'
-            ,  'transition'       : 'transitionend'
-            }
-          , name
-
-        for (name in transEndEventNames){
-          if (el.style[name] !== undefined) {
-            return transEndEventNames[name]
-          }
-        }
-
-      }())
-
-      return transitionEnd && {
-        end: transitionEnd
-      }
-
-    })()
-
-  })
-
-}(window.jQuery);
-;
-FI"_version;
-<<<<<<< HEAD
-F"%fab91690054e5ed11e0c5453110b0e9c
-=======
-F"%be3ef3d5fef9e9ae96abc60c988c5ee1
->>>>>>> a9e0bc390dbd981e8daf92703167d73c4e35bb85
+!function(a){a(function(){"use strict",a.support.transition=function(){var a=function(){var a=document.createElement("bootstrap"),b={WebkitTransition:"webkitTransitionEnd",MozTransition:"transitionend",OTransition:"oTransitionEnd otransitionend",transition:"transitionend"},c;for(c in b)if(a.style[c]!==undefined)return b[c]}();return a&&{end:a}}()})}(window.jQuery);
+TI"_version;
+F"%11b50e06f47220e0acb98b48aeb154c1

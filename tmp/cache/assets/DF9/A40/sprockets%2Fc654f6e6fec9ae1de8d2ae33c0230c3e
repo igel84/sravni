@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541552.8478875:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586725.5598288:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%d43b3f30fbd18ce96b5f4b75ac25b1caI"logical_path;
+F"%b14ed85134c00bccd2e7d129934b6865I"logical_path;
 FI",ckeditor/plugins/link/images/anchor.gif;
 FI"pathname;
 FI"Å/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/plugins/link/images/anchor.gif;

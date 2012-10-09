@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.6397374:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.41839:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%1b77c7ba4bf6a7755092cfdc44d4b0b0I"logical_path;
+F"%12c2caba3e743af84b762ecba3602adbI"logical_path;
 FI"(rails_admin/ra.nested-form-hooks.js;
 FI"pathname;
 FI"Å/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/ra.nested-form-hooks.coffee;

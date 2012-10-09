@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.6812758:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.5018308:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%6430ae262f116342915e40668873ad80I"logical_path;
+F"%7eb41e7178f34012b7067080392c55c2I"logical_path;
 FI"bootstrap-typeahead.js;
 FI"pathname;
 FI"}/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-typeahead.js;

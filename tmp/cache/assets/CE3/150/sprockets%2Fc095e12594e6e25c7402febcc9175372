@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541552.7767465:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586725.521389:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%d78a977fe82743dba4638cf83fc18588I"logical_path;
+F"%01878d37c9644910f5c711f9b6af6021I"logical_path;
 FI":ckeditor/plugins/devtools/lang/_translationstatus.txt;
 FI"pathname;
 FI"è/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/plugins/devtools/lang/_translationstatus.txt;

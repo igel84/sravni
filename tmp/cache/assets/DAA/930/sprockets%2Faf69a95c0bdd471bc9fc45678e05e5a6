@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.657536:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.4770145:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%53040301997b7a6e20cf75b3df98a98cI"logical_path;
+F"%86642800fe46f91075dcfac9ce4763a7I"logical_path;
 FI"bootstrap-transition.js;
 FI"pathname;
 FI"~/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-transition.js;

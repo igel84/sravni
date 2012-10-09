@@ -1,6 +1,10 @@
-$('#shops .area').html("<%= escape_javascript select('role', 'area_id', @areas.collect {|p| [ p.name, p.id ] }, {:include_blank => true}, html_options = {class: 'chzn-select-deselect chzn-areas', :'data-placeholder' => 'Выберите район'}) %>");
+$('#shops .area').html("<%= escape_javascript select_tag('area_id', options_from_collection_for_select(@areas, 'id', 'name'),  :include_blank => true, :'data-placeholder' => 'Выберите район', class: 'chzn-select-deselect chzn-areas') %>");
 $('.chzn-areas').chosen().change(function() {
   var id = $(this).val();
   var chain_id = $('#chain').val();
-  $.get('/areas/'+id+'/shops.js?chain_id='+ chain_id, function(data){});
+  var city_id = $('.chzn-city').val();
+  $.get('/areas/'+id+'/shops.js?chain_id='+chain_id+'&city_id='+city_id, function(data){});
 });
+$('.shop').html('');
+$('.price').html('');
+$('#add-price').text('добавить прайс города');

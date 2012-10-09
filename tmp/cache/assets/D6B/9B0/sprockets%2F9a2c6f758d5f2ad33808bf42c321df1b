@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541567.4077716:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586740.349231:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%e1f828417ed177be220b97d64fea7d22I"logical_path;
+F"%b7539f0173646fedf32a58c9ab2faccdI"logical_path;
 FI"glyphicons-halflings.png;
 FI"pathname;
 FI"z/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/bootstrap-sass-2.1.0.0/vendor/assets/images/glyphicons-halflings.png;

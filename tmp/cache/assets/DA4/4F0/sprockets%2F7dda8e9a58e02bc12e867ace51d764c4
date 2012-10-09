@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.5631073:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.3377638:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%72ee40723e8abb0399fe79000563e29eI"logical_path;
+F"%15bcadef566b99aecfe90bdecff7bfebI"logical_path;
 FI"jquery.ui.sortable.js;
 FI"pathname;
 FI"{/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-ui-rails-1.1.1/vendor/assets/javascripts/jquery.ui.sortable.js;

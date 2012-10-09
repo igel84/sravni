@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541550.4148738:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586722.9448547:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%d956a286ef6f0f1a0eabf37e654035a1I"logical_path;
+F"%e67f07a287196dad3612b2d24b672713I"logical_path;
 FI"3ckeditor/filebrowser/javascripts/jquery.min.js;
 FI"pathname;
 FI"ˆ/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/filebrowser/javascripts/jquery.min.js;

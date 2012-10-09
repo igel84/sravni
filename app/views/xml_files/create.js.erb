@@ -1,6 +1,6 @@
-<% if !@count #@xml_file.new_record? 
-%>
+<% unless @price_list &&  @price_list != [] %>
   alert('no');
 <% else %>
-  alert("<%= @count %> продуктов считано и сохранено");
+  $('.modal').html("<%= j render partial: 'price' %>");
+  $('.modal').modal();
 <% end %>

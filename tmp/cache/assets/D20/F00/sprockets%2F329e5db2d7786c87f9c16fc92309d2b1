@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.577105:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.3522654:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%37b9dc22a30f5eaff33776ffbeed4de7I"logical_path;
+F"%bc91c58b3a11f18dd03e67b0a97cf638I"logical_path;
 FI"%rails_admin/ra.datetimepicker.js;
 FI"pathname;
 FI"/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/ra.datetimepicker.js;

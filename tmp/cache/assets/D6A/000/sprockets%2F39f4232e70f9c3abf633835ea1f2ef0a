@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349513382.2909613:@value{	I"length:EFi›
-=======
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541583.2243755:@value{	I"length:EFi›
->>>>>>> a9e0bc390dbd981e8daf92703167d73c4e35bb85
-I"digest;
-F"%8a21f895adbe1423ac80157a63f7ab31I"source;
-FI"›
-/* ============================================================
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349718409.2852056:@value{	I"length:EFi_I"digest;
+F"%1561c933851e9b4c668c4b07615a54bbI"source;
+FI"_/* ============================================================
  * bootstrap-button.js v2.1.0
  * http://twitter.github.com/bootstrap/javascript.html#buttons
  * ============================================================
@@ -24,89 +18,6 @@ FI"›
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ============================================================ */
-
-
-
-!function ($) {
-
-  "use strict"; // jshint ;_;
-
-
- /* BUTTON PUBLIC CLASS DEFINITION
-  * ============================== */
-
-  var Button = function (element, options) {
-    this.$element = $(element)
-    this.options = $.extend({}, $.fn.button.defaults, options)
-  }
-
-  Button.prototype.setState = function (state) {
-    var d = 'disabled'
-      , $el = this.$element
-      , data = $el.data()
-      , val = $el.is('input') ? 'val' : 'html'
-
-    state = state + 'Text'
-    data.resetText || $el.data('resetText', $el[val]())
-
-    $el[val](data[state] || this.options[state])
-
-    // push to event loop to allow forms to submit
-    setTimeout(function () {
-      state == 'loadingText' ?
-        $el.addClass(d).attr(d, d) :
-        $el.removeClass(d).removeAttr(d)
-    }, 0)
-  }
-
-  Button.prototype.toggle = function () {
-    var $parent = this.$element.parent('[data-toggle="buttons-radio"]')
-
-    $parent && $parent
-      .find('.active')
-      .removeClass('active')
-
-    this.$element.toggleClass('active')
-  }
-
-
- /* BUTTON PLUGIN DEFINITION
-  * ======================== */
-
-  $.fn.button = function (option) {
-    return this.each(function () {
-      var $this = $(this)
-        , data = $this.data('button')
-        , options = typeof option == 'object' && option
-      if (!data) $this.data('button', (data = new Button(this, options)))
-      if (option == 'toggle') data.toggle()
-      else if (option) data.setState(option)
-    })
-  }
-
-  $.fn.button.defaults = {
-    loadingText: 'loading...'
-  }
-
-  $.fn.button.Constructor = Button
-
-
- /* BUTTON DATA-API
-  * =============== */
-
-  $(function () {
-    $('body').on('click.button.data-api', '[data-toggle^=button]', function ( e ) {
-      var $btn = $(e.target)
-      if (!$btn.hasClass('btn')) $btn = $btn.closest('.btn')
-      $btn.button('toggle')
-    })
-  })
-
-}(window.jQuery);
-;
-FI"_version;
-<<<<<<< HEAD
-F"%29833995c241c101eabe97e86de2ec99
-=======
-F"%237ebb6150b049829c271aff64136657
->>>>>>> a9e0bc390dbd981e8daf92703167d73c4e35bb85
+!function(a){"use strict";var b=function(b,c){this.$element=a(b),this.options=a.extend({},a.fn.button.defaults,c)};b.prototype.setState=function(a){var b="disabled",c=this.$element,d=c.data(),e=c.is("input")?"val":"html";a+="Text",d.resetText||c.data("resetText",c[e]()),c[e](d[a]||this.options[a]),setTimeout(function(){a=="loadingText"?c.addClass(b).attr(b,b):c.removeClass(b).removeAttr(b)},0)},b.prototype.toggle=function(){var a=this.$element.parent('[data-toggle="buttons-radio"]');a&&a.find(".active").removeClass("active"),this.$element.toggleClass("active")},a.fn.button=function(c){return this.each(function(){var d=a(this),e=d.data("button"),f=typeof c=="object"&&c;e||d.data("button",e=new b(this,f)),c=="toggle"?e.toggle():c&&e.setState(c)})},a.fn.button.defaults={loadingText:"loading..."},a.fn.button.Constructor=b,a(function(){a("body").on("click.button.data-api","[data-toggle^=button]",function(b){var c=a(b.target);c.hasClass("btn")||(c=c.closest(".btn")),c.button("toggle")})})}(window.jQuery);
+TI"_version;
+F"%7eef7d78cd55c527b638f56a7a7c44b9

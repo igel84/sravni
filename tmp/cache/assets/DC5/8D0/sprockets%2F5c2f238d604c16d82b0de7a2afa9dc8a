@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.28003:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586725.9823358:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%4cb61c33a7706b043fb0304cb70ef61cI"logical_path;
+F"%c3e2164d93dae9b95ae6b64f606a66deI"logical_path;
 FI"4rails_admin/colorpicker/colorpicker_overlay.png;
 FI"pathname;
 FI"„/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/images/rails_admin/colorpicker/colorpicker_overlay.png;

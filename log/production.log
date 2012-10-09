@@ -1563,3 +1563,10 @@ Compiled rails_admin/custom/ui.js  (0ms)  (pid 6212)
 Compiled rails_admin/jquery.colorpicker.css  (26ms)  (pid 6212)
 Compiled rails_admin/rails_admin.css  (1ms)  (pid 6212)
 Compiled rails_admin/imports.css  (3541ms)  (pid 6212)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2012-10-07 09:16:48 +0400
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+Rendered users/edit.html.haml within layouts/application (279.9ms)
+Completed 200 OK in 484ms (Views: 346.9ms | ActiveRecord: 9.9ms)

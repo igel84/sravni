@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.042529:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586725.789141:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%cf2b3c983bc048c4385df8089e7e283eI"logical_path;
+F"%6673ceed9ff6009a8fe62f0c82174863I"logical_path;
 FI"8ckeditor/plugins/uicolor/yui/assets/picker_mask.png;
 FI"pathname;
 FI"ç/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/plugins/uicolor/yui/assets/picker_mask.png;

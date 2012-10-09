@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541553.033019:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586725.779417:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%e0fb1388e35672525fad5a45a0088352I"logical_path;
+F"%87c50428d1568feddf3ce6c54c5ee733I"logical_path;
 FI")ckeditor/plugins/uicolor/uicolor.gif;
 FI"pathname;
 FI"~/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/ckeditor-3.7.1/vendor/assets/javascripts/ckeditor/plugins/uicolor/uicolor.gif;

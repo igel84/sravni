@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
   # Собственно сам метод переключения 
   def override_db
     @current_city = City.find_by_name(request.subdomain) 
-    @current_city = City.find(params[:city_id]) if params[:city_id] && @current_city.nil?
+    @current_city = City.find(params[:city_id]) if params[:city_id] #&& @current_city.nil?
     @products = Product.all
     @users = User.all
     @chains = Chain.all

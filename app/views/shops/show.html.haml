@@ -1,0 +1,9 @@
+= @shop.area.name
+= @shop.name
+= @shop.adds
+%table.table
+  - @shop.shop_products.order('product_id').each do |sh_pr|
+    %tr
+      %td= Product.find(sh_pr.product_id).name
+      %td= sh_pr.name
+      %td= sh_pr.price

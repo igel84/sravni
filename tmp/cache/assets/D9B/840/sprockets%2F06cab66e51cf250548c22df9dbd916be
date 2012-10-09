@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349541567.435531:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586740.429216:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%5fa2e7bfe35e5a22a5b0cec056f53858I"logical_path;
+F"%87108ce16fbaa151e2cc2aa621c23115I"logical_path;
 FI"progressbar.gif;
 FI"pathname;
 FI"x/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-fileupload-rails-0.3.4/vendor/assets/images/progressbar.gif;
