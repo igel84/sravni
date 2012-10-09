@@ -28,29 +28,33 @@
 ActiveRecord::Base.clear_cache!
 ActiveRecord::Base.establish_connection(
     adapter: 'sqlite3',
-    database: 'db/moscow.sqlite3',
+    database: 'db/voronezh.sqlite3',
     pool: 5,
     timeout: 5000
 )      
 
-1.upto(5) do |i|
-  Area.create(name: "Район города № #{i.to_s}", city_id: 1)
-end
+#1.upto(5) do |i|
+#  Area.create(name: "Район города № #{i.to_s}", city_id: 1)
+#end
       
-@chains.each do |chain|
-  1.upto(5) do |i|
-    area_id = rand(Area.all.count)
-    area_id += 1 if area_id == 0
-    adds = 'адрес магазина ' + i.to_s
-    Shop.create(chain_id: chain.id, area_id: area_id, adds: adds, name: chain.name, raiting: rand(300))
-  end
-end
+#@chains.each do |chain|
+#  1.upto(5) do |i|
+#    area_id = rand(Area.all.count)
+#    area_id += 1 if area_id == 0
+#    adds = 'адрес магазина ' + i.to_s
+#    Shop.create(chain_id: chain.id, area_id: area_id, adds: adds, name: chain.name, raiting: rand(300))
+#  end
+#end
+
+#Shop.all.each do |shop|
+#  @products.each do |prod|
+#    1.upto(2) do |i|
+#      name = 'продовольственный товар № ' + i.to_s
+#      ShopProduct.create(product_id: prod.id, shop_id: shop.id, price: rand(1000), name: name)
+#    end
+#  end
+#end
 
 Shop.all.each do |shop|
-  @products.each do |prod|
-    1.upto(2) do |i|
-      name = 'продовольственный товар № ' + i.to_s
-      ShopProduct.create(product_id: prod.id, shop_id: shop.id, price: rand(1000), name: name)
-    end
-  end
+  shop.set_raiting
 end

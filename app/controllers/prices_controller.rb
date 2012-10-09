@@ -1,4 +1,7 @@
 class PricesController < ApplicationController
+  include ActionView::Helpers::NumberHelper
+  include PricesHelper
+
   skip_before_filter :require_login, :only => :index
   skip_before_filter :override_db, :only => :index
 
@@ -8,10 +11,12 @@ class PricesController < ApplicationController
       Product.all.each do |product|  
         @prices += '<tr><td>' + product.name + '</td>'
         params[:ids].each do |key, val|
-          @prices += '<td>' + ShopProduct.where(shop_id: key, product_id: product.id).first.try(:price).to_s + '</td>' unless key.nil?
+          @prices += '<td style="text-align:center;cursor:pointer;cursor:hand;" rel="popover" data-content="' + include_all_price(key, product.id) + '" data-original-title="' + product.name + '" class="popover-text">' + number_to_currency(ShopProduct.where(shop_id: key, product_id: product.id).first.try(:price) || '0', unit: 'p.', separator: ',', format: "%n%u") + '</td>' unless key.nil?
         end
         @prices += '</tr>'          
       end
+
+      #@prices = params[:ids]
     end
     #render 'index'
   end

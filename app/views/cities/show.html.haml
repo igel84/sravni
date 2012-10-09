@@ -56,7 +56,7 @@
         %td.shops{style: 'width:100px;text-align:center;', id:"shop_#{shop.id}"}
           = link_to shop.name, root_path if shop.name
           %br/
-          .muted{style: 'font-size:9px'}= link_to truncate(shop.adds, length: 15, ommission: '...'), [@current_city, shop], title: shop.adds, rel: "tooltip", :'data-placement' => 'right'
+          .muted{style: 'font-size:9px'}= link_to truncate(shop.adds, length: 15, ommission: '...'), [@current_city, shop], title: shop.adds, rel: "tooltip", :'data-placement' => 'right'          
 = paginate @temp_shops, outer_window: 3 if @temp_shops != []
 %br/
 %blockquote.pull-right

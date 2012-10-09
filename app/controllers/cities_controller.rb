@@ -6,7 +6,7 @@ class CitiesController < ApplicationController
     if @current_city && params[:area_id].nil? && params[:chain_id].nil?
       @city = @current_city
       session['city'] = @city.id
-      @temp_shops = Shop.order('raiting DESC').page params[:page]
+      @temp_shops = Shop.order('raiting').page params[:page]
     elsif params[:id] && params[:area_id] && params[:chain_id].nil?
       @area = Area.find(params[:area_id]) || Area.first
       @city = City.find(params[:id]) || City.first
