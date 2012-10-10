@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.4895809:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349856763.5469716:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%fdf192afda3aaed2431a4399674e5b3cI"logical_path;
+F"%acff0e3a1506d28973df93fab609f9c2I"logical_path;
 FI"bootstrap-dropdown.js;
 FI"pathname;
 FI"|/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-dropdown.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-10T23:19:45+04:00;
+FI"2012-09-11T09:48:13+04:00;
 FI"	body;
 FI"s/* ============================================================
  * bootstrap-dropdown.js v2.1.0
@@ -170,8 +170,8 @@ F[{I"	path;
 FI"|/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/bootstrap-sass-2.1.0.0/vendor/assets/javascripts/bootstrap-dropdown.js;
 FI"
 mtime;
-FIu:	TimeS!€}ª×N
+FIu:	Timee!€HÄÐÀ
 :@_zoneI"MSK;
-T:nano_numiÖ:nano_deni:submicro"G:offseti@8I"hexdigest;
-F"%d5d6e3e8320965bf5b3ac84ed40e86fbI"_version;
-F"%1c9609bc58b1e77c196de29021583379
+T:nano_numi:nano_deni:submicro"€:offseti@8I"hexdigest;
+F"%8b5a827f09108652c3bd99c629eaaeefI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

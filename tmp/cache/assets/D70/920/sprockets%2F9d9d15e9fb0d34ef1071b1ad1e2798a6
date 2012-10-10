@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.41839:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349856763.4304805:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%12c2caba3e743af84b762ecba3602adbI"logical_path;
+F"%f19215df846c8e8b1e8cc9ddce58d011I"logical_path;
 FI"(rails_admin/ra.nested-form-hooks.js;
 FI"pathname;
 FI"Å/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/ra.nested-form-hooks.coffee;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-10T23:20:06+04:00;
+FI"2012-09-11T09:48:37+04:00;
 FI"	body;
 FI"'(function() {
   var $;
@@ -67,8 +67,8 @@ F[{I"	path;
 FI"Å/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/ra.nested-form-hooks.coffee;
 FI"
 mtime;
-FIu:	TimeS!Ä~kP
+FIu:	Timee!Ä»ÍT¬
 :@_zoneI"MSK;
-T:nano_numi≥:nano_deni:submicro"ê:offseti@8I"hexdigest;
-F"%99d94e2b152a24b21fd3b1ac41537c70I"_version;
-F"%1c9609bc58b1e77c196de29021583379
+T:nano_numiÔ:nano_deni:submicro"IP:offseti@8I"hexdigest;
+F"%18cbf57ad75fb1fb4783e7ee7b3503e5I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

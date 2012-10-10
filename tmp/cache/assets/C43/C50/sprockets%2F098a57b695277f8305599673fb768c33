@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.3576565:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349856763.272453:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%ae63224b69366683a99490100c75aec3I"logical_path;
+F"%0c60f1085b7293c1050d4633419fbc81I"logical_path;
 FI"'rails_admin/ra.filtering-select.js;
 FI"pathname;
 FI"|/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/ra.filtering-select.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-10T23:20:06+04:00;
+FI"2012-09-11T09:48:37+04:00;
 FI"	body;
 FI"N/*
  * RailsAdmin filtering select @VERSION
@@ -210,8 +210,8 @@ F[{I"	path;
 FI"|/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/ra.filtering-select.js;
 FI"
 mtime;
-FIu:	TimeS!Ä~kP
+FIu:	Timee!Ä»ÍT¬
 :@_zoneI"MSK;
-T:nano_numi≥:nano_deni:submicro"ê:offseti@8I"hexdigest;
-F"%506c0244f82e20c4a5765d0193c6355eI"_version;
-F"%1c9609bc58b1e77c196de29021583379
+T:nano_numiÔ:nano_deni:submicro"IP:offseti@8I"hexdigest;
+F"%c2fd0aae4da283d512272df54b4757e2I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349586726.539122:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349856763.7266214:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%a42365fd5b4c5522cab69d0a32584cb0I"logical_path;
+F"%4b70972cb4754c64bfbb29b212c07837I"logical_path;
 FI"rails_admin/custom/ui.js;
 FI"pathname;
 FI"w/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/custom/ui.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2012-09-10T23:20:06+04:00;
+FI"2012-09-11T09:48:37+04:00;
 FI"	body;
 FI"T/*
   Meant to be overriden in user's app/assets/javascripts/rails_admin/custom directory. no content here
@@ -33,8 +33,8 @@ F[{I"	path;
 FI"w/home/igel/.rvm/gems/ruby-1.9.3-p194@global/gems/rails_admin-0.0.5/app/assets/javascripts/rails_admin/custom/ui.js;
 FI"
 mtime;
-FIu:	TimeS!Ä~kP
+FIu:	Timee!Ä»ÍT¬
 :@_zoneI"MSK;
-T:nano_numi≥:nano_deni:submicro"ê:offseti@8I"hexdigest;
-F"%81608a05576a162e6d833a2aed5be085I"_version;
-F"%1c9609bc58b1e77c196de29021583379
+T:nano_numiÔ:nano_deni:submicro"IP:offseti@8I"hexdigest;
+F"%b6ff3871aa5267bcba74daf939e39c77I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5
