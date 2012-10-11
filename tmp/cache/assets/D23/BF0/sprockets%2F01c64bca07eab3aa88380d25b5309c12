@@ -1,0 +1,51 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349995345.375478:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%b9a3c30124be4f61f4fd38633ba52aa6I"logical_path;
+FI"img_files.js;
+FI"pathname;
+FI"5$root/app/assets/javascripts/img_files.js.coffee;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-10-12T02:41:59+04:00;
+FI"	body;
+FI"0
+  jQuery.fn.img_upload = function() {
+    return $(this).fileupload({
+      dataType: "script",
+      add: function(e, data) {
+        var file, types;
+        types = /(\.|\/)(gif|jpe?g|png)$/i;
+        file = data.files[0];
+        if (types.test(file.type) || types.test(file.name)) {
+          data.context = $(tmpl("template-upload", file));
+          $(this).append(data.context);
+          return data.submit();
+        } else {
+          return alert("" + file.name + " не является файлом изображения");
+        }
+      },
+      progress: function(e, data) {
+        var progress;
+        if (data.context) {
+          progress = parseInt(data.loaded / data.total * 100, 10);
+          return data.context.find('.bar').css('width', progress + '%');
+        }
+      }
+    });
+  };
+;
+TI"asset_paths;
+F[I"5$root/app/assets/javascripts/img_files.js.coffee;
+FI"dependency_paths;
+F[{I"	path;
+FI"5$root/app/assets/javascripts/img_files.js.coffee;
+FI"
+mtime;
+FIu:	Timev%�aŵ�
+:@_zoneI"MSK;
+T:nano_numi�:nano_deni:submicro"Pp:offseti@8I"hexdigest;
+F"%53161dcb2c59c0c50baa09a6a4085b46I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

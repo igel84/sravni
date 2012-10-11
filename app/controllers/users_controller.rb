@@ -1,5 +1,6 @@
 #encoding: utf-8
 class UsersController < ApplicationController
+  before_filter :require_login
   skip_before_filter :require_login, :only => [:new, :create, :activate]
 
   def new

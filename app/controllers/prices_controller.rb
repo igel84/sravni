@@ -23,6 +23,8 @@ class PricesController < ApplicationController
   end
 
   def create
+    redirect_to edit_user_path if !current_user.admin?
+    
     @price_list = []
     params[:price].each do |key, val|
       price = Price.new        

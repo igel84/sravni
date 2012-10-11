@@ -1,4 +1,6 @@
 class XmlFilesController < ApplicationController
+  before_filter :require_login
+  
   #skip_before_filter :require_login
   skip_before_filter :override_db
   require 'fileutils'

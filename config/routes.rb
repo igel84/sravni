@@ -28,6 +28,9 @@ InitialRelease::Application.routes.draw do
   #match 'cities/:id/with_area/:area_id/with_chain/:chain_id' => "cities#show"
 
   resources :prices
+  resources :promotions do
+    get :start
+  end
 
   resources :cities do
     resources :shops

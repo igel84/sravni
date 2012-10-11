@@ -1,5 +1,6 @@
 class ShopsController < ApplicationController
-  skip_before_filter :require_login, :only => :wellcom
+  before_filter :require_login
+  skip_before_filter :require_login, :only => :show
 
   def index
     if params[:area_id] && !params[:chain_id]
@@ -21,6 +22,8 @@ class ShopsController < ApplicationController
   end
 
   def create    
+    redirect_to edit_user_path if !current_user.admin?
+
     if params[:shop]
       @city = City.find(params[:city_id])
       @chain = Chain.find(params[:shop][:chain_id])
@@ -48,6 +51,8 @@ class ShopsController < ApplicationController
   end
 
   def update
+    redirect_to edit_user_path if !current_user.admin?
+    
     if params[:city_id] && params[:id]
       @shop = Shop.find(params[:id])
       @shop.adds = params[:shop][:adds]
@@ -68,6 +73,8 @@ class ShopsController < ApplicationController
   end
 
   def destroy
+    redirect_to edit_user_path if !current_user.admin?
+    
     if params[:id]
       Shop.find(params[:id]).destroy if current_user.admin?
       redirect_to edit_user_path(current_user)

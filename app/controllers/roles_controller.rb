@@ -1,6 +1,6 @@
 #encoding: utf-8
 class RolesController < ApplicationController
-  #skip_before_filter :require_login
+  before_filter :require_login
   skip_before_filter :override_db
 
   before_filter :check_role
@@ -10,6 +10,8 @@ class RolesController < ApplicationController
   end
 
   def create
+    redirect_to edit_user_path if !current_user.admin?
+    
     @user = User.find(params[:user_id])
     if params[:shop_id] && !params[:shop_id].blank?
       @user.add_role :shop, Shop.find(params[:shop_id])
@@ -25,6 +27,8 @@ class RolesController < ApplicationController
   end
 
   def destroy
+    redirect_to edit_user_path if !current_user.admin?
+    
     @user = User.find(params[:user_id])
     Role.find(params[:id]).destroy
     flash[:info] = "Роль для пользователя " + @user.email + " успешно удалена"

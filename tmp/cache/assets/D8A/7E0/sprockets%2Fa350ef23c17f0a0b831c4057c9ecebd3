@@ -1,0 +1,5 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349995345.396571:@value{	I"length:EFi�I"digest;
+F"%17b7449cd7b67405e38002e5af69658aI"source;
+FI"�jQuery.fn.img_upload=function(){return $(this).fileupload({dataType:"script",add:function(a,b){var c,d;return d=/(\.|\/)(gif|jpe?g|png)$/i,c=b.files[0],d.test(c.type)||d.test(c.name)?(b.context=$(tmpl("template-upload",c)),$(this).append(b.context),b.submit()):alert(""+c.name+" не является файлом изображения")},progress:function(a,b){var c;if(b.context)return c=parseInt(b.loaded/b.total*100,10),b.context.find(".bar").css("width",c+"%")}})};
+TI"_version;
+F"%b9a3c30124be4f61f4fd38633ba52aa6

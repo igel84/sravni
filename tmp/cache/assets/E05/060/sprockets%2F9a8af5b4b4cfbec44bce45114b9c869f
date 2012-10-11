@@ -1,0 +1,43 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1349995311.9478185:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%ba04f5bbc1e52aed50e3ac784f4421d3I"logical_path;
+FI"img_files.js.cofee;
+FI"pathname;
+FI"4$root/app/assets/javascripts/img_files.js.cofee;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-10-12T02:40:49+04:00;
+FI"	body;
+FI"`jQuery.fn.img_upload = ->
+  $(this).fileupload
+    dataType: "script"
+    add: (e, data) ->
+      types = /(\.|\/)(gif|jpe?g|png)$/i
+      file = data.files[0]
+      if types.test(file.type) || types.test(file.name)
+        data.context = $(tmpl("template-upload", file))
+        $(this).append(data.context)
+        data.submit()
+      else
+        alert("#{file.name} не является файлом изображения")
+    progress: (e, data) ->
+      if data.context
+        progress = parseInt(data.loaded / data.total * 100, 10)
+        data.context.find('.bar').css('width', progress + '%')
+;
+;
+TI"asset_paths;
+F[I"4$root/app/assets/javascripts/img_files.js.cofee;
+FI"dependency_paths;
+F[{I"	path;
+FI"4$root/app/assets/javascripts/img_files.js.cofee;
+FI"
+mtime;
+FIu:	Timev%�c��
+:@_zoneI"MSK;
+T:nano_numi:nano_deni:submicro"S:offseti@8I"hexdigest;
+F"%53161dcb2c59c0c50baa09a6a4085b46I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5
