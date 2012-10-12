@@ -29,7 +29,9 @@ InitialRelease::Application.routes.draw do
 
   resources :prices
   resources :promotions do
-    get :start
+    post :search, on: :collection
+    #post :search, on: :collection
+    get :start    
   end
 
   resources :cities do

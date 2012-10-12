@@ -2,7 +2,7 @@ class PromotionsController < ApplicationController
   before_filter :require_login
 
   def index
-    @promotions = current_user.promotions
+    @promotions = current_user.admin? == true ? Promotion.all : current_user.promotions
   end
 
   def create
@@ -21,6 +21,7 @@ class PromotionsController < ApplicationController
 
   def update
     @promotion = Promotion.find(params[:id])
+    params[:promotion][:balance] = params[:promotion][:balance].to_i * 10
     @promotion.update_attributes(params[:promotion])
     respond_to do |format|
       format.html { redirect_to promotions_path }
@@ -32,9 +33,14 @@ class PromotionsController < ApplicationController
     @promotion = Promotion.find(params[:promotion_id])
   end
 
+  def search
+    @promotions = Promotion.where(key: params[:key])
+    render 'index'
+  end
+
   def destroy
     @promotion = Promotion.find(params[:id])
-    @promotion.destroy if @promotion.user == current_user
+    @promotion.destroy if @promotion.user == current_user || current_user.admin?
     redirect_to promotions_path
   end
 

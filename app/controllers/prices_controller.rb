@@ -3,6 +3,8 @@ class PricesController < ApplicationController
   include ActionView::Helpers::NumberHelper
   include PricesHelper
 
+  skip_before_filter :show_promotion, only: :index
+
   skip_before_filter :require_login, :only => :index
   skip_before_filter :override_db, :only => :index
 
