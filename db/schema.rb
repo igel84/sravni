@@ -99,8 +99,9 @@ ActiveRecord::Schema.define(:version => 20121009220548) do
     t.string   "link"
     t.string   "info"
     t.string   "key"
-    t.integer  "count"
-    t.integer  "balance"
+    t.integer  "user_id"
+    t.integer  "count",               :default => 0
+    t.integer  "balance",             :default => 0
     t.boolean  "active",              :default => false
     t.datetime "created_at"
     t.datetime "updated_at"

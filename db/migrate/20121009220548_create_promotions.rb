@@ -11,8 +11,9 @@ class CreatePromotions < ActiveRecord::Migration
       t.string :link
       t.string :info
       t.string :key
-      t.integer :count
-      t.integer :balance
+      t.integer :user_id
+      t.integer :count, default: 0
+      t.integer :balance, default: 0
       t.boolean :active, default: false
 
       t.timestamps

@@ -1,1 +1,25 @@
-= link_to 'разместить рекламу', new_promotion_path, class: 'btn btn-large btn-block btn-danger', type: 'button'
+= link_to 'добавить рекламу', new_promotion_path, class: 'btn btn-large btn-block btn-success', type: 'button'
+%table.table
+  - @promotions.each do |promotion|
+    %tr
+      %td{style: 'width: 140px;text-align:center;'}= image_tag(promotion.banner.url(:original)) if promotion.banner
+      %td
+        %span.label{style: 'width:100px;display:inline-block;text-align:center'} название
+        %small= promotion.name
+        %br/
+        %span.label{style: 'width:100px;display:inline-block;text-align:center'} ссылка
+        %small= promotion.link
+        %br/
+        %span.label{style: 'width:100px;display:inline-block;text-align:center'} информация
+        %small= promotion.info == nil ? 'ожидает оплаты' : promotion.info
+        %br/
+        %span.label{style: 'width:100px;display:inline-block;text-align:center'} баланс
+        %small= number_to_currency(promotion.balance / 10, unit: 'p.', separator: ',', format: "%n%u")
+        %br/
+        %span.label{style: 'width:100px;display:inline-block;text-align:center'} платежный код
+        %span.label.label-important{style: 'display:inline-block;text-align:center', rel: 'tooltip', title: 'данный код нужно указать в комментариях к платежу на QIWI-кошелек 9050518868'}= promotion.key
+      %td{style: 'width: 80px'}
+        = link_to promotion, method: :delete, confirm: 'вы действительно хотите удалить рекламу?', title: 'удалить рекламу', rel: 'tooltip', class: 'btn btn-danger' do
+          %i.icon-trash
+        %br/
+        

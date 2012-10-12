@@ -13,6 +13,7 @@ class User < ActiveRecord::Base
   has_many :shops, through: :user_shops
   has_many :user_shops
   belongs_to :city
+  has_many :promotions
   
   attr_accessible :email, :password, :password_confirmation, :city_id
 

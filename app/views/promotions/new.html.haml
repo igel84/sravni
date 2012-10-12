@@ -9,9 +9,9 @@
 .well.well-small  
   %legend Реклама
   .container
-    .row
-      .offset1.span6
-        = form_for Promotion.new, html: {class:'form-horizontal'} do |f|
+    = form_for Promotion.new, html: {class:'form-horizontal'} do |f|        
+      .row
+        .offset1.span6
           %script{id:"template-upload", type:"text/x-tmpl"}
             %div.upload.span2{style: 'display:block;position:relative;top:10px;left:10px;'}
           .hidden
@@ -27,8 +27,8 @@
             %span.add-on
               %i.icon-map-marker
             = f.text_field :link, placeholder:"ссылка на сайт", class: 'span9'      
-      .span2
-        #promotion_img= image_tag "banner.jpg", class:"img-rounded"
-    %br/
-    .row
-      .offset1.span8#start
+        .span2
+          #promotion_img= image_tag "banner.jpg", class:"img-rounded"
+      %br/
+      .row
+        .offset1.span8#start
