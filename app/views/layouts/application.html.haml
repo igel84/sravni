@@ -48,18 +48,18 @@
                           = link_to edit_user_path(current_user) do
                             %i.icon-user
                             профиль
-                        %li
-                          = link_to '' do
-                            %i.icon-envelope
-                            подписка
+                        -#%li
+                        -#  = link_to '' do
+                        -#    %i.icon-envelope
+                        -#    подписка
                         %li
                           = link_to promotions_path do
                             %i.icon-eye-open
                             реклама
-                        %li
-                          = link_to '' do
-                            %i.icon-globe
-                            друзья
+                        -#%li
+                        -#  = link_to '' do
+                        -#   %i.icon-globe
+                        -#    друзья
                         %li
                           = link_to logout_path do
                             %i.icon-remove-circle
@@ -81,3 +81,7 @@
             %a{href: promotion.link, target:'_blank', title: promotion.name}
               = image_tag(promotion.banner.url(:original), class:"img-rounded")
             %br/
+    %footer.footer
+      .container
+        %p.pull-right
+          = mail_to 'support@sravnim-ka.ru', 'поддержка сайта', encode: "javascript"

@@ -11,6 +11,9 @@
         - if promotion.active == true
           %span.label.label-success активна
           %br/          
+        - elsif promotion.active == false
+          %span.label.label-important не активна
+          %br/                  
         %span.label{style: 'width:100px;display:inline-block;text-align:center'} название
         %small= promotion.name
         %br/
