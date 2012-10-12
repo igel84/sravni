@@ -15,6 +15,19 @@ class PromotionsController < ApplicationController
     end
   end
 
+  def edit
+    @promotion = Promotion.find(params[:id])
+  end
+
+  def update
+    @promotion = Promotion.find(params[:id])
+    @promotion.update_attributes(params[:promotion])
+    respond_to do |format|
+      format.html { redirect_to promotions_path }
+      format.js  {render :layout => false }
+    end
+  end
+
   def start
     @promotion = Promotion.find(params[:promotion_id])
   end

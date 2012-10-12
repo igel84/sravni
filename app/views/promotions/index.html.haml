@@ -18,8 +18,11 @@
         %br/
         %span.label{style: 'width:100px;display:inline-block;text-align:center'} платежный код
         %span.label.label-important{style: 'display:inline-block;text-align:center', rel: 'tooltip', title: 'данный код нужно указать в комментариях к платежу на QIWI-кошелек 9050518868'}= promotion.key
-      %td{style: 'width: 80px'}
-        = link_to promotion, method: :delete, confirm: 'вы действительно хотите удалить рекламу?', title: 'удалить рекламу', rel: 'tooltip', class: 'btn btn-danger' do
-          %i.icon-trash
+      %td{style: 'width:80px;text-align:center;'}
+        = link_to edit_promotion_path(promotion), title: 'изменить рекламу', rel: 'tooltip', class: 'btn btn-large', style: 'width:20px;margin-top:4px' do
+          %i.icon-edit
         %br/
+        %br/
+        = link_to promotion, method: :delete, confirm: 'вы действительно хотите удалить рекламу?', title: 'удалить рекламу', rel: 'tooltip', class: 'btn btn-danger btn-large', style: 'width:20px' do
+          %i.icon-trash
         
