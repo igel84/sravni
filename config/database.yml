@@ -26,3 +26,117 @@ moscow:
   database: db/moscow.sqlite3
   pool: 5
   timeout: 5000
+
+peterburg:
+  adapter: sqlite3
+  database: db/peterburg.sqlite3
+  pool: 5
+  timeout: 5000
+
+novosibirsk:
+  adapter: sqlite3
+  database: db/novosibirsk.sqlite3
+  pool: 5
+  timeout: 5000
+
+yekaterinburg:
+  adapter: sqlite3
+  database: db/yekaterinburg.sqlite3
+  pool: 5
+  timeout: 5000
+
+nnovgorod:
+  adapter: sqlite3
+  database: db/nnovgorod.sqlite3
+  pool: 5
+  timeout: 5000
+
+kazan:
+  adapter: sqlite3
+  database: db/kazan.sqlite3
+  pool: 5
+  timeout: 5000
+
+omsk:
+  adapter: sqlite3
+  database: db/omsk.sqlite3
+  pool: 5
+  timeout: 5000
+
+chelyabinsk:
+  adapter: sqlite3
+  database: db/chelyabinsk.sqlite3
+  pool: 5
+  timeout: 5000
+
+rostov:
+  adapter: sqlite3
+  database: db/rostov.sqlite3
+  pool: 5
+  timeout: 5000
+
+ufa:
+  adapter: sqlite3
+  database: db/ufa.sqlite3
+  pool: 5
+  timeout: 5000
+
+volgograd:
+  adapter: sqlite3
+  database: db/volgograd.sqlite3
+  pool: 5
+  timeout: 5000
+
+perm:
+  adapter: sqlite3
+  database: db/perm.sqlite3
+  pool: 5
+  timeout: 5000
+
+saratov:
+  adapter: sqlite3
+  database: db/saratov.sqlite3
+  pool: 5
+  timeout: 5000
+
+krasnodar:
+  adapter: sqlite3
+  database: db/krasnodar.sqlite3
+  pool: 5
+  timeout: 5000
+
+krasnoyarsk:
+  adapter: sqlite3
+  database: db/krasnoyarsk.sqlite3
+  pool: 5
+  timeout: 5000
+
+togliatti:
+  adapter: sqlite3
+  database: db/togliatti.sqlite3
+  pool: 5
+  timeout: 5000
+
+izhevsk:
+  adapter: sqlite3
+  database: db/izhevsk.sqlite3
+  pool: 5
+  timeout: 5000
+
+tumen:
+  adapter: sqlite3
+  database: db/tumen.sqlite3
+  pool: 5
+  timeout: 5000
+
+samara:
+  adapter: sqlite3
+  database: db/samara.sqlite3
+  pool: 5
+  timeout: 5000
+
+ulanovsk:
+  adapter: sqlite3
+  database: db/ulanovsk.sqlite3
+  pool: 5
+  timeout: 5000

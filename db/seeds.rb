@@ -29,45 +29,58 @@
 ActiveRecord::Base.clear_cache!
 ActiveRecord::Base.establish_connection(
     adapter: 'sqlite3',
-    database: 'db/voronezh.sqlite3',
+    database: 'db/old_development.sqlite3',
     pool: 5,
     timeout: 5000
 )
 
-Shop.destroy_all(chain_id: 1)
-Shop.destroy_all(chain_id: 2)
-Shop.destroy_all(chain_id: 3)
-
-@cities.each do |city|
-  if city.id == 1 || city.id == 2
-    city.chains = []
-    city.save
-
+@areas = Area.all
+@areas.each do |area|
+    next if area.city_id == nil
     ActiveRecord::Base.clear_cache!
     ActiveRecord::Base.establish_connection(
         adapter: 'sqlite3',
-        database: "db/#{city.name}.sqlite3",
+        database: "db/#{City.find(area.city_id).name}.sqlite3",
         pool: 5,
         timeout: 5000
     )
-    
-    @chains.each do |chain|
-      if Shop.where(chain_id: chain.id).first
-        city.chains << chain        
-      end
-    end
-
-    ActiveRecord::Base.clear_cache!
-    ActiveRecord::Base.establish_connection(
-        adapter: 'sqlite3',
-        database: "db/development.sqlite3",
-        pool: 5,
-        timeout: 5000
-    )
-    city.save
-
-  end
+    Area.create(city_id: area.city_id, name: area.name)
 end
+
+#Shop.destroy_all(chain_id: 1)
+#Shop.destroy_all(chain_id: 2)
+#Shop.destroy_all(chain_id: 3)
+
+#@cities.each do |city|
+#  if city.id == 1 || city.id == 2
+#    city.chains = []
+#    city.save
+#
+#    ActiveRecord::Base.clear_cache!
+#    ActiveRecord::Base.establish_connection(
+#        adapter: 'sqlite3',
+#        database: "db/#{city.name}.sqlite3",
+#        pool: 5,
+#        timeout: 5000
+#    )
+    
+#    @chains.each do |chain|
+#      if Shop.where(chain_id: chain.id).first
+#        city.chains << chain        
+#      end
+#    end
+
+#    ActiveRecord::Base.clear_cache!
+#    ActiveRecord::Base.establish_connection(
+#        adapter: 'sqlite3',
+#        database: "db/development.sqlite3",
+#        pool: 5,
+#        timeout: 5000
+#    )
+#    city.save
+
+#  end
+#end
 
 #ActiveRecord::Base.clear_cache!
 #ActiveRecord::Base.establish_connection(

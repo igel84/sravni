@@ -1,0 +1,260 @@
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (19.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (3.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20120904231302)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "salt" varchar(255), "shop_id" integer, "city_id" integer, "admin" boolean DEFAULT 'f', "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120904231302')[0m
+Migrating to SorceryRememberMe (20120904231303)
+  [1m[35m (0.9ms)[0m  ALTER TABLE "users" ADD "remember_me_token" varchar(255) DEFAULT NULL
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "remember_me_token_expires_at" datetime DEFAULT NULL[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_users_on_remember_me_token" ON "users" ("remember_me_token")[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120904231303')
+Migrating to SorceryResetPassword (20120904231304)
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD "reset_password_token" varchar(255) DEFAULT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "reset_password_token_expires_at" datetime DEFAULT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "reset_password_email_sent_at" datetime DEFAULT NULL[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120904231304')[0m
+Migrating to SorceryUserActivation (20120904234937)
+  [1m[35m (1.1ms)[0m  ALTER TABLE "users" ADD "activation_state" varchar(255) DEFAULT NULL
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "activation_token" varchar(255) DEFAULT NULL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "activation_token_expires_at" datetime DEFAULT NULL
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_users_on_activation_token" ON "users" ("activation_token")
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120904234937')[0m
+Migrating to CreateCities (20120907193834)
+  [1m[35m (0.5ms)[0m  CREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "alias" varchar(255), "okrug" boolean, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120907193834')[0m
+Migrating to CreateRailsAdminHistoriesTable (20120910192041)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "rails_admin_histories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message" text, "username" varchar(255), "item" integer, "table" varchar(255), "month" integer(2), "year" integer(5), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_rails_admin_histories" ON "rails_admin_histories" ("item", "table", "month", "year")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910192041')[0m
+Migrating to CreateChains (20120910213804)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "chains" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "logo_content_type" varchar(255), "logo_file_size" integer, "logo_file_name" varchar(255), "logo_updated_at" datetime, "info" text, "site" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910213804')[0m
+Migrating to CreateShops (20120910215754)
+  [1m[35m (0.5ms)[0m  CREATE TABLE "shops" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "chain_id" integer, "name" varchar(255), "area_id" integer, "raiting" integer DEFAULT 1, "adds" varchar(255), "phone" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910215754')[0m
+Migrating to CreateAreas (20120910215902)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "areas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "city_id" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910215902')[0m
+Migrating to CreateProducts (20120910222445)
+  [1m[35m (0.6ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910222445')[0m
+Migrating to CreateShopProducts (20120910222849)
+  [1m[35m (0.3ms)[0m  CREATE TABLE "shop_products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "shop_id" integer, "product_id" integer, "price" decimal, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910222849')[0m
+Migrating to CreateCkeditorAssets (20120914105854)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "ckeditor_assets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_file_name" varchar(255) NOT NULL, "data_content_type" varchar(255), "data_file_size" integer, "assetable_id" integer, "assetable_type" varchar(30), "type" varchar(30), "width" integer, "height" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("ckeditor_assets")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "idx_ckeditor_assetable_type" ON "ckeditor_assets" ("assetable_type", "type", "assetable_id")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("ckeditor_assets")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('idx_ckeditor_assetable_type')
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "idx_ckeditor_assetable" ON "ckeditor_assets" ("assetable_type", "assetable_id")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120914105854')
+Migrating to CreateArticles (20120914105899)
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "slug" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("articles")
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_articles_on_slug" ON "articles" ("slug")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120914105899')
+Migrating to CreateFriendlyIdSlugs (20120914109999)
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "friendly_id_slugs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "slug" varchar(255) NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" varchar(40), "created_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("friendly_id_slugs")
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_friendly_id_slugs_on_sluggable_id" ON "friendly_id_slugs" ("sluggable_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("friendly_id_slugs")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_sluggable_id')[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs" ("slug", "sluggable_type")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("friendly_id_slugs")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_friendly_id_slugs_on_slug_and_sluggable_type')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_sluggable_id')[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_friendly_id_slugs_on_sluggable_type" ON "friendly_id_slugs" ("sluggable_type")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120914109999')[0m
+Migrating to CreateXmlFiles (20121002083818)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "xml_files" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "shop_id" integer, "attach_content_type" varchar(255), "attach_file_size" integer, "attach_file_name" varchar(255), "attach_updated_at" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121002083818')[0m
+Migrating to RolifyCreateRoles (20121006174722)
+  [1m[35m (0.5ms)[0m  CREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "resource_id" integer, "resource_type" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "users_roles" ("user_id" integer, "role_id" integer) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("roles")
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("roles")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_roles_on_name')[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users_roles")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121006174722')[0m
+Migrating to CreateChainsCities (20121009220547)
+  [1m[35m (0.6ms)[0m  CREATE TABLE "chains_cities" ("city_id" integer, "chain_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121009220547')[0m
+Migrating to CreatePromotions (20121009220548)
+  [1m[35m (0.8ms)[0m  CREATE TABLE "promotions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "banner_content_type" varchar(255), "banner_file_size" integer, "banner_file_name" varchar(255), "banner_updated_at" datetime, "name" varchar(255), "link" varchar(255), "info" varchar(255), "key" varchar(255), "user_id" integer, "count" integer DEFAULT 0, "balance" integer DEFAULT 0, "active" boolean DEFAULT 'f', "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121009220548')[0m
+  [1m[35m (0.9ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("areas")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("articles")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_articles_on_slug')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("chains")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("chains_cities")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("cities")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("ckeditor_assets")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('idx_ckeditor_assetable')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('idx_ckeditor_assetable_type')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("friendly_id_slugs")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_friendly_id_slugs_on_sluggable_type')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_slug_and_sluggable_type')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_friendly_id_slugs_on_sluggable_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("products")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("promotions")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_rails_admin_histories')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("roles")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_roles_on_name_and_resource_type_and_resource_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_roles_on_name')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("shop_products")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("shops")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_activation_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users_roles")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_roles_on_user_id_and_role_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("xml_files")
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (210.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (4.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to SorceryCore (20120904231302)
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "salt" varchar(255), "shop_id" integer, "city_id" integer, "admin" boolean DEFAULT 'f', "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120904231302')[0m
+Migrating to SorceryRememberMe (20120904231303)
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "remember_me_token" varchar(255) DEFAULT NULL
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD "remember_me_token_expires_at" datetime DEFAULT NULL[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_users_on_remember_me_token" ON "users" ("remember_me_token")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120904231303')
+Migrating to SorceryResetPassword (20120904231304)
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "reset_password_token" varchar(255) DEFAULT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "reset_password_token_expires_at" datetime DEFAULT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "reset_password_email_sent_at" datetime DEFAULT NULL[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120904231304')[0m
+Migrating to SorceryUserActivation (20120904234937)
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" ADD "activation_state" varchar(255) DEFAULT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "activation_token" varchar(255) DEFAULT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "activation_token_expires_at" datetime DEFAULT NULL
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_users_on_activation_token" ON "users" ("activation_token")
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120904234937')[0m
+Migrating to CreateCities (20120907193834)
+  [1m[35m (0.9ms)[0m  CREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "alias" varchar(255), "okrug" boolean, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120907193834')[0m
+Migrating to CreateRailsAdminHistoriesTable (20120910192041)
+  [1m[35m (0.6ms)[0m  CREATE TABLE "rails_admin_histories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message" text, "username" varchar(255), "item" integer, "table" varchar(255), "month" integer(2), "year" integer(5), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.4ms)[0m  CREATE INDEX "index_rails_admin_histories" ON "rails_admin_histories" ("item", "table", "month", "year")
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910192041')[0m
+Migrating to CreateChains (20120910213804)
+  [1m[35m (0.9ms)[0m  CREATE TABLE "chains" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "logo_content_type" varchar(255), "logo_file_size" integer, "logo_file_name" varchar(255), "logo_updated_at" datetime, "info" text, "site" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910213804')[0m
+Migrating to CreateShops (20120910215754)
+  [1m[35m (0.7ms)[0m  CREATE TABLE "shops" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "chain_id" integer, "name" varchar(255), "area_id" integer, "raiting" integer DEFAULT 1, "adds" varchar(255), "phone" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910215754')[0m
+Migrating to CreateAreas (20120910215902)
+  [1m[35m (0.5ms)[0m  CREATE TABLE "areas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "city_id" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910215902')[0m
+Migrating to CreateProducts (20120910222445)
+  [1m[35m (0.8ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910222445')[0m
+Migrating to CreateShopProducts (20120910222849)
+  [1m[35m (0.6ms)[0m  CREATE TABLE "shop_products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "shop_id" integer, "product_id" integer, "price" decimal, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120910222849')[0m
+Migrating to CreateCkeditorAssets (20120914105854)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "ckeditor_assets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "data_file_name" varchar(255) NOT NULL, "data_content_type" varchar(255), "data_file_size" integer, "assetable_id" integer, "assetable_type" varchar(30), "type" varchar(30), "width" integer, "height" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("ckeditor_assets")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "idx_ckeditor_assetable_type" ON "ckeditor_assets" ("assetable_type", "type", "assetable_id")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("ckeditor_assets")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('idx_ckeditor_assetable_type')
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "idx_ckeditor_assetable" ON "ckeditor_assets" ("assetable_type", "assetable_id")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120914105854')
+Migrating to CreateArticles (20120914105899)
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "slug" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("articles")
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_articles_on_slug" ON "articles" ("slug")[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120914105899')
+Migrating to CreateFriendlyIdSlugs (20120914109999)
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "friendly_id_slugs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "slug" varchar(255) NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" varchar(40), "created_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("friendly_id_slugs")
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "index_friendly_id_slugs_on_sluggable_id" ON "friendly_id_slugs" ("sluggable_id")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("friendly_id_slugs")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_sluggable_id')[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs" ("slug", "sluggable_type")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("friendly_id_slugs")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_friendly_id_slugs_on_slug_and_sluggable_type')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_sluggable_id')[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_friendly_id_slugs_on_sluggable_type" ON "friendly_id_slugs" ("sluggable_type")
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120914109999')[0m
+Migrating to CreateXmlFiles (20121002083818)
+  [1m[35m (0.6ms)[0m  CREATE TABLE "xml_files" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "shop_id" integer, "attach_content_type" varchar(255), "attach_file_size" integer, "attach_file_name" varchar(255), "attach_updated_at" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121002083818')[0m
+Migrating to RolifyCreateRoles (20121006174722)
+  [1m[35m (0.7ms)[0m  CREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "resource_id" integer, "resource_type" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "users_roles" ("user_id" integer, "role_id" integer) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("roles")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("roles")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_roles_on_name')[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users_roles")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121006174722')[0m
+Migrating to CreateChainsCities (20121009220547)
+  [1m[35m (0.5ms)[0m  CREATE TABLE "chains_cities" ("city_id" integer, "chain_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121009220547')[0m
+Migrating to CreatePromotions (20121009220548)
+  [1m[35m (0.8ms)[0m  CREATE TABLE "promotions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "banner_content_type" varchar(255), "banner_file_size" integer, "banner_file_name" varchar(255), "banner_updated_at" datetime, "name" varchar(255), "link" varchar(255), "info" varchar(255), "key" varchar(255), "user_id" integer, "count" integer DEFAULT 0, "balance" integer DEFAULT 0, "active" boolean DEFAULT 'f', "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121009220548')[0m
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("areas")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("articles")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_articles_on_slug')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("chains")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("chains_cities")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("cities")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("ckeditor_assets")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('idx_ckeditor_assetable')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('idx_ckeditor_assetable_type')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("friendly_id_slugs")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_friendly_id_slugs_on_sluggable_type')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_friendly_id_slugs_on_slug_and_sluggable_type')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_friendly_id_slugs_on_sluggable_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("products")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("promotions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_rails_admin_histories')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("roles")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_roles_on_name_and_resource_type_and_resource_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_roles_on_name')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("shop_products")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("shops")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_activation_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_remember_me_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users_roles")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_roles_on_user_id_and_role_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("xml_files")
