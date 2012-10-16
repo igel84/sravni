@@ -78,10 +78,10 @@
         .span2
           - @active_promotions.each do |promotion|
             %br/
-            %a{href: promotion.link, target:'_blank', title: promotion.name}
+            %a{href: promotion.link, target:'_blank', title: promotion.name, 'data-placement' => 'left'}
               = image_tag(promotion.banner.url(:original), class:"img-rounded")
             %br/
     %footer.footer
       .container
         %p.pull-right
-          = mail_to 'support@sravnim-ka.ru', 'поддержка сайта', encode: "javascript"
+          = mail_to 'support@sravnim-ka.ru', 'поддержка сайта', encode: "javascript", 'data-placement' => 'top', title: 'написать письмо'

@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   end
   
   def not_authenticated
-    redirect_to main_app.login_path, :alert => "First login to access this page."
+    redirect_to main_app.login_path, :alert => "Сначала войдите на сайт или зарегистрируйтесь"
   end
 
   def check_city
