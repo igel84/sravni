@@ -11,7 +11,7 @@ class ShopProductsController < ApplicationController
     @city_id = @current_city.id
     @chain_id = @shop.chain_id
     
-    @shop_products = @shop.shop_products.each
+    @shop_products = @shop.shop_products
   end
 
 end

@@ -1,6 +1,19 @@
-= @shop.area.name
-= @shop.name
-= @shop.adds
+.span11.well
+  .row
+    .offset1.span3
+      = link_to root_path, class:"thumbnail" do
+        = image_tag(@shop.chain.logo(:thumb), alt: '')
+    .span7
+      %strong
+        %p{style: 'color:#3A87AD;'}
+          = @shop.area.name
+          = ' район'
+        %p
+          = @shop.adds
+      %span.badge.badge-warning
+        8 messages
+      %span.badge.badge-info 15 followers
+.clear
 %table.table
   - @shop.shop_products.order('product_id').each do |sh_pr|
     %tr

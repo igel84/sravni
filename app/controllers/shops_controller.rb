@@ -98,6 +98,7 @@ class ShopsController < ApplicationController
 
   def show
     @shop = Shop.find(params[:id])
+    
     #if params[:id] 
       #@area = Area.find(params[:area_id]) if params[:area_id]
       #@chain = Chain.find(params[:id]) || Chain.first
