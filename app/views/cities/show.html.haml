@@ -38,8 +38,15 @@
             = @chain == nil ? 'Выберите сеть' : @chain.name
             %span.caret
           %ul.dropdown-menu
-            - @current_city.chains.each do |chain|
-              %li= link_to chain.name, {controller: 'cities', action: 'show', chain_id: chain.id}
+            - if @area
+              - Chain.all.each do |chain|
+                -# Chain.all(:conditions => {})
+                -# @area.chains.each do |chain|
+                - if chain.areas.include?(@area)
+                  %li= link_to chain.name, {controller: 'cities', action: 'show', chain_id: chain.id}
+            - else
+              - @current_city.chains.each do |chain|
+                %li= link_to chain.name, {controller: 'cities', action: 'show', chain_id: chain.id}
       .span3
         .btn-group
           %a.btn.btn-info.dropdown-toggle{:'data-toggle' => 'dropdown', href: '#', style: 'width: 180px'}
