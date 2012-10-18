@@ -1,9 +1,7 @@
 :javascript
-  $(document).ready(function() {
-    $('.del-item').click(function(){      
-      $(this).parent().parent().find('.value').val('-');
-      $(this).parent().parent().hide();
-    });
+  $('.del-item').bind('click', function(){ 
+    $(this).parent().parent().find('.value').val('-');
+    $(this).parent().parent().hide();
   });
 = form_tag '/prices', remote: true do
   .modal-header
@@ -15,7 +13,8 @@
     = hidden_field_tag :area_id, @area_id if @area_id
     = hidden_field_tag :city_id, @city_id if @city_id
     = hidden_field_tag :chain_id, @chain_id if @chain_id
-    %table.table
+    = link_to 'добавить товар', new_city_shop_products_path(city: City.find(@city_id)), remote: true, class: 'btn btn-info'
+    %table.table#shop_products
       = render @shop_products
   .modal-footer
     %a.btn.close-btn{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} Отменить

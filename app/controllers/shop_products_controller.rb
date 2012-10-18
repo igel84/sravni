@@ -2,6 +2,11 @@ class ShopProductsController < ApplicationController
   skip_before_filter :require_login
   #skip_before_filter :override_db, :only => [:index, :edit]
 
+  def new
+    @shop_product = ShopProduct.new
+    #@shop_product.product_id = 1
+  end
+
   def edit
     @shop = Shop.find(params[:shop_id])    
     
