@@ -1,1 +1,4 @@
-$('.well#shop_list').html("<legend>список магазинов:</legend><%= escape_javascript(render partial: 'cities/shop',  collection: Shop.where(area_id: @area.id).where(chain_id: @chain.id).order('created_at DESC'))%>");
+$('#shops .shop').html("<%= escape_javascript select_tag('shop_id', options_from_collection_for_select(@shops, 'id', 'label'), :include_blank => true, :'data-placeholder' => 'Выберите магазин', class: 'chzn-select-deselect chzn-shops') %>");
+$('.chzn-shops').chosen();
+$('body').shop_choise();
+$("#edit_shop_<%= @shop_id %>").remove();

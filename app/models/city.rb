@@ -7,7 +7,7 @@ class City < ActiveRecord::Base
   has_many :areas
 	has_many :users
 
-  has_and_belongs_to_many :chains
+  has_and_belongs_to_many :chains, :uniq => true
 
   def to_s
     name
