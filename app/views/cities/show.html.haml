@@ -45,16 +45,28 @@
                 - if chain.areas.include?(@area)
                   %li= link_to chain.name, {controller: 'cities', action: 'show', chain_id: chain.id}
             - else
-              - @current_city.chains.each do |chain|
-                %li= link_to chain.name, {controller: 'cities', action: 'show', chain_id: chain.id}
+              - Chain.all.each do |chain|                
+                - Area.all.each do |area|
+                  - if chain.areas.include?(area)
+                    %li= link_to chain.name, {controller: 'cities', action: 'show', chain_id: chain.id}
+                    - break
+              -# @current_city.chains.each do |chain|
+              -#  %li= link_to chain.name, {controller: 'cities', action: 'show', chain_id: chain.id}
       .span3
         .btn-group
           %a.btn.btn-info.dropdown-toggle{:'data-toggle' => 'dropdown', href: '#', style: 'width: 180px'}
             = @shop == nil ? 'Выберите магазин' : truncate(@shop.label, length: 23, ommission: '...')
             %span.caret
           %ul.dropdown-menu
-            - Shop.order('name').each do |shop|
-              %li= link_to shop.label, {controller: 'cities', action: 'show', shop_id: shop.id}
+            - if @area
+              - @area.shops.order('name').each do |shop|
+                %li= link_to shop.label, {controller: 'cities', action: 'show', shop_id: shop.id}
+            - elsif @chain
+              - @chain.shops.order('name').each do |shop|
+                %li= link_to shop.label, {controller: 'cities', action: 'show', shop_id: shop.id}
+            - else
+              - Shop.order('name').each do |shop|
+                %li= link_to shop.label, {controller: 'cities', action: 'show', shop_id: shop.id}
 %table.table.table-hover.table-striped
   %tr.success
     %td &nbsp;
