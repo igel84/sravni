@@ -34,6 +34,8 @@ InitialRelease::Application.routes.draw do
     get :start    
   end
 
+  resources :chains
+
   resources :cities do
     resources :shops
     resources :xml_files

@@ -1,0 +1,5 @@
+= form_for @chain do |f|
+  %label название сети
+  = f.text_field :name
+  = f.file_field :logo
+  = f.submit 'создать', class: 'btn'
