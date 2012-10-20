@@ -21,7 +21,7 @@
     .control-group
       %label.control-label{:for => "inputCity"} Город
       .controls
-        = select_tag "user[city_id]", options_from_collection_for_select(City.all, "id", "name"), :prompt => @user.city_id != nil ? @user.city.name : 'выберите город', class: 'span8'    
+        = select_tag "user[city_id]", options_from_collection_for_select(City.all, "id", "alias"), :prompt => @user.city_id != nil ? @user.city.name : 'выберите город', class: 'span8'    
         = f.submit 'сохранить', class:'btn pull-right'
   .well.well-small
     %legend Смена пароля
