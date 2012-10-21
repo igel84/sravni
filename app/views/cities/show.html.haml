@@ -73,7 +73,7 @@
     - if @temp_shops
       - @temp_shops.each do |shop|
         %td.shops{style: 'width:100px;text-align:center;', id:"shop_#{shop.id}"}
-          = link_to shop.name, '#' if shop.name
+          = link_to shop.name, [@current_city, shop], title: 'подробнее о магазине ...', rel: "tooltip", :'data-placement' => 'right' if shop.name
           %br/
           .muted{style: 'font-size:9px'}= link_to truncate(shop.adds, length: 15, ommission: '...'), [@current_city, shop], title: shop.adds, rel: "tooltip", :'data-placement' => 'right'
       - if @temp_shops.count < 5

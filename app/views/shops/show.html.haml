@@ -20,13 +20,14 @@
 .clear
 %table.table
   %tr
-    %th Тип
-    %th Название
-    %th Количество
-    %th Цена
+    %th{style: 'text-align:center'} Тип
+    %th{style: 'text-align:center'} Название
+    %th{style: 'text-align:center'} Количество
+    %th{style: 'text-align:center'} Цена
   - @shop.shop_products.order('product_id').each do |sh_pr|
     %tr
-      %td= Product.find(sh_pr.product_id).name
-      %td= sh_pr.name
-      %td= sh_pr.volume
-      %td= sh_pr.price
+      - product = Product.find(sh_pr.product_id)
+      %td{style: 'width:200px'}= product.name
+      %td{style: 'width:300px'}= sh_pr.name
+      %td{style: 'text-align:center'}= sh_pr.volume.to_s + ' ' + product.unit
+      %td{style: 'text-align:center'}= number_to_currency(sh_pr.price, unit: 'p.', separator: ',', format: "%n%u")

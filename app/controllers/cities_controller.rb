@@ -3,7 +3,17 @@ class CitiesController < ApplicationController
   skip_before_filter :require_login, :only => :wellcom
   before_filter :check_admin, only: :update_shop_raiting
 
+  #time for Voronezh
+  def index
+    @current_city = City.find(1)
+    redirect_to controller: 'cities', action: 'show', subdomain: "voronezh" 
+  end
+
   def show
+    if @current_city.id != 1
+      render 'error'
+    end
+
     if @current_city && params[:area_id].nil? && params[:chain_id].nil? && params[:shop_id].nil?
       @city = @current_city
       session['city'] = @city.id

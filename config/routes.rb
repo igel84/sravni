@@ -17,7 +17,7 @@ InitialRelease::Application.routes.draw do
   match '', to: 'cities#show', constraints: lambda { |r| r.subdomain.present? && r.subdomain != 'www' }
   
   #match "/cities/:id", :to => "cities#show"
-  root :to => "cities#index"
+  root :to =>  "cities#index", :requirements => { :subdomain => "voronezh" } #"cities#index"
 
   defaults :subdomain => false do
     root :to => 'cities#index'
