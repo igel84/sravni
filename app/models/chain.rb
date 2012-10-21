@@ -7,7 +7,7 @@ class Chain < ActiveRecord::Base
   has_and_belongs_to_many :cities, :uniq => true
   has_and_belongs_to_many :areas, :uniq => true
 
-	has_attached_file :logo, :styles => { :thumb=> ["140x140", :jpg] }, :whiny => false
+	has_attached_file :logo, :styles => { :thumb=> ["140x140", :png] }, :whiny => false
 
    def to_s
     name

@@ -1,6 +1,7 @@
 = form_for Chain.new do |f|
-  %label название новой сети
-  = f.text_field :name
+  %label новая сеть
+  = f.text_field :name, placeholder: 'название'
+  = f.text_field :site, placeholder: 'сайт'
   = f.file_field :logo
   = f.submit 'создать', class: 'btn'
 %table.table

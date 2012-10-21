@@ -1,8 +1,12 @@
 .span11.well
   .row
     .offset1.span3
-      %a{href: @shop.chain.site[0, 7] == 'http://' ? @shop.chain.site : 'http://' + @shop.chain.site, class:"thumbnail"}
-        = image_tag(@shop.chain.logo(:thumb), alt: '')
+      - if @shop.chain.site
+        %a{href: @shop.chain.site[0, 7] == 'http://' ? @shop.chain.site : 'http://' + @shop.chain.site, class:"thumbnail"}
+          = image_tag(@shop.chain.logo(:thumb), alt: '')
+      - else
+        %a{href: '#', class:"thumbnail"}
+          = image_tag(@shop.chain.logo(:thumb), alt: '')
     .span7
       %strong
         %p{style: 'color:#3A87AD;'}
@@ -10,12 +14,19 @@
           = ' район'
         %p
           = @shop.adds
-      -#%span.badge.badge-warning 8 messages
+      - if @shop.real_price == true
+        %span.badge.badge-warning real
       -#%span.badge.badge-info 15 followers
 .clear
 %table.table
+  %tr
+    %th Тип
+    %th Название
+    %th Количество
+    %th Цена
   - @shop.shop_products.order('product_id').each do |sh_pr|
     %tr
       %td= Product.find(sh_pr.product_id).name
       %td= sh_pr.name
+      %td= sh_pr.volume
       %td= sh_pr.price

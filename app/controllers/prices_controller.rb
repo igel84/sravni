@@ -33,7 +33,8 @@ class PricesController < ApplicationController
       key.each do |key, val|
         price.product_id = val if key == 'product_id'
         price.name = val if key == 'name'
-        price.value = val.gsub(',','.') if key == 'value'        
+        price.volume = val if key == 'volume'
+        price.count = val.gsub(',','.') if key == 'count'        
       end
       @price_list << price
     end
@@ -51,16 +52,20 @@ class PricesController < ApplicationController
       )
       # on SHOP
       if params[:shop_id] && !params[:shop_id].blank? && params[:type] == 'shop'
+        #set real price to shop
+        Shop.find(params[:shop_id]).update_attribute(:real_price, true)
+        
         @price_list.each do |price|
           sh_pr = ShopProduct.where(shop_id: params[:shop_id], product_id: price.product_id, name: price.name).first
           if sh_pr
-            sh_pr.destroy if price.value == '-'
-            if price.value != '-'
-              sh_pr.price = price.value
+            sh_pr.destroy if price.count == '-'
+            if price.count != '-'
+              sh_pr.volume = price.volume
+              sh_pr.price = price.count
               sh_pr.save 
             end 
           else
-            ShopProduct.create(shop_id: params[:shop_id], product_id: price.product_id, name: price.name, price: price.value)
+            ShopProduct.create(shop_id: params[:shop_id], product_id: price.product_id, name: price.name, price: price.count, volume: price.volume)
           end
         end
       # on AREA
@@ -69,13 +74,13 @@ class PricesController < ApplicationController
           @price_list.each do |price|
             sh_pr = ShopProduct.where(shop_id: shop.id, product_id: price.product_id, name: price.name).first
             if sh_pr
-              sh_pr.destroy if price.value == '-'
-              if price.value != '-'
-                sh_pr.price = price.value
+              sh_pr.destroy if price.count == '-'
+              if price.count != '-'
+                sh_pr.price = price.count
                 sh_pr.save 
               end 
             else
-              ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.value)
+              ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.count, volume: price.volume)
             end
           end
         end
@@ -85,13 +90,13 @@ class PricesController < ApplicationController
           @price_list.each do |price|
             sh_pr = ShopProduct.where(shop_id: shop.id, product_id: price.product_id, name: price.name).first
             if sh_pr
-              sh_pr.destroy if price.value == '-'
-              if price.value != '-'
-                sh_pr.price = price.value
+              sh_pr.destroy if price.count == '-'
+              if price.count != '-'
+                sh_pr.price = price.count
                 sh_pr.save 
               end 
             else
-              ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.value)
+              ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.count, volume: price.volume)
             end
           end
         end 
@@ -111,13 +116,13 @@ class PricesController < ApplicationController
           @price_list.each do |price|
             sh_pr = ShopProduct.where(shop_id: shop.id, product_id: price.product_id, name: price.name).first
             if sh_pr
-              sh_pr.destroy if price.value == '-'
-              if price.value != '-'
-                sh_pr.price = price.value
+              sh_pr.destroy if price.count == '-'
+              if price.count != '-'
+                sh_pr.price = price.count
                 sh_pr.save 
               end 
             else
-              ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.value)
+              ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.count, volume: price.volume)
             end
           end         
         end

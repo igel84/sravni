@@ -18,14 +18,16 @@ class XmlFilesController < ApplicationController
       2.upto(20) do |line|
         product = oo.cell(line,'A')
         name = oo.cell(line,'B')
-        value = oo.cell(line,'C')        
-        if !name.blank? && !product.blank? && !value.blank? && (prod = Product.find_by_name(product))
+        volume = oo.cell(line,'C')        
+        count = oo.cell(line,'D') 
+        if !name.blank? && !product.blank? && !volume.blank? && !count.blank? && (prod = Product.find_by_name(product))
            
           price = Price.new
           price.product = prod.name
           price.product_id = prod.id
           price.name = name
-          price.value = value.to_s.gsub(',','.')
+          price.volume = volume
+          price.count = count.to_s.gsub(',','.')
 
           @price_list << price
         end

@@ -19,7 +19,7 @@ class ChainsController < ApplicationController
 
   def update
     @chain = Chain.find(params[:id])    
-    @chain.update_params(params[:chain])
+    @chain.update_attributes(params[:chain])
     redirect_to chains_path
   end
 

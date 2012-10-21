@@ -20,8 +20,9 @@
           = hidden_field_tag 'price[][product_id]', price.product_id
           %td
             %label= Product.find(price.product_id).name
-          %td= text_field_tag 'price[][name]', price.name, class: 'input-xlarge', style: 'margin-top:-3px'
-          %td= text_field_tag 'price[][value]', price.value, class: 'input-mini', style: 'margin-top:-3px'
+          %td= text_field_tag 'price[][name]', price.name, class: 'input-large', style: 'margin-top:-3px'
+          %td= text_field_tag 'price[][volume]', price.volume, class: 'input-mini', style: 'margin-top:-3px'
+          %td= text_field_tag 'price[][count]', price.count, class: 'input-mini', style: 'margin-top:-3px'
           %td= link_to 'удалить', '#', class: 'del-item'
   .modal-footer
     %a.btn.close-btn{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} Отменить
