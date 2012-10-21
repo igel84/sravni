@@ -14,7 +14,7 @@ class Shop < ActiveRecord::Base
   def label
     name + ' ' + adds
   end
-
+  
   def set_shop_location(city_id, area_id, method)
     city = City.find(city_id) if city_id
     area = Area.find(area_id) if area_id
@@ -25,6 +25,22 @@ class Shop < ActiveRecord::Base
     elsif method == :destroy
       city.chains.delete(self.chain) if city and self.chain and self.chain.shops.count == 1 #(:all, :conditions => ["city_id = ? and chain_id = ?", city_id, self.id) if Shop.find(:all, :conditions => [])
       area.chains.delete(self.chain) if area and self.chain and self.chain.shops.count == 1
+    end
+  end
+
+  def self.set_global_price(city_id)
+    Chain.all.each do |chain|
+      real_shop = Shop.where(real_price: true, chain_id: chain.id).first
+      if real_shop
+        Shop.where(chain_id: chain.id).each do |shop|
+          if shop.real_price != true
+            real_shop.shop_products.each do |sh_pr|
+              ShopProduct.destroy_all(shop_id: shop.id, product_id: sh_pr.product_id, name: sh_pr.name)              
+              ShopProduct.create(shop_id: shop.id, product_id: sh_pr.product_id, name: sh_pr.name, price: (sh_pr.price + Random.rand(sh_pr.price * 0.05) - Random.rand(sh_pr.price * 0.05)), volume: sh_pr.volume)
+            end
+          end
+        end
+      end
     end
   end
 

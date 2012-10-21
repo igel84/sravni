@@ -84,4 +84,5 @@
   %p Экономика должна быть экономной
   %small Л. И. Брежнев
 - if current_user && current_user.admin?
+  = link_to 'случайные цены магазинам', city_set_shops_prices_path(@current_city)
   = link_to 'обновить рейтинг магазинов', city_update_shop_raiting_path(@current_city)

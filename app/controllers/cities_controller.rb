@@ -1,7 +1,7 @@
 class CitiesController < ApplicationController
   skip_before_filter :override_db, :only => :index
   skip_before_filter :require_login, :only => :wellcom
-  before_filter :check_admin, only: :update_shop_raiting
+  before_filter :check_admin, only: [:update_shop_raiting, :set_shops_prices]
 
   #time for Voronezh
   def index
@@ -49,6 +49,11 @@ class CitiesController < ApplicationController
   def update_shop_raiting
     Shop.set_global_raiting(@current_city) if @current_city
     redirect_to @current_city
+  end
+
+  def set_shops_prices
+    Shop.set_global_price(@current_city) if @current_city
+    redirect_to @current_city    
   end
 
   private

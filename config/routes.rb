@@ -38,6 +38,7 @@ InitialRelease::Application.routes.draw do
   resources :products
 
   resources :cities do
+    get :set_shops_prices
     get :update_shop_raiting
     resources :shops
     resources :xml_files
