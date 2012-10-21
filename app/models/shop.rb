@@ -28,6 +28,27 @@ class Shop < ActiveRecord::Base
     end
   end
 
+  def self.set_global_raiting(city_id)
+    Shop.all.each do |shop|      
+      count_prod = 0
+      count_price = 0
+
+      Product.all.each do |product|
+        sh_pr = ShopProduct.where(product_id: product.id, shop_id: shop.id).minimum('price')
+        if sh_pr && sh_pr != 0
+          count_prod += 1
+          count_price += sh_pr
+        end  
+      end
+
+      if count_price != 0 && count_prod != 0
+        shop.update_attribute(:raiting, count_price.to_f / count_prod.to_f)
+      else
+        shop.update_attribute(:raiting, 1000)
+      end  
+    end
+  end  
+
   def set_raiting
     @products = Product.all
 

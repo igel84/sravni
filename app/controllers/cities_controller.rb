@@ -1,6 +1,7 @@
 class CitiesController < ApplicationController
   skip_before_filter :override_db, :only => :index
   skip_before_filter :require_login, :only => :wellcom
+  before_filter :check_admin, only: :update_shop_raiting
 
   def show
     if @current_city && params[:area_id].nil? && params[:chain_id].nil? && params[:shop_id].nil?
@@ -34,5 +35,17 @@ class CitiesController < ApplicationController
       @temp_shops = Shop.where(id: @shop.id).order('raiting').page params[:page]
     end    
   end
+
+  def update_shop_raiting
+    Shop.set_global_raiting(@current_city) if @current_city
+    redirect_to @current_city
+  end
+
+  private
+    def check_admin
+      if !current_user || !current_user.admin?
+        redirect_to :root
+      end
+    end
 
 end

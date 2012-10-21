@@ -13,7 +13,6 @@ class ChainsController < ApplicationController
   end
 
   def edit
-    @chains = Chain.all
     @chain = Chain.find(params[:id])    
   end
 

@@ -35,8 +35,10 @@ InitialRelease::Application.routes.draw do
   end
 
   resources :chains
+  resources :products
 
   resources :cities do
+    get :update_shop_raiting
     resources :shops
     resources :xml_files
     resource :shop_products

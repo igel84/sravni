@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1350000742.1065278:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1350839855.6838496:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%15290999f802f917c4cf210a17a00a5fI"logical_path;
+F"%60bf7084625ba0d59e8247e023f30e50I"logical_path;
 FI"application.css;
 TI"pathname;
 FI"1$root/app/assets/stylesheets/application.css;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"text/css;
 FI"
 mtime;
-FI"2012-10-12T04:12:16+04:00;
+FI"2012-10-21T21:14:34+04:00;
 FI"	body;
 FI":/*
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
@@ -18,36 +18,37 @@ FI":/*
 */
 ;
 FI"asset_paths;
-F[I"1$root/app/assets/stylesheets/application.css;
+F[I"1$root/app/assets/stylesheets/application.css;
 FI":$root/app/assets/stylesheets/bootstrap-responsive.css;
 FI"B$root/app/assets/stylesheets/bootstrap_and_overrides.css.less;
 FI"3$root/app/assets/stylesheets/chosen/chosen.css;
 FI"/$root/app/assets/stylesheets/home.css.scss;
 FI":$root/app/assets/stylesheets/password_resets.css.scss;
+FI"2$root/app/assets/stylesheets/product.css.scss;
 FI"3$root/app/assets/stylesheets/sessions.css.scss;
 FI"0$root/app/assets/stylesheets/users.css.scss;
 FI"dependency_paths;
-F[{I"	path;
+F[{I"	path;
 FI"1$root/app/assets/stylesheets/application.css;
 FI"
 mtime;
-FIu:	TimeR!ÄBŒ1 
+FIu:	Timer!Äã“Bo
 :@_zoneI"MSK;
-T:nano_numim:nano_deni:submicro"@:offseti@8I"hexdigest;
+T:nano_numiˆ:nano_deni:submicro"uÄ:offseti@8I"hexdigest;
 F"%2b7a967c0b2a73b7a2cb015e2bfeaa8c{I"	path;
 FI"!$root/app/assets/stylesheets;
 FI"
 mtime;
-FIu;Ó$Ä«ç” 
+FIu;±&ÄÍ#:
 ;I"MSK;
-T;iñ;i;"ëÄ;i@8I"hexdigest;
-F"%753a9707a790b6889534c29a55fbfc0c{I"	path;
+T;i+;i;"Ä;i@8I"hexdigest;
+F"%1473fc06879ff8556223d25d6cae769b{I"	path;
 FI"($root/app/assets/stylesheets/chosen;
 FI"
 mtime;
-FIu;÷#Ä(µG
+FIu;o$ÄÙèÌh
 ;I"MSK;
-T;i√;i;"E;i@8I"hexdigest;
+T;iò;i;"í;i@8I"hexdigest;
 F"%e65e71fe6b3bd8dbf61e4a65784f20c7{I"	path;
 FI":$root/app/assets/stylesheets/bootstrap-responsive.css;
 FI"
@@ -84,6 +85,13 @@ FIu;q!ÄWÇµÌ
 ;I"MSK;
 T;i˛;i;"v`;i@8I"hexdigest;
 F"%5fc2fe7cd50de2db84b919f5bb4fd477{I"	path;
+FI"2$root/app/assets/stylesheets/product.css.scss;
+FI"
+mtime;
+FIu;±&ÄÍ#:
+;I"MSK;
+T;i+;i;"Ä;i@8I"hexdigest;
+F"%764b7071f6dc888e13bf8279277109e4{I"	path;
 FI"3$root/app/assets/stylesheets/sessions.css.scss;
 FI"
 mtime;

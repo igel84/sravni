@@ -83,3 +83,5 @@
 %blockquote.pull-right
   %p Экономика должна быть экономной
   %small Л. И. Брежнев
+- if current_user && current_user.admin?
+  = link_to 'обновить рейтинг магазинов', city_update_shop_raiting_path(@current_city)

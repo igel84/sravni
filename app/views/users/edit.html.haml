@@ -50,6 +50,11 @@
           %td= link_to 'изменить аккаунт', edit_user_path(user)
           %td= link_to 'изменить роли', [user, :roles]
 - if current_user.admin?
+  .well.well-small
+    %p
+      = link_to 'продукты', products_path, class: 'btn btn-success'
+      = link_to 'сети', chains_path, class: 'btn btn-success'
+- if current_user.admin?
   .modal.hide.fade    
   %script    
     jQuery.fn.shop_choise = function(event, data){ 

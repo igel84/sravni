@@ -15,7 +15,7 @@ class XmlFilesController < ApplicationController
     @price_list = []
     oo = Excel.new(file)
       oo.default_sheet = oo.sheets.first
-      2.upto(20) do |line|
+      2.upto(50) do |line|
         product = oo.cell(line,'A')
         name = oo.cell(line,'B')
         volume = oo.cell(line,'C')        

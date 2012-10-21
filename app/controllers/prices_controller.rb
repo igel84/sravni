@@ -8,6 +8,8 @@ class PricesController < ApplicationController
   skip_before_filter :require_login, :only => :index
   skip_before_filter :override_db, :only => :index
 
+  
+
   def index
     if params[:ids]
       @prices = ''
@@ -68,6 +70,8 @@ class PricesController < ApplicationController
             ShopProduct.create(shop_id: params[:shop_id], product_id: price.product_id, name: price.name, price: price.count, volume: price.volume)
           end
         end
+        Shop.find(params[:shop_id]).set_raiting
+        
       # on AREA
       elsif params[:area_id] && !params[:area_id].blank? && params[:type] == 'area'
         Shop.where(area_id: params[:area_id], chain_id: params[:chain_id]).each do |shop|
@@ -83,6 +87,7 @@ class PricesController < ApplicationController
               ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.count, volume: price.volume)
             end
           end
+          shop.set_raiting
         end
       # on CITY
       elsif  params[:city_id] && !params[:city_id].blank? && params[:type] == 'city'
@@ -99,6 +104,7 @@ class PricesController < ApplicationController
               ShopProduct.create(shop_id: shop.id, product_id: price.product_id, name: price.name, price: price.count, volume: price.volume)
             end
           end
+          shop.set_raiting
         end 
       end
     #on CHAIN
