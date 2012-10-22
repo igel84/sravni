@@ -21,6 +21,9 @@ gem 'sorcery'
 gem 'roo'
 gem 'kaminari'
 
+gem 'ancestry'
+gem 'acts_as_tree'
+
 # Gems used only for assets and not required
 # in production environments by default.
 gem "twitter-bootstrap-rails", :group => :assets

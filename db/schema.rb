@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121021171932) do
+ActiveRecord::Schema.define(:version => 20121022185613) do
 
   create_table "areas", :force => true do |t|
     t.string   "name"
@@ -79,6 +79,20 @@ ActiveRecord::Schema.define(:version => 20121021171932) do
 
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
+
+  create_table "discussions", :force => true do |t|
+    t.string   "title"
+    t.string   "ancestry"
+    t.boolean  "visible",    :default => false
+    t.text     "body"
+    t.integer  "user_id"
+    t.integer  "parent_id"
+    t.string   "user_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "discussions", ["ancestry"], :name => "index_discussions_on_ancestry"
 
   create_table "friendly_id_slugs", :force => true do |t|
     t.string   "slug",                         :null => false

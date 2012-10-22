@@ -14,6 +14,7 @@ class User < ActiveRecord::Base
   has_many :user_shops
   belongs_to :city
   has_many :promotions
+  has_many :discussions
   
   attr_accessible :email, :password, :password_confirmation, :city_id
 

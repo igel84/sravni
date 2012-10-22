@@ -1,5 +1,5 @@
 InitialRelease::Application.routes.draw do  
-
+  
   mount Ckeditor::Engine => '/ckeditor'
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
@@ -36,6 +36,11 @@ InitialRelease::Application.routes.draw do
 
   resources :chains
   resources :products
+  resources :discussions do
+    member do
+      get 'change_visible'
+    end
+  end
 
   resources :cities do
     get :set_shops_prices

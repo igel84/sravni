@@ -1,0 +1,11 @@
+%blockquote.offset1.span10
+  %p
+    %span.label= discussion.title
+    %br/
+    = discussion.body
+  %small.pull-right
+    = discussion.user_name      
+    =# discussion.created_at
+  = link_to "#{discussion.visible != true ? 'отобразить' : 'скрыть'}", change_visible_discussion_path(discussion), class: 'btn' if current_user && current_user.admin?
+  = link_to 'редактировать', edit_discussion_path(discussion), class: 'btn btn-success' if current_user && current_user.admin?
+  = link_to 'удалить', discussion, class: 'btn btn-danger', :confirm => 'Вы уверены?', :method => :delete if (current_user && (current_user.admin? || (discussion.user && discussion.user == current_user)))

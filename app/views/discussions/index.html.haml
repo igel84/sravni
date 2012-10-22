@@ -1,0 +1,53 @@
+%legend Вопросы, ответы, обсуждения
+.accordion#accordion1
+  .accordion-group
+    .accordion-heading
+      %a.accordion-toggle{'data-toggle' => "collapse", 'data-parent' => "#accordion1", href: "#collapseOne"} Задать вопрос
+    #collapseOne.accordion-body.collapse
+      .accordion-inner        
+        = form_for Discussion.new, html: {class:'form-horizontal', style: 'margin-bottom:0'} do |f|
+          = f.hidden_field :parent_id
+          .control-group{style: 'margin-bottom:2px'}
+            %label.control-label{:for => "inputTitle"} Заголовок
+            .controls
+              = f.text_field :title, id:'inputTitle', placeholder:"Заголовок", class: 'span10'
+          .control-group{style: 'margin-bottom:2px'}
+            %label.control-label{:for => "inputName"} Ваше имя
+            .controls
+              = f.text_field :user_name, id:'inputName', placeholder:"Ваше имя", class: 'span10'
+          .control-group{style: 'margin-bottom:2px'}
+            %label.control-label{:for => "inputBody"} Сообщение
+            .controls
+              = f.text_area :body, class: "span10", placeholder: "Текст сообщения ...", rows: "5", id:'inputBody'
+          = f.submit 'опубликовать', class: "btn btn-large btn-info", style: 'text-align:center;width:300px;margin:8px auto;display:block'
+.clearfix
+.accordion#accordion2
+  .accordion-group
+    - @discussions.each_with_index do |discussion, index|
+      .accordion-heading
+        %a.accordion-toggle{'data-toggle' => "collapse", 'data-parent' => "#accordion2", href: "#collapse#{discussion.id.to_s}"}= discussion.title
+      %div{id: "collapse#{discussion.id.to_s}", class: "accordion-body collapse #{'in' if index == 0}"}
+        .accordion-inner
+          = discussion.body
+          .pull-right
+            %small.muted= discussion.user_name
+            .btn-group
+              %a.btn.dropdown-toggle{:'data-toggle' => 'dropdown', href: '#', style: 'width: 180px'}
+                комментировать
+                %span.caret
+              .dropdown-menu{style: 'width:200px;height:200px;z-index:1;overflow:visible !important;'}
+                = form_for Discussion.new(parent_id: discussion.id), html: {class:'form-horizontal', style: 'margin-bottom:0'} do |f|
+                  = f.hidden_field :parent_id
+                  .control-group{style: 'margin-bottom:2px'}
+                    %label.control-label{:for => "inputName"} Ваше имя
+                    .controls
+                      = f.text_field :user_name, id:'inputName', placeholder:"Ваше имя", class: 'span10'
+                  .control-group{style: 'margin-bottom:2px'}
+                    %label.control-label{:for => "inputBody"} Сообщение
+                    .controls
+                      = f.text_area :body, class: "span10", placeholder: "Текст сообщения ...", rows: "5", id:'inputBody'
+                  = f.submit 'опубликовать', class: "btn btn-large btn-info", style: 'text-align:center;width:300px;margin:8px auto;display:block'
+            = link_to "#{discussion.visible != true ? 'отобразить' : 'скрыть'}", change_visible_discussion_path(discussion), class: 'btn' if current_user && current_user.admin?
+            = link_to 'редактировать', edit_discussion_path(discussion), class: 'btn btn-success' if current_user && current_user.admin?
+            = link_to 'удалить', discussion, class: 'btn btn-danger', :confirm => 'Вы уверены?', :method => :delete if (current_user && (current_user.admin? || (discussion.user && discussion.user == current_user)))
+          = render discussion.children if discussion.children

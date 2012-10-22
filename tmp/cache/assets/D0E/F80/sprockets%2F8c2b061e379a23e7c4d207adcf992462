@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1350000742.0351017:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1350943237.393932:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%325fe04aad32bb2faa96de28c7a283deI"logical_path;
+F"%4626bb30265f2382f0525688bf0c4affI"logical_path;
 FI" bootstrap_and_overrides.css;
 FI"pathname;
 FI"B$root/app/assets/stylesheets/bootstrap_and_overrides.css.less;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"text/css;
 FI"
 mtime;
-FI"2012-10-12T04:12:16+04:00;
+FI"2012-10-23T02:00:10+04:00;
 FI"	body;
 FI"ýNarticle,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
 audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
@@ -1205,8 +1205,8 @@ F[{I"	path;
 FI"B$root/app/assets/stylesheets/bootstrap_and_overrides.css.less;
 FI"
 mtime;
-FIu:	Time€%€ÅS1
+FIu:	TimeÖ&€âª 
 :@_zoneI"MSK;
-T:nano_numi:nano_deni:submicro"(0:offseti@8I"hexdigest;
-F"%46afb5c33d785b55bd5eaf3643ba9f12I"_version;
+T:nano_numiù:nano_deni:submicro"v:offseti@8I"hexdigest;
+F"%f1c920cffde6b3a6fa221596018e1e7eI"_version;
 F"%46dde6621c301f4928e3b34efee9e3b5

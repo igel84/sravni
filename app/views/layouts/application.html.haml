@@ -32,7 +32,7 @@
                   %li{class: "#{controller_name == 'cities' && action_name == 'index' ? 'active' : ''}"}
                     = link_to 'главная', url_for(controller: 'cities', action: 'index', subdomain: false)
                   %li.divider-vertical
-                  %li= link_to 'информация', '#'
+                  %li= link_to 'информация', discussions_path, title: 'Вопросы, ответы, обсуждения', rel: "tooltip", :'data-placement' => 'right'
                   %li.divider-vertical
                   %li= link_to 'помощь', '#'
                   %li.divider-vertical
@@ -78,7 +78,7 @@
         .span2
           - @active_promotions.each do |promotion|
             %br/
-            %a{href: promotion.link, target:'_blank', title: promotion.name, 'data-placement' => 'left'}
+            %a{href: promotion.link, target:'_blank', title: promotion.name, rel: "tooltip", :'data-placement' => 'right'}
               = image_tag(promotion.banner.url(:original), class:"img-rounded")
             %br/
     %footer.footer
