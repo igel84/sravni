@@ -3,9 +3,9 @@ class DiscussionsController < ApplicationController
 
   def index
     if current_user && current_user.admin?
-      @discussions = Discussion.all 
+      @discussions = Discussion.roots
     else
-      @discussions = Discussion.where(visible: true)
+      @discussions = Discussion.roots.where(visible: true)
     end
 
     respond_to do |format|
@@ -34,12 +34,7 @@ class DiscussionsController < ApplicationController
   # GET /discussions/new
   # GET /discussions/new.json
   def new
-    @discussion = Discussion.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @discussion }
-    end
+    @discussion = Discussion.new(parent_id: params[:parent_id])
   end
 
   # GET /discussions/1/edit
@@ -53,7 +48,10 @@ class DiscussionsController < ApplicationController
     params[:discussion][:user_id] = current_user.id if current_user
     @discussion = Discussion.new(params[:discussion])
     @discussion.save
-    redirect_to discussions_url
+    respond_to do |format|
+      format.js { render 'create' } 
+      format.html { redirect_to discussions_url }
+    end
   end
 
   # PUT /discussions/1
@@ -75,7 +73,7 @@ class DiscussionsController < ApplicationController
   # DELETE /discussions/1
   # DELETE /discussions/1.json
   def destroy
-    Discussion.find(params[:id]).destroy if current_user && (current_user.admin? || Discussion.find(params[:id]).user == current_user)
+    Discussion.find(params[:id]).destroy if current_user && current_user.admin? #(current_user.admin? || Discussion.find(params[:id]).user == current_user)
     redirect_to discussions_url
   end
 

@@ -93,6 +93,7 @@ ActiveRecord::Schema.define(:version => 20121022185613) do
   end
 
   add_index "discussions", ["ancestry"], :name => "index_discussions_on_ancestry"
+  add_index "discussions", ["parent_id"], :name => "index_discussions_on_parent_id"
 
   create_table "friendly_id_slugs", :force => true do |t|
     t.string   "slug",                         :null => false

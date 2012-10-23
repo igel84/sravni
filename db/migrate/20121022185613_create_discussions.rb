@@ -12,5 +12,6 @@ class CreateDiscussions < ActiveRecord::Migration
       t.timestamps
     end
     add_index :discussions, :ancestry
+    add_index :discussions, :parent_id
   end
 end
